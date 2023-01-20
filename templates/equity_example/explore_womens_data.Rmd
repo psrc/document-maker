@@ -29,6 +29,15 @@ earnings_df <- get_acs_recs(geography = 'county',
              years=c(2021),
              acs.type = 'acs5')
 
-earnings_df_ft<- earnings_df %>% filter(label %in% c('Estimate!!Median earnings in the past 12 months (in 2021 inflation-adjusted dollars) --!!Total (dollars):!!Female --!!Total (dollars)!!Worked full-time, year-round in the past 12 months (dollars))',  'Estimate!!Median earnings in the past 12 months (in 2021 inflation-adjusted dollars) --!!Total (dollars):!!Male --!!Total (dollars)!!Worked full-time, year-round in the past 12 months (dollars))'))
+earnings_df_ft<- earnings_df %>% 
+filter(label %in% c('Estimate!!Median earnings in the past 12 months (in 2021 inflation-adjusted dollars) --!!Total (dollars):!!Female --!!Total (dollars)!!Worked full-time, year-round in the past 12 months (dollars)',  'Estimate!!Median earnings in the past 12 months (in 2021 inflation-adjusted dollars) --!!Total (dollars):!!Male --!!Total (dollars)!!Worked full-time, year-round in the past 12 months (dollars)'))%>%
+mutate(label = recode(label, 'Estimate!!Median earnings in the past 12 months (in 2021 inflation-adjusted dollars) --!!Total (dollars):!!Female --!!Total (dollars)!!Worked full-time, year-round in the past 12 months (dollars)'= 'Female', 
+'Estimate!!Median earnings in the past 12 months (in 2021 inflation-adjusted dollars) --!!Total (dollars):!!Male --!!Total (dollars)!!Worked full-time, year-round in the past 12 months (dollars)' = 'Male'))
+```
+```{r}
+earnings<- static_column_chart(t=earnings_df_ft, y='estimate', x= 'name', fill="label", moe='moe', color='psrc_light', est='currency')
+earnings
+write.csv(earnings_df_ft, 'earnings.csv')
+
 ```
 

@@ -26,7 +26,7 @@ library(htmlwidgets)
 source('data-processing-template.R')
 
 output_dir<-file.path(getwd(), 'outputs')
-network_file_loc<-'X:\DSA\Trends\household-travel-survey\images'
+network_file_loc<-'X:/DSA/Trends/household-travel-survey/images'
 
 # Create Image 
 image1 <- image_read(file.path(network_file_loc, 'plaza_roberto.png'))

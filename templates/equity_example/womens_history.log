@@ -1,7 +1,7 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.1.18)  20 JAN 2023 13:46
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.1.18)  20 JAN 2023 13:49
  restricted system commands enabled.
-**template_documentmaker_hts.tex
-(./template_documentmaker_hts.tex
+**womens_history.tex
+(./womens_history.tex
 LaTeX2e <2022-11-01> patch level 1
 Lua module: luaotfload 2022-10-03 3.23 Lua based OpenType font support
 Lua module: lualibs 2022-10-04 2.75 ConTeXt Lua standard libraries.
@@ -597,8 +597,8 @@ Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
 \CatcodeTableOther=\catcodetable12
 \CatcodeTableExpl=\catcodetable13
 )
-Inserting `Suppress ligatures selectively' in `ligaturing'.) (./template_documentmaker_hts.aux)
-\openout1 = template_documentmaker_hts.aux
+Inserting `Suppress ligatures selectively' in `ligaturing'.) (./womens_history.aux)
+\openout1 = womens_history.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
 LaTeX Font Info:    ... okay on input line 93.
@@ -930,10 +930,10 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 93.
-(./template_documentmaker_hts.out) (./template_documentmaker_hts.out)
+(./womens_history.out) (./womens_history.out)
 \@outlinefile=\write4
 
-\openout4 = template_documentmaker_hts.out
+\openout4 = womens_history.out
 Package soulpos Info: Loading soulutf8 on input line 93.
 (c:/Users/SChildress/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/soulutf8/soulutf8.sty
 Package: soulutf8 2019/12/15 v1.2 Permit use of UTF-8 characters in soul (HO)
@@ -956,74 +956,119 @@ luaotfload | aux : font no 18 (nil) defines no feature for script latn
 Package fontspec Info: Poppins scale = 0.9999976796313398.
 
 LaTeX Font Info:    Font shape `TU/Poppins(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 99.
+(Font)              scaled to size 17.28pt on input line 98.
 LaTeX Font Info:    Font shape `TU/Poppins(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 99.
-<walking_image_header.png, id=16, 757.83125pt x 100.375pt>
-File: walking_image_header.png Graphic file (type png)
-<use walking_image_header.png>
-Package luatex.def Info: walking_image_header.png  used on input line 101.
-(luatex.def)             Requested size: 469.75801pt x 62.21959pt.
+(Font)              scaled to size 17.28pt on input line 98.
+<women_image_header.png, id=16, 898.35625pt x 200.75pt>
+File: women_image_header.png Graphic file (type png)
+<use women_image_header.png>
+Package luatex.def Info: women_image_header.png  used on input line 100.
+(luatex.def)             Requested size: 469.75241pt x 104.9726pt.
 LaTeX Font Info:    Font shape `TU/Poppins(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 109.
+(Font)              scaled to size 14.4pt on input line 107.
 LaTeX Font Info:    Font shape `TU/Poppins(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 109.
-<template_documentmaker_hts_files/figure-latex/overallmodeshare-1.pdf, id=19, 433.62pt x 289.08pt>
-File: template_documentmaker_hts_files/figure-latex/overallmodeshare-1.pdf Graphic file (type pdf)
-<use template_documentmaker_hts_files/figure-latex/overallmodeshare-1.pdf>
-Package luatex.def Info: template_documentmaker_hts_files/figure-latex/overallmodeshare-1.pdf  used on input line 122.
-(luatex.def)             Requested size: 433.63878pt x 289.09251pt.
-<X:/DSA/Trends/household-travel-survey/headers/PST_2021_HTS_header.png, id=20, 503.9628pt x 88.1694pt>
-File: X:/DSA/Trends/household-travel-survey/headers/PST_2021_HTS_header.png Graphic file (type png)
-<use X:/DSA/Trends/household-travel-survey/headers/PST_2021_HTS_header.png>
-Package luatex.def Info: X:/DSA/Trends/household-travel-survey/headers/PST_2021_HTS_header.png  used on input line 124.
-(luatex.def)             Requested size: 469.7725pt x 82.18771pt.
+(Font)              scaled to size 14.4pt on input line 107.
+
+Overfull \hbox (766.24352pt too wide) in paragraph at lines 141--141
+[]\TU/lmtt/m/n/12 ##                                                                                                                                                                                               concept[] 
+ []
+
+
+Overfull \hbox (766.23152pt too wide) in paragraph at lines 141--141
+[]\TU/lmtt/m/n/12 ## 1 MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2021 INFLATION-ADJUSTED DOLLARS) BY SEX BY WORK EXPERIENCE IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS[] 
+ []
+
+
+Overfull \hbox (766.23152pt too wide) in paragraph at lines 141--141
+[]\TU/lmtt/m/n/12 ## 2 MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2021 INFLATION-ADJUSTED DOLLARS) BY SEX BY WORK EXPERIENCE IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS[] 
+ []
+
+
+Overfull \hbox (766.23152pt too wide) in paragraph at lines 141--141
+[]\TU/lmtt/m/n/12 ## 3 MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2021 INFLATION-ADJUSTED DOLLARS) BY SEX BY WORK EXPERIENCE IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS[] 
+ []
+
+
+Overfull \hbox (766.23152pt too wide) in paragraph at lines 141--141
+[]\TU/lmtt/m/n/12 ## 4 MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2021 INFLATION-ADJUSTED DOLLARS) BY SEX BY WORK EXPERIENCE IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS[] 
+ []
+
+
+Overfull \hbox (766.23152pt too wide) in paragraph at lines 141--141
+[]\TU/lmtt/m/n/12 ## 5 MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2021 INFLATION-ADJUSTED DOLLARS) BY SEX BY WORK EXPERIENCE IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS[] 
+ []
+
+
+Overfull \hbox (766.21953pt too wide) in paragraph at lines 141--141
+[]\TU/lmtt/m/n/12 ## 6 MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2021 INFLATION-ADJUSTED DOLLARS) BY SEX BY WORK EXPERIENCE IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS[] 
+ []
+
+
+Overfull \hbox (766.23152pt too wide) in paragraph at lines 141--141
+[]\TU/lmtt/m/n/12 ## 7 MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2021 INFLATION-ADJUSTED DOLLARS) BY SEX BY WORK EXPERIENCE IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS[] 
+ []
+
+
+Overfull \hbox (766.23152pt too wide) in paragraph at lines 141--141
+[]\TU/lmtt/m/n/12 ## 8 MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2021 INFLATION-ADJUSTED DOLLARS) BY SEX BY WORK EXPERIENCE IN THE PAST 12 MONTHS FOR THE POPULATION 16 YEARS AND OVER WITH EARNINGS IN THE PAST 12 MONTHS[] 
+ []
+
+<X:/DSA/Trends/equity/headers/PST_Equity_Edition-Trend_header.png, id=17, 503.9628pt x 89.3739pt>
+File: X:/DSA/Trends/equity/headers/PST_Equity_Edition-Trend_header.png Graphic file (type png)
+<use X:/DSA/Trends/equity/headers/PST_Equity_Edition-Trend_header.png>
+Package luatex.def Info: X:/DSA/Trends/equity/headers/PST_Equity_Edition-Trend_header.png  used on input line 141.
+(luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
-(fancyhdr)                Make it at least 86.53775pt, for example:
-(fancyhdr)                \setlength{\headheight}{86.53775pt}.
+(fancyhdr)                Make it at least 87.66054pt, for example:
+(fancyhdr)                \setlength{\headheight}{87.66054pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-11.53775pt}.
+(fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
 
 LaTeX Font Info:    Font shape `TU/Poppins(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 124.
+(Font)              scaled to size 8.0pt on input line 141.
 [1
 
 
-\openout3 = template_documentmaker_hts.upa
-{c:/Users/SChildress/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<x:/DSA/Trends/household-travel-survey/headers/PST_2021_HTS_header.png><./walking_image_header.png>]
-File: X:/DSA/Trends/household-travel-survey/headers/PST_2021_HTS_header.png Graphic file (type png)
-<use X:/DSA/Trends/household-travel-survey/headers/PST_2021_HTS_header.png>
-Package luatex.def Info: X:/DSA/Trends/household-travel-survey/headers/PST_2021_HTS_header.png  used on input line 129.
-(luatex.def)             Requested size: 469.7725pt x 82.18771pt.
+\openout3 = womens_history.upa
+{c:/Users/SChildress/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<x:/DSA/Trends/equity/headers/PST_Equity_Edition-Trend_header.png><./women_image_header.png>]
+<womens_history_files/figure-latex/overallmodeshare-1.pdf, id=29, 433.62pt x 289.08pt>
+File: womens_history_files/figure-latex/overallmodeshare-1.pdf Graphic file (type pdf)
+<use womens_history_files/figure-latex/overallmodeshare-1.pdf>
+Package luatex.def Info: womens_history_files/figure-latex/overallmodeshare-1.pdf  used on input line 143.
+(luatex.def)             Requested size: 433.63878pt x 289.09251pt.
+File: X:/DSA/Trends/equity/headers/PST_Equity_Edition-Trend_header.png Graphic file (type png)
+<use X:/DSA/Trends/equity/headers/PST_Equity_Edition-Trend_header.png>
+Package luatex.def Info: X:/DSA/Trends/equity/headers/PST_Equity_Edition-Trend_header.png  used on input line 150.
+(luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
-(fancyhdr)                Make it at least 86.53775pt, for example:
-(fancyhdr)                \setlength{\headheight}{86.53775pt}.
+(fancyhdr)                Make it at least 87.66054pt, for example:
+(fancyhdr)                \setlength{\headheight}{87.66054pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-11.53775pt}.
+(fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
 
-[2<./template_documentmaker_hts_files/figure-latex/overallmodeshare-1.pdf>] (./template_documentmaker_hts.aux * soulpos - computing points - it may take a few seconds *
-\openout3 = template_documentmaker_hts.upb
- (./template_documentmaker_hts.upa))
-Package rerunfilecheck Info: File `template_documentmaker_hts.out' has not changed.
-(rerunfilecheck)             Checksum: 76C61B8B24326866E14747ACC8D4A602;618.
+[2<./womens_history_files/figure-latex/overallmodeshare-1.pdf>] (./womens_history.aux * soulpos - computing points - it may take a few seconds *
+\openout3 = womens_history.upb
+ (./womens_history.upa))
+Package rerunfilecheck Info: File `womens_history.out' has not changed.
+(rerunfilecheck)             Checksum: 9BDC058E649C4FF91ED2817A6CFD437D;401.
 )
 
 Here is how much of LuaTeX's memory you used:
- 23345 strings out of 478382
+ 23348 strings out of 478382
  100000,1977958 words of node,token memory allocated
  547 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 8 attribute, 59 glue_spec, 8 attribute_list, 1 write, 1 user_defined nodes
-   avail lists: 1:1,2:321,3:175,4:74,5:58,6:39,7:4791,8:25,9:315,10:16,11:255
- 42644 multiletter control sequences out of 65536+600000
- 62 fonts using 10376635 bytes
- 86i,15n,122p,1007b,413s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/Users/SChildress/AppData/Local/Microsoft/Windows/Fonts/Poppins-Regular.ttf><c:/Users/SChildress/AppData/Local/Microsoft/Windows/Fonts/Poppins-Bold.ttf>
-Output written on template_documentmaker_hts.pdf (2 pages, 851110 bytes).
+   avail lists: 1:1,2:437,3:2553,4:66,5:85,6:102,7:9193,8:18,9:447,10:14,11:45
+ 42647 multiletter control sequences out of 65536+600000
+ 63 fonts using 10464759 bytes
+ 86i,15n,122p,995b,528s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/Users/SChildress/AppData/Roaming/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf><c:/Users/SChildress/AppData/Local/Microsoft/Windows/Fonts/Poppins-Regular.ttf><c:/Users/SChildress/AppData/Local/Microsoft/Windows/Fonts/Poppins-Bold.ttf>
+Output written on womens_history.pdf (2 pages, 576760 bytes).
 
-PDF statistics: 55 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+PDF statistics: 59 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  8 named destinations out of 1000 (max. 131072)
  25 words of extra memory for PDF output out of 10000 (max. 100000000)
 
