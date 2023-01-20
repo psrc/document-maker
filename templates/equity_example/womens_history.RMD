@@ -1,0 +1,74 @@
+---
+output:
+  pdf_document:
+    latex_engine: lualatex
+    includes:
+      in_header: "X:/DSA/shiny-uploads/images/headers/trend_format_equity.tex"
+  html_document:
+    df_print: paged
+fontsize: 12pt
+---
+
+\setmainfont{Poppins}
+
+# Celebraing Women's History
+```{r setup, include=FALSE}
+
+options(tinytex.verbose=TRUE)
+library(psrcplot)
+library(psrccensus)
+library(tidyverse)
+library(knitr)
+library(magick)
+library(openxlsx)
+library(htmlwidgets)
+
+source('data-processing.R')
+
+output_dir<-file.path(getwd(), 'outputs')
+
+output_dir<-file.path(getwd(), 'outputs')
+network_file_loc<-'X:\DSA\shiny-uploads\images\travel-studies'
+
+# Create Image 
+image1 <- image_read(file.path(network_file_loc, 'plaza_roberto.png'))
+image2 <- image_read(file.path(network_file_loc, "pride_pedestrian.jpg"))
+image3 <- image_rea(file.path(network_file_loc, "puyallup_transit.jpg"))
+image4<-  image_read(file.path(network_file_loc, "hectors-walking.jpg"))
+image5<- image_read(file.path(network_file_loc, "northgate_cyclist.jpg"))
+input <- c(image_scale(image1, "x200"), image_scale(image2, "x200"), image_scale(image3, "x200"),  image_scale(image4, "x200"),  image_scale(image5, "x200"))
+walking_image_header <- image_append(input)
+image_write(walking_image_header, path="walking_image_header.png", format="png")
+install_psrc_fonts()
+walking_image_header
+```
+![](walking_image_header.png){width=100%}
+\begin{flushleft}
+wordswordswords
+\end{flushleft}
+
+## some header
+\begin{flushleft}
+more words
+\end{flushleft}
+
+
+
+```{r, echo=FALSE, results=TRUE,  fig.dim=c(6,4)}
+wb <- createWorkbook()
+xlsx_file <- "womens_history.xlsx"
+
+```
+
+
+```{r overallmodeshare, echo=FALSE, results=TRUE,  fig.dim=c(6,4), fig.dim=c(6,4) }
+
+
+```
+
+
+\subsection{Conclusion}
+\begin{flushleft}
+People were walking and biking more in 2021 than in previous years but using transit less. COVID-19 conditions contributed to this substantial shift in behavior across most demographic groups. The 2023 household travel survey will show whether these patterns continue.
+\end{flushleft}
+
