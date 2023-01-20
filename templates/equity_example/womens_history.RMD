@@ -3,7 +3,7 @@ output:
   pdf_document:
     latex_engine: lualatex
     includes:
-      in_header: "X:/DSA/shiny-uploads/images/headers/trend_format_equity.tex"
+      in_header: "X:/DSA/Trends/equity/headers/trend_format_equity.tex"
   html_document:
     df_print: paged
 fontsize: 12pt
@@ -28,7 +28,7 @@ source('data-processing.R')
 output_dir<-file.path(getwd(), 'outputs')
 
 output_dir<-file.path(getwd(), 'outputs')
-network_file_loc<-'X:\DSA\shiny-uploads\images\travel-studies'
+network_file_loc<-'X:\DSA\Trends\equity\images'
 
 # Create Image 
 image1 <- image_read(file.path(network_file_loc, 'plaza_roberto.png'))
