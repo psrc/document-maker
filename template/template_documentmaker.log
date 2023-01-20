@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.1.18)  18 JAN 2023 16:06
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.1.18)  19 JAN 2023 10:17
  restricted system commands enabled.
 **template_documentmaker.tex
 (./template_documentmaker.tex
@@ -974,7 +974,7 @@ Here is how much of LuaTeX's memory you used:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 8 attribute, 59 glue_spec, 8 attribute_list, 1 write, 1 user_defined nodes
    avail lists: 1:1,2:319,3:175,4:74,5:58,6:39,7:4794,8:25,9:315,10:16,11:255
  42009 multiletter control sequences out of 65536+600000
- 62 fonts using 10376555 bytes
+ 62 fonts using 10376635 bytes
  86i,15n,122p,827b,411s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/SChildress/AppData/Local/Microsoft/Windows/Fonts/Poppins-Regular.ttf><c:/Users/SChildress/AppData/Local/Microsoft/Windows/Fonts/Poppins-Bold.ttf>
 Output written on template_documentmaker.pdf (2 pages, 851257 bytes).
