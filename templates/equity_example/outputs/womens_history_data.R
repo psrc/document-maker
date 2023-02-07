@@ -65,14 +65,14 @@ elmer_connection <- elmer_connect()
 #census_employ <- read.csv('census_employ_tidy.csv')
 #census_employ <- census_employ[,-c(1, 3)]
 
-x <- get_psrc_pums(span = 5,                       # Denoting ACS 5-year estimates; 1-year also available
-                   dyear = c(2019),                 # Last data year of span
+x <- get_psrc_pums(span = 1,                       # Denoting ACS 1-year estimates; 1-year also available
+                   dyear = c(2019),                # Last data year of span
                    level = "p",                    # Unit of analysis == household ("p" used for person)
                    vars = c("ESR","SEX", "AGEP"))  # You can choose as many variables as you need.
 
 gender_data_19 <- psrc_pums_count(x, group_vars=c("ESR","SEX", "AGEP"))
 
-y <- get_psrc_pums(span = 5,                       
+y <- get_psrc_pums(span = 1,                       
                    dyear = c(2021),                 
                    level = "p",                    
                    vars = c("ESR","SEX", "AGEP")) 
@@ -89,7 +89,7 @@ gender_data_19_21$AGEP <- as.numeric(as.character(gender_data_19_21$AGEP))
 
 # fxns for tidying
 
-smp_delivery_combo <- function(data, year) {
+smp_combo <- function(data, year) {
   ## rewriting labels of responses to be more concise
   temp_table <- data %>%
     mutate(ESR= case_when(ESR == "Armed forces, at work" | 
@@ -106,21 +106,38 @@ smp_delivery_combo <- function(data, year) {
 }
 
 
-gender_data_test <- smp_delivery_combo(gender_data_19_21)
+gender_data_test <- smp_combo(gender_data_19_21)%>%
+  mutate(period = as.factor(DATA_YEAR))
 
+#gender_data_new <- psrc_pums_count(gender_data_test, group_by = c("period", "AGE"))
 
 # unemployment by age and gender for 2019/2021
 ?static_column_chart
 
 employ_chart <- static_column_chart(t=gender_data_test, 
-                                    x = "DATA_YEAR",
-                                    y = "ESR",
-                                    fill = "SEX",
+                                    x = "AGE",
+                                    y = "share",
+                                    fill = "ESR",
                                     moe = "share_moe",
                                     color="psrc_pairs",
                                     est ="percent")
 
 employ_chart
+
+
+gender_age_facet <- create_facet_bar_chart(t= gender_data_test,
+                                             w.x="SEX", w.y="share",
+                                             f="DATA_SURVEY", g="ESR",
+                                             w.color="psrc_light",
+                                             est.type ="percent",
+                                             w.interactive="no",
+                                             w.dec=2,
+                                             w.scales="fixed",
+                                             w.facet=6,
+                                             w.title="Share of Employment by Gender",
+                                             w.sub.title="Male or Female")+ 
+  ggplot2::theme(axis.title = ggplot2::element_blank()) +
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 5))
 
 # hhts data pull & variables
 
