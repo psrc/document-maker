@@ -17,12 +17,23 @@ fontsize: 12pt
 options(tinytex.verbose=TRUE)
 library(psrcplot)
 library(psrccensus)
+library(psrc.travelsurvey)
 library(tidyverse)
 library(knitr)
 library(magick)
 library(openxlsx)
 library(htmlwidgets)
 
+elmer_connect <- function(){
+  DBI::dbConnect(odbc::odbc(),
+                 driver = "ODBC Driver 17 for SQL Server",
+                 server = "AWS-PROD-SQL\\Sockeye",
+                 database = "Elmer",
+                 trusted_connection = "yes",
+                 port = 1433)
+}
+
+elmer_connection <- elmer_connect()
 
 output_dir<-file.path(getwd(), 'outputs')
 
@@ -74,6 +85,9 @@ earnings_df
 earnings_chart
 ```
 
+```{r person variables}
+source("womens_history_data.R")
+```
 
 \subsection{Conclusion}
 \begin{flushleft}
