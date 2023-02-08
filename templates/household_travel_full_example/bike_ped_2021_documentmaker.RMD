@@ -10,7 +10,7 @@ fontsize: 12pt
 ---
 
 \setmainfont{Poppins}
-\thispagestyle{firstpage}
+\thispagestyle{fancy}
 
 # Trends in Walking and Biking 
 ```{r setup, include=FALSE}
@@ -91,6 +91,8 @@ writeDataTable(wb = wb, sheet = 'trips_by_mode', x = trips_by_mode_no_drive)
 
 ```
 
+
+
 \begin{flushleft}
 The walk trip mode share was over 30\% in 2021 for social,
 recreational, and meal trips. A greater proportion of trips was made
@@ -98,7 +100,9 @@ for these purposes in 2021 when compared to 2017/2019 survey responses.
 Driving remained around 80\% of trips, consistent with previous years. The 2017 and 2019 survey samples have been combined in this analysis to strengthen the statistical validity of the findings by increasing the number of respondents in each calculation. Lines above the columns in each chart indicate the margin of error.
 \end{flushleft}
 
-\pagestyle{otherpages}
+\setlength{\headheight}{25pt}
+\setlength{\textheight}{650pt}
+\fancyhead[L]{}
 
 ### More social and recreation trips, Fewer work and school trips
 \begin{flushleft}
@@ -143,7 +147,7 @@ writeDataTable(wb = wb, sheet = 'trips_by_purpose_walk', x = trips_by_purpose_wa
 \begin{flushleft}
 Approximately 75\% of all transit trips were accessed by walk, jog or wheelchair.  Access by biking accounted for less than 5\% of trips to transit in both years.  The remaining transit trips were accessed by several other modes, including driving oneself and getting dropped off.
 \end{flushleft}
-```{r transit-access, echo=FALSE, results=TRUE,  fig.dim=c(6,4)}
+```{r transit-access, echo=FALSE, results=TRUE,  fig.dim=c(6,3)}
 transit_access_mode<-read.csv(paste0(output_dir, '/transit_access.csv'))
 transit_access_chart<-static_column_chart(t=transit_access_mode, x='mode_acc_walk', y='share', fill='year', moe='share_moe', est='percent',color="pgnobgy_5", title='Transit Access Mode')
 addWorksheet(wb = wb, sheetName = 'transit_access_mode', gridLines = FALSE)
@@ -217,7 +221,7 @@ People living in regional growth centers may walk more than others because they 
 
 \end{flushleft}
 
-```{r, echo=FALSE, results=TRUE,  fig.dim=c(6,4)}
+```{r, echo=FALSE, results=TRUE,  fig.dim=c(6,3)}
 veh_walk_mode<-read.csv(paste0(output_dir, '/NoVehicles_walk_mode_share.csv'))
 veh_walk_mode_chart<-static_column_chart(t=veh_walk_mode , x='NoVehicles', y='share', f='survey', moe='share_moe', est='percent', color="pgnobgy_5", title='Walking Trip Mode Shares by Household Vehicle Ownership')
 veh_walk_mode_chart
@@ -234,10 +238,10 @@ In 2021, all racial groups had higher walking shares than in 2017/2019. Interpre
 
 \end{flushleft}
 
-```{r, echo=FALSE, results=TRUE,  fig.dim=c(6,4)}
+```{r, echo=FALSE, results=TRUE,  fig.dim=c(6,3)}
 race_walk_mode<-read.csv(paste0(output_dir, '/race_eth_broad_walk_mode_share.csv'))
 
-race_walk_mode_chart<-static_bar_chart(t=race_walk_mode , y='race_eth_broad', x='share', f='survey', moe='share_moe', est='percent', color="pgnobgy_5", title='Walking Trip Mode Shares by Race and Ethnicity')+scale_x_discrete(limits=rev)
+race_walk_mode_chart<-static_bar_chart(t=race_walk_mode , y='race_eth_broad', x='share', f='survey', moe='share_moe', est='percent', color="pgnobgy_5", title='Walking Trip Mode Shares by Race and Ethnicity')+scale_x_discrete()
 race_walk_mode_chart
 
 addWorksheet(wb = wb, sheetName = 'race_walk_mode', gridLines = FALSE)
@@ -267,5 +271,9 @@ saveWorkbook(wb=wb, file=paste0(output_dir,'/', xlsx_file), overwrite = TRUE)
 \subsection{Conclusion}
 \begin{flushleft}
 People were walking and biking more in 2021 than in previous years but using transit less. COVID-19 conditions contributed to this substantial shift in behavior across most demographic groups. The 2023 household travel survey will show whether these patterns continue.
+
+
+\href{https://www.psrc.org/media/7082}{\underline{\textcolor{blue}{Download the data used in this Trend.}}}
+
 \end{flushleft}
 
