@@ -19,12 +19,14 @@ library(sp)
 library(gridExtra)
 library(ggpubr)
 
+setwd("C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example")
+
 # packages that are from github that host functions for pulling data (do the install in R Gui, not RStudio)
 
 #devtools::install_github("psrc/psrc.travelsurvey", force = TRUE)
-devtools::install_github("psrc/psrccensus", force = TRUE)
-devtools::install_github("psrc/psrcplot", force = TRUE)
-devtools::install_github("psrc/psrctrends", force = TRUE)
+#devtools::install_github("psrc/psrccensus", force = TRUE)
+#devtools::install_github("psrc/psrcplot", force = TRUE)
+#devtools::install_github("psrc/psrctrends", force = TRUE)
 
 # run these after installing github changes through R Gui
 
@@ -34,8 +36,6 @@ library(psrcplot)
 library(psrctrends)
 
 install_psrc_fonts()
-setwd("C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/census_data")
-output_path <- "C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/outputs"
 
 # for Elmer connection
 
@@ -65,51 +65,40 @@ elmer_connection <- elmer_connect()
 #census_employ <- read.csv('census_employ_tidy.csv')
 #census_employ <- census_employ[,-c(1, 3)]
 
-x <- get_psrc_pums(span = 1,                       # Denoting ACS 1-year estimates; 1-year also available
-                   dyear = c(2019),                # Last data year of span
-                   level = "p",                    # Unit of analysis == household ("p" used for person)
-                   vars = c("ESR","SEX", "AGEP"))  # You can choose as many variables as you need.
+pvars <- c("ESR","SEX", "AGEP")
+ftr_int <- function(x){as.integer(as.character(x))}                                        
+pums19 <- get_psrc_pums(1, 2019, "p", pvars) 
 
-gender_data_19 <- psrc_pums_count(x, group_vars=c("ESR","SEX", "AGEP"))
+pums19 %<>% mutate(
+  ESR= factor(
+    case_when(grepl("^(Civilian|Armed) ", as.character(ESR)) ~ "Employed",
+              !is.na(ESR) ~ "Unemployed")),
+  AGE = factor(
+    case_when(between(ftr_int(AGEP), 18, 25) ~ '18-25',
+              between(ftr_int(AGEP), 26, 35) ~ '26-35',
+              between(ftr_int(AGEP), 36, 45) ~ '36-45',
+              AGEP >= 46 ~ "46+")))
 
-y <- get_psrc_pums(span = 1,                       
-                   dyear = c(2021),                 
-                   level = "p",                    
-                   vars = c("ESR","SEX", "AGEP")) 
+pums19_all <- psrc_pums_count(pums19, group_vars = c("ESR", "AGE", "SEX"), incl_na=FALSE)
 
-gender_data_21 <- psrc_pums_count(y, group_vars=c("ESR","SEX", "AGEP"))
+pums21 <- get_psrc_pums(1, 2021, "p", pvars) 
 
-gender_data_19_21 <- rbind(gender_data_19, gender_data_21) %>%
+pums21 %<>% mutate(
+  ESR= factor(
+    case_when(grepl("^(Civilian|Armed) ", as.character(ESR)) ~ "Employed",
+              !is.na(ESR) ~ "Unemployed")),
+  AGE = factor(
+    case_when(between(ftr_int(AGEP), 18, 25) ~ '18-25',
+              between(ftr_int(AGEP), 26, 35) ~ '26-35',
+              between(ftr_int(AGEP), 36, 45) ~ '36-45',
+              AGEP >= 46 ~ "46+")))
+
+pums21_all <- psrc_pums_count(pums21, group_vars = c("ESR", "AGE", "SEX"),incl_na=FALSE)
+
+
+gender_data_19_21 <- rbind(pums19_all, pums21_all) %>%
   filter(ESR != "Total")%>%
   filter(AGEP != "Total")
-
-#unique(gender_data_19_21$ESR)
-#unique(gender_data_19_21$AGE)
-gender_data_19_21$AGEP <- as.numeric(as.character(gender_data_19_21$AGEP))
-
-# fxns for tidying
-
-smp_combo <- function(data, year) {
-  ## rewriting labels of responses to be more concise
-  temp_table <- data %>%
-    mutate(ESR= case_when(ESR == "Armed forces, at work" | 
-                            ESR == "Civilian employed, at work" |
-                            ESR == "Armed forces, with a job but not at work"  | 
-                            ESR == "Civilian employed, with a job but not at work" ~ "Employed",
-                            ESR == "Not in labor force"  | 
-                            ESR == "Unemployed" ~ "Unemployed")) %>%
-    mutate(AGE = case_when(AGEP >= 18  & AGEP <= 25 ~ '18-25',
-                           AGEP >= 26  & AGEP <= 35 ~ '26-35',
-                           AGEP >= 36  & AGEP <= 45 ~ '36-45',
-                           AGEP >= 46 ~ "46+"))
-  temp_table
-}
-
-
-gender_data_test <- smp_combo(gender_data_19_21)%>%
-  mutate(period = as.factor(DATA_YEAR))
-
-#gender_data_new <- psrc_pums_count(gender_data_test, group_by = c("period", "AGE"))
 
 # unemployment by age and gender for 2019/2021
 ?static_column_chart
