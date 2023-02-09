@@ -106,14 +106,6 @@ pums21_all <- psrc_pums_count(pums21, group_vars = c("ESR", "SEX"),incl_na=FALSE
     survey = DATA_YEAR
   )
 
-
-#gender_data_19_21 <- rbind(pums19_all, pums21_all) %>%
- #filter(ESR != "Total")%>%
- #filter(SEX != "Total")%>%
-  #rename(
-   #survey = DATA_YEAR
-  #)
-
 # unemployment by gender for 2019/2021
 
 employ__gender_chart_19 <- static_column_chart(t=pums19_all, 
@@ -200,69 +192,44 @@ employ_21 <- static_column_chart(t=pums21_year,
                                             est ="percent")
 
 employ_21
-# ggplot count and share plot
 
-count_and_share_plot <- function(dt, grp_var, num_var, legend_name, tbl_name){
-  
-  fill_group <- dt[[grp_var]]
-  x_axis_grp <- dt[[num_var]]
-  
-  count_plot <- ggplot(dt,
-                       aes(x=x_axis_grp,
-                           y=count,
-                           fill = survey)) +
-    geom_bar(stat="identity",
+# facet chart with ggplot
+pums19_extra <- psrc_pums_count(pums19, group_vars = c("ESR", "SEX", "AGE"), incl_na=FALSE)%>%
+  filter(ESR != "Total")%>%
+  filter(SEX != "Total")%>%
+  rename(
+    survey = DATA_YEAR
+  )
+
+pums21_extra <- psrc_pums_count(pums21, group_vars = c("ESR", "SEX", "AGE"), incl_na=FALSE)%>%
+  filter(ESR != "Total")%>%
+  filter(SEX != "Total")%>%
+  rename(
+    survey = DATA_YEAR
+  )
+
+gender_data_19_21_extra <- rbind(pums19_extra, pums21_extra) %>%
+  filter(ESR != "Total")%>%
+  filter(SEX != "Total")%>%
+  filter(AGE != "Total")
+
+p <- ggplot(data = gender_data_19_21_extra, aes(x = ESR,
+                                     y = share, 
+                                     fill = AGE
+                                     ))
+p + geom_bar(stat = "identity",
              position="dodge2") +
-    theme(axis.text.x=element_text(angle=45, hjust=1, vjust=1),
-          axis.title.x = element_blank()) +
-    labs(y = "Number") +
-    scale_y_continuous(labels = scales::comma) +
-    geom_errorbar(aes(ymin=count-count_moe, ymax=count+count_moe),
-                  position = position_dodge2(width = 0.9, preserve = "single", padding = .5))
-  
-  share_plot <- ggplot(dt,
-                       aes(x=x_axis_grp,
-                           y=share,
-                           fill = survey)) +
-    geom_bar(stat="identity",
-             position="dodge2") +
-    theme(axis.text.x=element_text(angle=45, hjust=1, vjust=1),
-          axis.title.x = element_blank()) +
-    labs(y = "Share") +
-    scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
-    geom_errorbar(aes(ymin=share-share_moe, ymax=share+share_moe),
-                  position = position_dodge2(width = 0.9, preserve = "single", padding = .5))
-  
-  trips <- ggarrange(count_plot, share_plot, 
-                     # ncol = 2, nrow = 1,
-                     common.legend = TRUE,
-                     legend = "right")
-  
-  annotate_figure(trips, top = text_grob(tbl_name, 
-                                         color = "blue", face = "bold", size = 14))
-}
-
-count_and_share_plot(gender_data_19_21,
-                     "survey",
-                     "ESR",
-                     "Number of Unemployed",
-                     "Number vs Share of Employment Rates")
-
-# facet chart for employment vs sex
-
-gender_age_facet <- create_facet_bar_chart(t= gender_data_test,
-                                             w.x="SEX", w.y="share",
-                                             f="DATA_SURVEY", g="ESR",
-                                             w.color="psrc_light",
-                                             est.type ="percent",
-                                             w.interactive="no",
-                                             w.dec=2,
-                                             w.scales="fixed",
-                                             w.facet=6,
-                                             w.title="Share of Employment by Gender",
-                                             w.sub.title="Male or Female")+ 
-  ggplot2::theme(axis.title = ggplot2::element_blank()) +
-  scale_x_discrete(labels = function(x) str_wrap(x, width = 5))
+  theme(axis.text.x=element_text(angle=45, hjust=1, vjust=1),
+        axis.title.x = element_blank())+
+  facet_wrap(~survey+SEX)+
+  theme(axis.text.x=element_text(angle=45, hjust=1, vjust=1),
+        axis.title.x = element_blank()) +
+  labs(y = "Share") +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1))+
+  theme(axis.text.x = element_text(size=12,color="#4C4C4C"))+ 
+  theme(axis.title.x = element_text(size=16,color="#4C4C4C"))+
+  theme(axis.title.y = element_text(size=10,color="#4C4C4C"))+
+  scale_fill_discrete_psrc("psrc_light")
 
 # hhts data pull & variables
 
