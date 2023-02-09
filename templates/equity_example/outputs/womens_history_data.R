@@ -66,7 +66,8 @@ elmer_connection <- elmer_connect()
 #census_employ <- census_employ[,-c(1, 3)]
 
 pvars <- c("ESR","SEX", "AGEP")
-ftr_int <- function(x){as.integer(as.character(x))}                                        
+ftr_int <- function(x){as.integer(as.character(x))} 
+
 pums19 <- get_psrc_pums(1, 2019, "p", pvars) 
 
 pums19 %<>% mutate(
@@ -79,7 +80,12 @@ pums19 %<>% mutate(
               between(ftr_int(AGEP), 36, 45) ~ '36-45',
               AGEP >= 46 ~ "46+")))
 
-pums19_all <- psrc_pums_count(pums19, group_vars = c("ESR", "AGE", "SEX"), incl_na=FALSE)
+pums19_all <- psrc_pums_count(pums19, group_vars = c("ESR", "SEX"), incl_na=FALSE)%>%
+  filter(ESR != "Total")%>%
+  filter(SEX != "Total")%>%
+  rename(
+    survey = DATA_YEAR
+  )
 
 pums21 <- get_psrc_pums(1, 2021, "p", pvars) 
 
@@ -93,26 +99,156 @@ pums21 %<>% mutate(
               between(ftr_int(AGEP), 36, 45) ~ '36-45',
               AGEP >= 46 ~ "46+")))
 
-pums21_all <- psrc_pums_count(pums21, group_vars = c("ESR", "AGE", "SEX"),incl_na=FALSE)
-
-
-gender_data_19_21 <- rbind(pums19_all, pums21_all) %>%
+pums21_all <- psrc_pums_count(pums21, group_vars = c("ESR", "SEX"),incl_na=FALSE)%>%
   filter(ESR != "Total")%>%
-  filter(AGEP != "Total")
+  filter(SEX != "Total")%>%
+  rename(
+    survey = DATA_YEAR
+  )
 
-# unemployment by age and gender for 2019/2021
-?static_column_chart
 
-employ_chart <- static_column_chart(t=gender_data_test, 
-                                    x = "AGE",
+#gender_data_19_21 <- rbind(pums19_all, pums21_all) %>%
+ #filter(ESR != "Total")%>%
+ #filter(SEX != "Total")%>%
+  #rename(
+   #survey = DATA_YEAR
+  #)
+
+# unemployment by gender for 2019/2021
+
+employ__gender_chart_19 <- static_column_chart(t=pums19_all, 
+                                    x = "SEX",
                                     y = "share",
                                     fill = "ESR",
                                     moe = "share_moe",
                                     color="psrc_pairs",
                                     est ="percent")
 
-employ_chart
+employ__gender_chart_19
 
+employ__gender_chart_21 <- static_column_chart(t=pums21_all, 
+                                    x = "SEX",
+                                    y = "share",
+                                    fill = "ESR",
+                                    moe = "share_moe",
+                                    color="psrc_pairs",
+                                    est ="percent")
+
+employ__gender_chart_21
+
+# unemployment by age for 2019/2021
+
+pums19_age <- psrc_pums_count(pums19, group_vars = c("ESR", "AGE"), incl_na=FALSE)%>%
+  filter(ESR != "Total")%>%
+  filter(AGE != "Total")%>%
+  rename(
+    survey = DATA_YEAR
+  )
+
+pums21_age <- psrc_pums_count(pums21, group_vars = c("ESR", "AGE"),incl_na=FALSE)%>%
+  filter(ESR != "Total")%>%
+  filter(AGE != "Total")%>%
+  rename(
+    survey = DATA_YEAR
+  )
+
+employ__age_chart_19 <- static_column_chart(t=pums19_age, 
+                                               x = "AGE",
+                                               y = "share",
+                                               fill = "ESR",
+                                               moe = "share_moe",
+                                               color="psrc_pairs",
+                                               est ="percent")
+
+employ__age_chart_19
+
+employ__age_chart_21 <- static_column_chart(t=pums21_age, 
+                                               x = "AGE",
+                                               y = "share",
+                                               fill = "ESR",
+                                               moe = "share_moe",
+                                               color="psrc_pairs",
+                                               est ="percent")
+
+employ__age_chart_21
+
+# unemployment by year for 2019/2021
+pums19_year <- psrc_pums_count(pums19, group_vars = c("ESR"), incl_na=FALSE)%>%
+  filter(ESR != "Total")%>%
+  rename(survey = DATA_YEAR)
+
+pums21_year <- psrc_pums_count(pums21, group_vars = c("ESR"),incl_na=FALSE)%>%
+  filter(ESR != "Total")%>%
+  rename(survey = DATA_YEAR)
+
+employ_19 <- static_column_chart(t=pums19_year, 
+                                            x = "ESR",
+                                            y = "share",
+                                            fill = "ESR",
+                                            moe = "share_moe",
+                                            color="psrc_pairs",
+                                            est ="percent")
+
+employ_19
+
+employ_21 <- static_column_chart(t=pums21_year, 
+                                            x = "ESR",
+                                            y = "share",
+                                            fill = "ESR",
+                                            moe = "share_moe",
+                                            color="psrc_pairs",
+                                            est ="percent")
+
+employ_21
+# ggplot count and share plot
+
+count_and_share_plot <- function(dt, grp_var, num_var, legend_name, tbl_name){
+  
+  fill_group <- dt[[grp_var]]
+  x_axis_grp <- dt[[num_var]]
+  
+  count_plot <- ggplot(dt,
+                       aes(x=x_axis_grp,
+                           y=count,
+                           fill = survey)) +
+    geom_bar(stat="identity",
+             position="dodge2") +
+    theme(axis.text.x=element_text(angle=45, hjust=1, vjust=1),
+          axis.title.x = element_blank()) +
+    labs(y = "Number") +
+    scale_y_continuous(labels = scales::comma) +
+    geom_errorbar(aes(ymin=count-count_moe, ymax=count+count_moe),
+                  position = position_dodge2(width = 0.9, preserve = "single", padding = .5))
+  
+  share_plot <- ggplot(dt,
+                       aes(x=x_axis_grp,
+                           y=share,
+                           fill = survey)) +
+    geom_bar(stat="identity",
+             position="dodge2") +
+    theme(axis.text.x=element_text(angle=45, hjust=1, vjust=1),
+          axis.title.x = element_blank()) +
+    labs(y = "Share") +
+    scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
+    geom_errorbar(aes(ymin=share-share_moe, ymax=share+share_moe),
+                  position = position_dodge2(width = 0.9, preserve = "single", padding = .5))
+  
+  trips <- ggarrange(count_plot, share_plot, 
+                     # ncol = 2, nrow = 1,
+                     common.legend = TRUE,
+                     legend = "right")
+  
+  annotate_figure(trips, top = text_grob(tbl_name, 
+                                         color = "blue", face = "bold", size = 14))
+}
+
+count_and_share_plot(gender_data_19_21,
+                     "survey",
+                     "ESR",
+                     "Number of Unemployed",
+                     "Number vs Share of Employment Rates")
+
+# facet chart for employment vs sex
 
 gender_age_facet <- create_facet_bar_chart(t= gender_data_test,
                                              w.x="SEX", w.y="share",
