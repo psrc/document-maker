@@ -1,16 +1,31 @@
 ---
-output:
+output: 
   pdf_document:
     latex_engine: lualatex
-    includes:
-      in_header: "X:/DSA/Trends/household-travel-survey/headers/trend_format_hts.tex"
-  html_document:
-    df_print: paged
 fontsize: 12pt
----
+  
+header-includes:
+  - \usepackage{xcolor}
+  - \usepackage{hyperref}
+  - \usepackage{pdfcomment}
+  - \usepackage{fancyhdr}
+   \pagestyle{fancy}
+   \setlength{\headheight}{75pt}
+   \setlength{\textheight}{600pt}
+   \fancyhead[C]{}
+   \fancyhead[L]{\includegraphics{X:/DSA/shiny-uploads/images/PST_2021_HTS_header.png}}
+   \fancyhead[R]{}
+   \fancyfoot[L]{\scriptsize{1011 Western Ave, Suite 500, Seattle WA 98104} \textcolor[HTML]{F05A28}. 206.464.7532 \textcolor[HTML]{F05A28}. www.psrc.org \textcolor[HTML]{F05A28}. November 2022}
+   \fancyfoot[R]{\textcolor[HTML]{F05A28}\thepage}
+   \fancyfoot[C]{}
+   \renewcommand{\headrulewidth}{0pt}
+   \renewcommand{\footrulewidth}{4pt}
+   \renewcommand{\footrule}{\hbox to \headwidth{\color[HTML]{BCBEC0}\leaders\hrule height \footrulewidth\hfill}}
+  - \usepackage{fontspec}
 
+---
 \setmainfont{Poppins}
-\thispagestyle{fancy}
+
 
 # Trends in Walking and Biking 
 ```{r setup, include=FALSE}
@@ -100,9 +115,8 @@ for these purposes in 2021 when compared to 2017/2019 survey responses.
 Driving remained around 80\% of trips, consistent with previous years. The 2017 and 2019 survey samples have been combined in this analysis to strengthen the statistical validity of the findings by increasing the number of respondents in each calculation. Lines above the columns in each chart indicate the margin of error.
 \end{flushleft}
 
-\setlength{\headheight}{25pt}
-\setlength{\textheight}{650pt}
 \fancyhead[L]{}
+
 
 ### More social and recreation trips, Fewer work and school trips
 \begin{flushleft}
