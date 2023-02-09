@@ -65,68 +65,198 @@ elmer_connection <- elmer_connect()
 #census_employ <- read.csv('census_employ_tidy.csv')
 #census_employ <- census_employ[,-c(1, 3)]
 
-pvars <- c("ESR","SEX", "AGEP")
-ftr_int <- function(x){as.integer(as.character(x))}                                        
+pvars <- c("ESR","SEX", "AGEP", "BIN_AGE", "PRACE")
+hvars <- "BINCOME"
+ftr_int <- function(x){as.integer(as.character(x))} 
+
 pums19 <- get_psrc_pums(1, 2019, "p", pvars) 
 
 pums19 %<>% mutate(
   ESR= factor(
     case_when(grepl("^(Civilian|Armed) ", as.character(ESR)) ~ "Employed",
-              !is.na(ESR) ~ "Unemployed")),
+              !is.na(ESR) ~ "Not employed")),
   AGE = factor(
     case_when(between(ftr_int(AGEP), 18, 25) ~ '18-25',
               between(ftr_int(AGEP), 26, 35) ~ '26-35',
               between(ftr_int(AGEP), 36, 45) ~ '36-45',
               AGEP >= 46 ~ "46+")))
 
-pums19_all <- psrc_pums_count(pums19, group_vars = c("ESR", "AGE", "SEX"), incl_na=FALSE)
+pums19_all <- psrc_pums_count(pums19, group_vars = c("ESR", "SEX"), incl_na=FALSE)%>%
+  filter(ESR != "Total")%>%
+  filter(SEX != "Total")%>%
+  rename(
+    survey = DATA_YEAR
+  )
 
 pums21 <- get_psrc_pums(1, 2021, "p", pvars) 
 
 pums21 %<>% mutate(
   ESR= factor(
     case_when(grepl("^(Civilian|Armed) ", as.character(ESR)) ~ "Employed",
-              !is.na(ESR) ~ "Unemployed")),
+              !is.na(ESR) ~ "Not employed")),
   AGE = factor(
     case_when(between(ftr_int(AGEP), 18, 25) ~ '18-25',
               between(ftr_int(AGEP), 26, 35) ~ '26-35',
               between(ftr_int(AGEP), 36, 45) ~ '36-45',
               AGEP >= 46 ~ "46+")))
 
-pums21_all <- psrc_pums_count(pums21, group_vars = c("ESR", "AGE", "SEX"),incl_na=FALSE)
-
-
-gender_data_19_21 <- rbind(pums19_all, pums21_all) %>%
+pums21_all <- psrc_pums_count(pums21, group_vars = c("ESR", "SEX"),incl_na=FALSE)%>%
   filter(ESR != "Total")%>%
-  filter(AGEP != "Total")
+  filter(SEX != "Total")%>%
+  rename(
+    survey = DATA_YEAR
+  )
 
-# unemployment by age and gender for 2019/2021
-?static_column_chart
+# unemployment by gender for 2019/2021
 
-employ_chart <- static_column_chart(t=gender_data_test, 
-                                    x = "AGE",
+employ__gender_chart_19 <- static_column_chart(t=pums19_all, 
+                                    x = "SEX",
                                     y = "share",
                                     fill = "ESR",
                                     moe = "share_moe",
                                     color="psrc_pairs",
-                                    est ="percent")
+                                    est ="percent",
+                                    title = "2019")
 
-employ_chart
+employ__gender_chart_19
 
+employ__gender_chart_21 <- static_column_chart(t=pums21_all, 
+                                    x = "SEX",
+                                    y = "share",
+                                    fill = "ESR",
+                                    moe = "share_moe",
+                                    color="psrc_pairs",
+                                    est ="percent",
+                                    title = "2021")
 
-gender_age_facet <- create_facet_bar_chart(t= gender_data_test,
-                                             w.x="SEX", w.y="share",
-                                             f="DATA_SURVEY", g="ESR",
-                                             w.color="psrc_light",
-                                             est.type ="percent",
-                                             w.interactive="no",
-                                             w.dec=2,
-                                             w.scales="fixed",
-                                             w.facet=6,
-                                             w.title="Share of Employment by Gender",
-                                             w.sub.title="Male or Female")+ 
-  ggplot2::theme(axis.title = ggplot2::element_blank()) +
-  scale_x_discrete(labels = function(x) str_wrap(x, width = 5))
+employ__gender_chart_21
+
+# unemployment by age for 2019/2021
+
+pums19_age <- psrc_pums_count(pums19, group_vars = c("ESR", "BIN_AGE"), incl_na=FALSE)%>%
+  filter(ESR != "Total")%>%
+  filter(BIN_AGE != "Total")%>%
+  rename(
+    survey = DATA_YEAR
+  )
+
+pums21_age <- psrc_pums_count(pums21, group_vars = c("ESR", "BIN_AGE"),incl_na=FALSE)%>%
+  filter(ESR != "Total")%>%
+  filter(BIN_AGE != "Total")%>%
+  rename(
+    survey = DATA_YEAR
+  )
+
+pums21_sex_age <- psrc_pums_count(pums21, group_vars = c("SEX", "BIN_AGE"),incl_na=FALSE)%>%
+  filter(SEX != "Total")%>%
+  filter(BIN_AGE != "Total")%>%
+  filter(BIN_AGE == c("between 65 and 75 years", "between 75 and 85 years", "85 years and over"))%>%
+  rename(
+    survey = DATA_YEAR
+  )
+
+employ__age_chart_19 <- static_column_chart(t=pums19_age, 
+                                               x = "AGE",
+                                               y = "share",
+                                               fill = "ESR",
+                                               moe = "share_moe",
+                                               color="psrc_pairs",
+                                               est ="percent",
+                                            title = "2019")
+
+employ__age_chart_19
+
+employ__age_chart_21 <- static_bar_chart(t=pums21_sex_age, 
+                                               x = "share",
+                                               y = "BIN_AGE",
+                                               fill = "SEX",
+                                               moe = "share_moe",
+                                               color="psrc_pairs",
+                                               est ="percent",
+                                            title = "2021")
+
+employ__age_chart_21
+
+employ_age_gender_chart_21 <- static_column_chart(t=pums21_sex_age, 
+                                         x = "SEX",
+                                         y = "share",
+                                         fill = "BIN_AGE",
+                                         moe = "share_moe",
+                                         color="psrc_pairs",
+                                         est ="percent")+
+  facet_wrap(~survey,
+             labeller = labeller(survey = label_wrap_gen(width =20)))
+
+employ_age_gender_chart_21
+
+# unemployment by year for 2019/2021
+pums19_year <- psrc_pums_count(pums19, group_vars = c("ESR"), incl_na=FALSE)%>%
+  filter(ESR != "Total")%>%
+  rename(survey = DATA_YEAR)
+
+pums21_year <- psrc_pums_count(pums21, group_vars = c("ESR"),incl_na=FALSE)%>%
+  filter(ESR != "Total")%>%
+  rename(survey = DATA_YEAR)
+
+employ_19 <- static_column_chart(t=pums19_year, 
+                                            x = "ESR",
+                                            y = "share",
+                                            fill = "ESR",
+                                            moe = "share_moe",
+                                            color="psrc_pairs",
+                                            est ="percent",
+                                 title = "2019")
+
+employ_19
+
+employ_21 <- static_column_chart(t=pums21_year, 
+                                            x = "ESR",
+                                            y = "share",
+                                            fill = "ESR",
+                                            moe = "share_moe",
+                                            color="psrc_pairs",
+                                            est ="percent",
+                                 title = "2021")
+
+employ_21
+
+# facet chart with ggplot
+pums19_extra <- psrc_pums_count(pums19, group_vars = c("ESR", "SEX", "AGE"), incl_na=FALSE)%>%
+  filter(ESR != "Total")%>%
+  filter(SEX != "Total")%>%
+  rename(
+    survey = DATA_YEAR
+  )
+
+pums21_extra <- psrc_pums_count(pums21, group_vars = c("ESR", "SEX", "AGE"), incl_na=FALSE)%>%
+  filter(ESR != "Total")%>%
+  filter(SEX != "Total")%>%
+  rename(
+    survey = DATA_YEAR
+  )
+
+gender_data_19_21_extra <- rbind(pums19_extra, pums21_extra) %>%
+  filter(ESR != "Total")%>%
+  filter(SEX != "Total")%>%
+  filter(AGE != "Total")
+
+p <- ggplot(data = gender_data_19_21_extra, aes(x = ESR,
+                                     y = share, 
+                                     fill = AGE
+                                     ))
+p + geom_bar(stat = "identity",
+             position="dodge2") +
+  theme(axis.text.x=element_text(angle=45, hjust=1, vjust=1),
+        axis.title.x = element_blank())+
+  facet_wrap(~survey+SEX)+
+  theme(axis.text.x=element_text(angle=45, hjust=1, vjust=1),
+        axis.title.x = element_blank()) +
+  labs(y = "Share") +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1))+
+  theme(axis.text.x = element_text(size=12,color="#4C4C4C"))+ 
+  theme(axis.title.x = element_text(size=16,color="#4C4C4C"))+
+  theme(axis.title.y = element_text(size=10,color="#4C4C4C"))+
+  scale_fill_discrete_psrc("psrc_light")
 
 # hhts data pull & variables
 
