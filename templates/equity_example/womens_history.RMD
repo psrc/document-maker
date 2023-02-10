@@ -76,7 +76,148 @@ women_image_header
 ```
 ![](women_image_header.png){width=100%}
 \begin{flushleft}
-wordswordswords
+
+notes: 
+Fewer women work than men. Women take few work trips, more caregiving related trips, more household chore trips.The transit system was initially designed around traveling to a central city work location- which may not meet women's needs as well as men's (on average).Women live longer than men, so that at older ages there are many more women who have unique travel needs than men.Older people (who tend to be women more often) have more need for transit in off-peak hours and specialized transportation services.Women bike much less than men. Some of this is undoubtedly because of bike network design not being safe for all people.How can the transportation and land use system better accommodate older people, household maintenance and caregiving needs? Addressing these questions will improve the system for all genders.
+
+
+Increase in telecommuting may be a double edged sword for women- still have hh responsibilities; but also juggling work
+
+
+
+start with 2017/2019 data; transition to pandemic data?
+
+
+according to 2021 hhts, 103, 000 women live in a household without a car; 86,000 men
+
+from: http://libraryarchives.metro.net/DB_Attachments/2019-0294/UnderstandingHowWomenTravel_FullReport_FINAL.pdf
+
+Travel Behavior Trends
+Through the analysis in this report, key trends
+emerge that differentiate women’s travel patterns
+from men’s travel patterns, across all modes. » Across all modes, more women are making many
+trips (7 or more) per day than men and more
+women than men are not making any trips per day.
+This means women may experience more exposure
+to travel burdens (cost, stress, or safety risks), or
+may be more likely to be isolated or disconnected
+from the opportunities that travel affords.
+» Women in Los Angeles also make shorter trips
+than men, which is potentially driven by workforce
+participation rates, location of employment
+opportunities, and taking household-serving trips
+that tend to be more localized.
+» Women’s trips are more varied to a broader spread
+of destinations, and are more likely to primarily
+serve the needs of someone else.
+» Women are more likely to live in a car-free or carlight household, take more trips with other people,
+and take fewer single-occupant car trips than men.
+» Women are also more likely to carpool or get a ride
+from a family member or friend if they don’t have
+a driver’s license.
+These findings show that women may need to adjust
+their own schedule and travel needs to accommodate
+others, and in doing so, give up some of their own
+autonomy and control over when and how they travel.
+Despite these challenges and tradeoffs,
+women show ingenuity in arranging their
+schedules to meet their travel needs. » Women are more likely to trip-chain, or make
+stops along the way to other destinations, and
+describe consolidating all their errand trips into
+one day where they will have access to a vehicle.
+» Women in Los Angeles are also more likely than
+men to travel mid-day, with a travel peak around 2
+PM when transit service may be reduced.
+
+Among female riders, almost 90% ride the system
+more than three days per week.
+» 57% of women bring their children on transit.
+» Women ride transit because they do not have a
+car, because they want to avoid traffic, or because
+they do not have a license. Two of these three
+reasons indicate that women who ride transit
+do so because they have fewer
+transportation options, and may
+have less access to economic
+opportunities as a result.
+Still, many women do use transit
+to access economic opportunity.
+» Over 85% of women riders use
+Metro to travel to work or school,
+and of those women, 32% also use
+Metro to run errands or complete
+recreational trips.
+Among people who make household
+serving trips most frequently,
+these trips comprise the same
+share for women whether they use
+transit or not; for men, the share of
+household-serving trips declines if
+they are transit users. This shows
+that while men are more likely to
+find alternatives to using transit to
+complete household-serving trips
+(using a different mode or taking
+fewer trips), women are less likely
+to find an alternative, and instead
+work to make the transit system work for their needs.
+Although the rate of adoption for TNCs like Uber and
+Lyft is the same for men and women, women are more
+likely than men to report that their transit use has
+stayed the same as they have also begun to use TNCs.
+» Women are more likely than men to say they use
+TNCs for trips that transit does not serve, while
+men are more likely to say they use TNCs to reach a
+transit stop or station. The trips that are not served
+by transit may be related to time or location, as
+women’s needs differ from men’s needs by both
+time of day and location.
+These travel behavior findings point towards many
+opportunities to adjust the services provided by Metro
+to better meet the travel needs expressed by those
+who are using transit. Development of a Gender Action
+Plan - or a tactical plan to implement policy, design,
+and service changes throughout the agency - would
+help to articulate the immediate opportunities and
+long-term goals that would create a system that
+better serves women. Adjustments to services, vehicle
+design, and policy would help minimize the time,
+cost, safety, and physical burdens of riding transit
+for the more than half of all riders who are women.
+» The findings from Understanding
+How Women Travel about women’s
+mode choices, how likely they are to
+travel with others in their care, and
+their complex trip-chaining patterns
+could all inform adjustments to
+Metro’s fare policy to make it more
+equitable towards women and more
+cost-competitive with driving and
+carpooling.
+»Findings about women’s trip
+purposes and primary responsibility
+for household errands could all
+inform the way transit vehicles,
+transit stations, and bus stops are
+designed, so that space for traveling
+with others and carrying bags and
+other belongings could be better
+accommodated.
+»Findings about when women are
+traveling and average trip lengths
+could inform new service offerings
+that meet a mid-day peak travel
+demand and provide better direct
+connections over long distances while
+minimizing transfers. 
+
+
+Vehicle access issues disproportionately affect women. 
+
+Financial access also disproportionately
+affects women. Low-income women, in
+particular, carry a disproportiona
+
 \end{flushleft}
 
 ## some header
@@ -93,13 +234,6 @@ xlsx_file <- "womens_history.xlsx"
 ```
 
 
-```{r overallmodeshare, echo=FALSE, results=TRUE,  fig.dim=c(6,4), fig.dim=c(6,4) }
-earnings_df<-read.csv('earnings.csv')
-earnings_chart<- static_column_chart(t=earnings_df, y='estimate', x= 'name', fill="label", moe='moe', color='psrc_light', est='currency')
-earnings_df
-
-earnings_chart
-```
 
 ```{r person variables}
 source("womens_history_data.R")
