@@ -301,7 +301,7 @@ data_17_19<-data_17_19%>%mutate(NoVehicles=ifelse(vehicle_count=='0 (no vehicles
   mutate(travelers_total_grp= case_when(travelers_total<=1 ~ '1',
                                         travelers_total==2 ~ '2',
                                         travelers_total==3 ~ '3+',
-                                        travelers_total==4 ~ '3+'))
+                                        travelers_total==4 ~ '4+'))
 
 
 data_21<-data_21%>%mutate(NoVehicles=ifelse(vehicle_count=='0 (no vehicles)', 'No Vehicles', "Has Vehicles"))%>%
@@ -344,7 +344,7 @@ data_21<-data_21%>%mutate(NoVehicles=ifelse(vehicle_count=='0 (no vehicles)', 'N
   mutate(travelers_total_grp= case_when(travelers_total<=1 ~ '1',
                                         travelers_total==2 ~ '2',
                                         travelers_total==3 ~ '3+',
-                                        travelers_total==4 ~ '3+'))
+                                        travelers_total==4 ~ '4+'))
 
 data_17_19$hhincome_100_f=factor(data_17_19$hhincome_100, levels=c("Prefer not to answer",  "$100,000 or more","$75,000-$99,999", "$50,000-$74,999" ,"$25,000-$49,999" , "Under $25,000"  ))
 
@@ -410,7 +410,7 @@ simple_groupings<-c('race_eth_broad'='Race/Ethnicity','hhincome_100_f'='Househol
 ```
 
 #number of trips
-
+not extremely different a few subtle differences
 ```{r}
   
     person_summs_2017_2019 <- hhts_count(person_data_17_19,
@@ -480,6 +480,25 @@ static_column_chart(t= person_summs_2021, x='numtripsgrp', y='share',  fill='gen
 
 ```
 
+show this as % of trips for not work and school
+```{r}
+
+  summs_2017_2019 <- hhts_count(data_17_19,
+                                        group_vars=c('gender','simple_purpose'),
+                                        spec_wgt='trip_adult_weight_2017_2019')%>%drop_na(c('gender', 'simple_purpose'))%>%filter(simple_purpose!='Total')%>%filter(gender %in% c('Female', 'Male') )
+
+  summs_2021 <- hhts_count(data_21,
+                                   group_vars=c('gender','simple_purpose'),
+                                   spec_wgt='trip_adult_weight_2021') %>%drop_na(c('gender', 'simple_purpose'))%>%filter(simple_purpose!='Total')%>%filter(gender %in% c('Female', 'Male') )
+  
+ 
+
+static_column_chart(t= summs_2017_2019, x='simple_purpose', y='share',  fill='gender', moe='share_moe', est='percent')
+static_column_chart(t= summs_2021, x='simple_purpose', y='share',  fill='gender', moe='share_moe', est='percent')
+
+```
+mode shares are somewhat similar
+
 ```{r}
 
 
@@ -500,7 +519,7 @@ static_column_chart(t= summs_2021, x='mode_simple', y='count',  fill='gender', m
 ```
 
 mode
-
+show this as % of trips without 1 person trips
 ```{r}
 
 data_17_19<- data_17_19%>%drop_na(c('gender', 'travelers_total_grp'))
@@ -508,11 +527,11 @@ data_21<-data_21%>%drop_na(c('gender', 'travelers_total_grp'))
 
   summs_2017_2019 <- hhts_count(data_17_19,
                                         group_vars=c('gender','travelers_total_grp'),
-                                        spec_wgt='trip_adult_weight_2017_2019')%>%drop_na(c('gender', 'travelers_total_grp'))%>%filter(travelers_total_grp!='Total')%>%filter(gender %in% c('Female', 'Male') )
+                                        spec_wgt='trip_adult_weight_2017_2019')%>%drop_na(c('gender', 'travelers_total_grp'))%>%filter(travelers_total_grp!='Total')%>%filter(gender %in% c('Female', 'Male') )%>%filter(travelers_total_grp!='1')
 
   summs_2021 <- hhts_count(data_21,
                                    group_vars=c('gender','travelers_total_grp'),
-                                   spec_wgt='trip_adult_weight_2021') %>%drop_na(c('gender', 'travelers_total_grp'))%>%filter(travelers_total_grp!='Total')%>%filter(gender %in% c('Female', 'Male') )
+                                   spec_wgt='trip_adult_weight_2021') %>%drop_na(c('gender', 'travelers_total_grp'))%>%filter(travelers_total_grp!='Total')%>%filter(gender %in% c('Female', 'Male') )%>%filter(travelers_total_grp!='1')
   
  
 
