@@ -1,12 +1,28 @@
 ---
-output:
+output: 
   pdf_document:
     latex_engine: lualatex
-    includes:
-      in_header: "X:/DSA/Trends/equity/headers/trend_format_equity.tex"
-  html_document:
-    df_print: paged
 fontsize: 12pt
+  
+header-includes:
+  - \usepackage{xcolor}
+  - \usepackage{hyperref}
+  - \usepackage{pdfcomment}
+  - \usepackage{fancyhdr}
+   \pagestyle{fancy}
+   \setlength{\headheight}{75pt}
+   \setlength{\textheight}{600pt}
+   \fancyhead[C]{}
+   \fancyhead[L]{\includegraphics{X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png}}
+   \fancyhead[R]{}
+   \fancyfoot[L]{\scriptsize{1011 Western Ave, Suite 500, Seattle WA 98104} \textcolor[HTML]{F05A28}. 206.464.7532 \textcolor[HTML]{F05A28}. www.psrc.org \textcolor[HTML]{F05A28}. November 2022}
+   \fancyfoot[R]{\textcolor[HTML]{F05A28}\thepage}
+   \fancyfoot[C]{}
+   \renewcommand{\headrulewidth}{0pt}
+   \renewcommand{\footrulewidth}{4pt}
+   \renewcommand{\footrule}{\hbox to \headwidth{\color[HTML]{BCBEC0}\leaders\hrule height \footrulewidth\hfill}}
+  - \usepackage{fontspec}
+
 ---
 
 \setmainfont{Poppins}
@@ -94,3 +110,4 @@ source("womens_history_data.R")
 someotherwords
 \end{flushleft}
 
+\fancyhead[L]{}
