@@ -15,7 +15,7 @@ header-includes:
    \fancyhead[C]{}
    \fancyhead[L]{\includegraphics{X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png}}
    \fancyhead[R]{}
-   \fancyfoot[L]{\scriptsize{1011 Western Ave, Suite 500, Seattle WA 98104} \textcolor[HTML]{F05A28}. 206.464.7532 \textcolor[HTML]{F05A28}. www.psrc.org \textcolor[HTML]{F05A28}. November 2022}
+   \fancyfoot[L]{\scriptsize{1011 Western Ave, Suite 500, Seattle WA 98104} \textcolor[HTML]{F05A28}. 206.464.7532 \textcolor[HTML]{F05A28}. www.psrc.org \textcolor[HTML]{F05A28}. February 2023}
    \fancyfoot[R]{\textcolor[HTML]{F05A28}\thepage}
    \fancyfoot[C]{}
    \renewcommand{\headrulewidth}{0pt}
@@ -32,7 +32,10 @@ header-includes:
 # Understanding Women's Travel for Women's History Month
 ```{r setup, include=FALSE}
 ### Making the Charts and pdf documents now
-source('C:/GitHub/document-maker/templates/equity_example/womens_history_story_draft_datacrunching.R')
+.libPaths("C:/Users/MGrzybowski/AppData/Local/R/win-library/4.2")
+
+
+source('C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/womens_history_story_draft_datacrunching.R')
 library(dplyr)
 library(stringr)
 library(ggplot2)
@@ -41,7 +44,7 @@ library(odbc)
 library(DBI)
 library(tidyr)
 library(psrcplot)
-options(tinytex.verbose=TRUE)
+library(tinytex)
 library(tidyverse)
 library(knitr)
 library(magick)
@@ -49,27 +52,25 @@ library(openxlsx)
 library(htmlwidgets)
 library(magrittr)
 
-
-
-output_dir<-file.path(getwd(), 'outputs')
-
-
-
-if(!dir.exists(output_dir)){ 
-  dir.create(output_dir)
-}
+#output_dir<-file.path(getwd(), 'equity_example')
 
 
 
+#if(!dir.exists(output_dir)){ 
+ # dir.create(output_dir)
+#}
 
+setwd("C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example")
+output_path <- "C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example"
 network_file_loc<-'X:/DSA/Trends/equity/images'
 
 # Create Image 
-image1 <- image_read(file.path(network_file_loc, 'bellevue_bus.jpg'))
-image2 <- image_read(file.path(network_file_loc, "uw_stroller.jpg"))
-image3 <- image_read(file.path(network_file_loc, "women_pride.jpg"))
-image4<-  image_read(file.path(network_file_loc, "paratransit.jpg"))
-input <- c(image_scale(image1, "x200"), image_scale(image2, "x200"), image_scale(image3, "x200"),  image_scale(image4, "x200"))
+image1 <- image_read(file.path(network_file_loc, 'women.jpg'))
+image2 <- image_read(file.path(network_file_loc, "ferry.jpg"))
+image3 <- image_read(file.path(network_file_loc, "streetart.jpg"))
+image4<-  image_read(file.path(network_file_loc, "transit.jpg"))
+image5<-  image_read(file.path(network_file_loc, "women2.jpg"))
+input <- c(image_scale(image1, "x200"), image_scale(image2, "x200"), image_scale(image3, "x200"),  image_scale(image4, "x200"), image_scale(image5, "x200"))
 women_image_header <- image_append(input)
 
 
@@ -77,7 +78,7 @@ image_write(women_image_header, path="women_image_header.png", format="png")
 install_psrc_fonts()
 women_image_header
 ```
-![](women_image_header.png){width=100%}
+![](C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women_image_header.png){width=100%}
 
 
 Women have \href{http://libraryarchives.metro.net/DB_Attachments/2019-0294/UnderstandingHowWomenTravel_FullReport_FINAL.pdf}{\underline{\textcolor{blue}{transportation needs that have not historically been met}}}. The regional transportation system, including transit, was designed around the need to quickly get to work at central locations. Women carry significantly more of the care-giving burden's of society and thus need a system that works safely for traveling with others to a variety of locations at all times of day. Women also represent a large portion of older populations who have unique transportation needs, not well-served by our system built for driving and going to work locations. Women are also more likely to live in poverty and have lower incomes than men.
