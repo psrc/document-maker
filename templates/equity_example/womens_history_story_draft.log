@@ -1,7 +1,7 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.2.9)  13 FEB 2023 10:24
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.2.9)  14 FEB 2023 09:29
  restricted system commands enabled.
-**womens_history.tex
-(./womens_history.tex
+**womens_history_story_draft.tex
+(./womens_history_story_draft.tex
 LaTeX2e <2022-11-01> patch level 1
 Lua module: luaotfload 2022-10-03 3.23 Lua based OpenType font support
 Lua module: lualibs 2022-10-04 2.75 ConTeXt Lua standard libraries.
@@ -480,8 +480,8 @@ Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
 \CatcodeTableOther=\catcodetable12
 \CatcodeTableExpl=\catcodetable13
 )
-Inserting `Suppress ligatures selectively' in `ligaturing'.) (./womens_history.aux)
-\openout1 = womens_history.aux
+Inserting `Suppress ligatures selectively' in `ligaturing'.) (./womens_history_story_draft.aux)
+\openout1 = womens_history_story_draft.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
 LaTeX Font Info:    ... okay on input line 113.
@@ -819,10 +819,10 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 113.
-(./womens_history.out) (./womens_history.out)
+(./womens_history_story_draft.out) (./womens_history_story_draft.out)
 \@outlinefile=\write5
 
-\openout5 = womens_history.out
+\openout5 = womens_history_story_draft.out
 Package soulpos Info: Loading soulutf8 on input line 113.
 (c:/Users/SChildress/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/soulutf8/soulutf8.sty
 Package: soulutf8 2019/12/15 v1.2 Permit use of UTF-8 characters in soul (HO)
@@ -945,7 +945,7 @@ LaTeX Font Info:    Font shape `TU/Poppins(0)/m/n' will be
 [1
 
 
-\openout4 = womens_history.upa
+\openout4 = womens_history_story_draft.upa
 {c:/Users/SChildress/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<x:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>]
 Overfull \hbox (24.6444pt too wide) in paragraph at lines 233--233
 []\TU/lmtt/m/n/12 ## -- Attaching packages --------------------------------------- tidyverse 1.3.2[] 
@@ -973,10 +973,10 @@ Overfull \hbox (92.62431pt too wide) in paragraph at lines 269--269
  []
 
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 286.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 298.
 File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
 <use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 316.
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 356.
 (luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
@@ -986,9 +986,16 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
 
 [3]
+Underfull \vbox (badness 10000) detected at line 356
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 356
+ []
+
 File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
 <use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 411.
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 356.
 (luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
@@ -998,16 +1005,9 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
 
 [4]
-Underfull \vbox (badness 10000) detected at line 411
- []
-
-
-Overfull \vbox (2.14pt too high) detected at line 411
- []
-
 File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
 <use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 411.
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 394.
 (luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
@@ -1017,9 +1017,16 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
 
 [5]
+Underfull \vbox (badness 10000) detected at line 487
+ []
+
+
+Overfull \vbox (1.804pt too high) detected at line 487
+ []
+
 File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
 <use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 456.
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 487.
 (luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
@@ -1029,14 +1036,16 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
 
 [6]
-<womens_history_files/figure-latex/unnamed-chunk-4-1.pdf, id=39, 469.755pt x 325.215pt>
-File: womens_history_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
-<use womens_history_files/figure-latex/unnamed-chunk-4-1.pdf>
-Package luatex.def Info: womens_history_files/figure-latex/unnamed-chunk-4-1.pdf  used on input line 458.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+Underfull \vbox (badness 10000) detected at line 487
+ []
+
+
+Overfull \vbox (2.224pt too high) detected at line 487
+ []
+
 File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
 <use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 460.
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 487.
 (luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
@@ -1046,14 +1055,14 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
 
 [7]
-<womens_history_files/figure-latex/unnamed-chunk-4-2.pdf, id=44, 469.755pt x 325.215pt>
-File: womens_history_files/figure-latex/unnamed-chunk-4-2.pdf Graphic file (type pdf)
-<use womens_history_files/figure-latex/unnamed-chunk-4-2.pdf>
-Package luatex.def Info: womens_history_files/figure-latex/unnamed-chunk-4-2.pdf  used on input line 466.
+<womens_history_story_draft_files/figure-latex/unnamed-chunk-5-1.pdf, id=43, 469.755pt x 325.215pt>
+File: womens_history_story_draft_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
+<use womens_history_story_draft_files/figure-latex/unnamed-chunk-5-1.pdf>
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/unnamed-chunk-5-1.pdf  used on input line 527.
 (luatex.def)             Requested size: 469.75386pt x 325.2142pt.
 File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
 <use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 468.
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 529.
 (luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
@@ -1062,15 +1071,10 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
 
-[8<./womens_history_files/figure-latex/unnamed-chunk-4-1.pdf>]
-<womens_history_files/figure-latex/unnamed-chunk-5-1.pdf, id=51, 469.755pt x 325.215pt>
-File: womens_history_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
-<use womens_history_files/figure-latex/unnamed-chunk-5-1.pdf>
-Package luatex.def Info: womens_history_files/figure-latex/unnamed-chunk-5-1.pdf  used on input line 484.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+[8]
 File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
 <use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 486.
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 557.
 (luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
@@ -1079,20 +1083,29 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
 
-[9<./womens_history_files/figure-latex/unnamed-chunk-4-2.pdf>]
-<womens_history_files/figure-latex/unnamed-chunk-5-2.pdf, id=58, 469.755pt x 325.215pt>
-File: womens_history_files/figure-latex/unnamed-chunk-5-2.pdf Graphic file (type pdf)
-<use womens_history_files/figure-latex/unnamed-chunk-5-2.pdf>
-Package luatex.def Info: womens_history_files/figure-latex/unnamed-chunk-5-2.pdf  used on input line 492.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+[9<./womens_history_story_draft_files/figure-latex/unnamed-chunk-5-1.pdf>]
+File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
+<use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 690.
+(luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 492--495
-[][]
+Package fancyhdr Warning: \headheight is too small (75.0pt): 
+(fancyhdr)                Make it at least 87.66054pt, for example:
+(fancyhdr)                \setlength{\headheight}{87.66054pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
+
+[10]
+Underfull \vbox (badness 10000) detected at line 690
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 690
  []
 
 File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
 <use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 495.
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 690.
 (luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
@@ -1101,19 +1114,38 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
 
-[10<./womens_history_files/figure-latex/unnamed-chunk-5-1.pdf>]
+[11]
+Underfull \vbox (badness 10000) detected at line 690
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 690
+ []
+
+File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
+<use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 690.
+(luatex.def)             Requested size: 469.7725pt x 83.3105pt.
+
+Package fancyhdr Warning: \headheight is too small (75.0pt): 
+(fancyhdr)                Make it at least 87.66054pt, for example:
+(fancyhdr)                \setlength{\headheight}{87.66054pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
+
+[12]
 LaTeX Font Info:    Font shape `TU/Poppins(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 499.
+(Font)              scaled to size 17.28pt on input line 723.
 LaTeX Font Info:    Font shape `TU/Poppins(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 499.
-<women_image_header.png, id=65, 442.0515pt x 80.3pt>
+(Font)              scaled to size 17.28pt on input line 723.
+<women_image_header.png, id=67, 442.0515pt x 80.3pt>
 File: women_image_header.png Graphic file (type png)
 <use women_image_header.png>
-Package luatex.def Info: women_image_header.png  used on input line 501.
+Package luatex.def Info: women_image_header.png  used on input line 725.
 (luatex.def)             Requested size: 469.773pt x 85.33568pt.
 File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
 <use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 512.
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 729.
 (luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
@@ -1122,20 +1154,18 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
 
-[11<./womens_history_files/figure-latex/unnamed-chunk-5-2.pdf><./women_image_header.png>]
-! Missing $ inserted.
-<inserted text> 
-$
-l.523 from: http://libraryarchives.metro.net/DB_
-                                              Attachments/2019-0294/Understa...
+[13<./women_image_header.png>]
+! You can't use `macro parameter character #' in vertical mode.
+l.733 #
+     ### Household Travel Survey
 
 Here is how much of LuaTeX's memory you used:
- 23246 strings out of 478294
+ 23224 strings out of 478294
  125007,1977958 words of node,token memory allocated
- 10260 words of node memory still in use:
-   29 hlist, 1 vlist, 2 rule, 65 disc, 5 local_par, 1 dir, 210 glue, 4 kern, 9 penalty, 1025 glyph, 25 attribute, 70 glue_spec, 25 attribute_list, 1 temp, 1 user_defined, 2 pdf_colorstack nodes
-   avail lists: 1:1,2:3294,3:678,4:1474,5:463,6:89,7:10651,8:6,9:421,10:16,11:45
- 42605 multiletter control sequences out of 65536+600000
+ 7742 words of node memory still in use:
+   24 hlist, 2 vlist, 3 rule, 57 disc, 2 local_par, 1 dir, 2 math, 153 glue, 5 kern, 8 penalty, 725 glyph, 28 attribute, 81 glue_spec, 28 attribute_list, 1 user_defined, 1 pdf_start_link, 1 pdf_end_link, 1 pdf_action, 6 pdf_colorstack nodes
+   avail lists: 1:1,2:2873,3:678,4:1350,5:418,6:91,7:10569,8:6,9:474,10:16,11:3
+ 42587 multiletter control sequences out of 65536+600000
  63 fonts using 10403403 bytes
- 86i,15n,122p,1496b,529s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,15n,122p,1508b,529s stack positions out of 10000i,1000n,20000p,200000b,200000s
 !  ==> Fatal error occurred, no output PDF file produced!
