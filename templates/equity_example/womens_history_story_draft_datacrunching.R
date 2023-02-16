@@ -241,7 +241,9 @@ summs_2021 <- hhts_count(data_21,
 #static_column_chart(t= summs_2021, x='simple_purpose', y='share',  fill='gender', moe='share_moe', est='percent')
 
 
-summs_2017_2019_2021<-rbind(summs_2017_2019, summs_2021)
+summs_2017_2019_2021<-rbind(summs_2017_2019, summs_2021)%>%
+  mutate(survey=case_when(survey == "2017_2019" ~ '2017/2019',
+                   TRUE ~ '2021'))
 
 
 

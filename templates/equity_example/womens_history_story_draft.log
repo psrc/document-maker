@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.2.16)  16 FEB 2023 11:02
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.2.16)  16 FEB 2023 11:52
  restricted system commands enabled.
 **womens_history_story_draft.tex
 (./womens_history_story_draft.tex
@@ -273,6 +273,17 @@ Package graphics Info: Driver file: luatex.def on input line 107.
 )
 \Gin@req@height=\dimen164
 \Gin@req@width=\dimen165
+) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip54
+\f@nch@O@elh=\skip55
+\f@nch@O@erh=\skip56
+\f@nch@O@olh=\skip57
+\f@nch@O@orh=\skip58
+\f@nch@O@elf=\skip59
+\f@nch@O@erf=\skip60
+\f@nch@O@olf=\skip61
+\f@nch@O@orf=\skip62
 ) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
@@ -379,7 +390,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip54
+\Hy@SectionHShift=\skip63
 ) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdfcomment/pdfcomment.sty
 Package: pdfcomment 2018/11/01 pdfcomment.sty v2.4a - Josef Kleber (C) 2008-2012, 2015-2016, 2018
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
@@ -397,16 +408,16 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 \c@pc@count@iv=\count306
 \pc@mathannot@box=\box55
 \pc@nullbox=\box56
-\pc@dima=\skip55
-\pc@dimb=\skip56
-\pc@Sposx=\skip57
-\pc@Sposy=\skip58
-\pc@Eposx=\skip59
-\pc@Eposy=\skip60
-\pc@column=\skip61
-\pc@box@width=\skip62
-\pc@box@height=\skip63
-\pc@box@depth=\skip64
+\pc@dima=\skip64
+\pc@dimb=\skip65
+\pc@Sposx=\skip66
+\pc@Sposy=\skip67
+\pc@Eposx=\skip68
+\pc@Eposy=\skip69
+\pc@column=\skip70
+\pc@box@width=\skip71
+\pc@box@height=\skip72
+\pc@box@depth=\skip73
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/luatex85/luatex85.sty
 Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
 ) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/datetime2/datetime2.sty
@@ -434,12 +445,12 @@ Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bcount=\count309
 \calc@Adimen=\dimen170
 \calc@Bdimen=\dimen171
-\calc@Askip=\skip65
-\calc@Bskip=\skip66
+\calc@Askip=\skip74
+\calc@Bskip=\skip75
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count310
-\calc@Cskip=\skip67
+\calc@Cskip=\skip76
 ) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/marginnote/marginnote.sty
 Package: marginnote 2018/08/09 v1.4b non floating margin notes for LaTeX
 \c@mn@abspage=\count311
@@ -457,35 +468,748 @@ Package: soulpos 2021/10/15 v1.2 Fancy underlining
 )
 Package zref Info: New property list: pdfcomment on input line 2735.
 Package zref Info: New property: PCPDFOBJID on input line 2736.
-) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip68
-\f@nch@O@elh=\skip69
-\f@nch@O@erh=\skip70
-\f@nch@O@olh=\skip71
-\f@nch@O@orh=\skip72
-\f@nch@O@elf=\skip73
-\f@nch@O@erf=\skip74
-\f@nch@O@olf=\skip75
-\f@nch@O@orf=\skip76
+) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/datetime/datetime.sty
+Package: datetime 2015/03/20 v2.60 Date Time Package
+(c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fmtcount/fmtcount.sty
+Package: fmtcount 2020/01/30 v3.07
+(c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fmtcount/fcprefix.sty
+Package: fcprefix 2012/09/28
+(c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
+Package: fcnumparser 2017/06/15
+\fc@digit@counter=\count314
+))
+\c@padzeroesN=\count315
+\fc@tmpcatcode=\count316
+\@DT@modctr=\count317
+\@ordinalctr=\count318
+\@orgargctr=\count319
+\@strctr=\count320
+\@tmpstrctr=\count321
+\@DT@loopN=\count322
+\@DT@X=\count323
+) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/datetime/datetime-defaults.sty
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count324
+\@month=\count325
+\@year=\count326
+\c@HOUR=\count327
+\c@HOURXII=\count328
+\c@MINUTE=\count329
+\c@TOHOUR=\count330
+\c@TOMINUTE=\count331
+\c@SECOND=\count332
+\currenthour=\count333
+\currentminute=\count334
+\currentsecond=\count335
+Package datetime Info: No datetime.cfg file found, using default settings on input line 308.
+\@dtctr=\count336
+\dayofyear=\count337
+\dayofweek=\count338
+LaTeX Info: Redefining \today on input line 736.
+\dt@a=\toks26
+\dt@b=\toks27
+) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2022/11/13 v3.2 ragged2e Package
+
+LaTeX Warning: Command \@arrayparboxrestore  has changed.
+               Check if current package is valid.
+
+(c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2022/03/08 v6.0d a miscellany of footnote facilities
+\FN@temptoken=\toks28
+\footnotemargin=\dimen173
+\@outputbox@depth=\dimen174
+Package footmisc Info: Declaring symbol style bringhurst on input line 695.
+Package footmisc Info: Declaring symbol style chicago on input line 703.
+Package footmisc Info: Declaring symbol style wiley on input line 712.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 723.
+Package footmisc Info: Declaring symbol style lamport* on input line 743.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 764.
+)
+\CenteringLeftskip=\skip77
+\RaggedLeftLeftskip=\skip78
+\RaggedRightLeftskip=\skip79
+\CenteringRightskip=\skip80
+\RaggedLeftRightskip=\skip81
+\RaggedRightRightskip=\skip82
+\CenteringParfillskip=\skip83
+\RaggedLeftParfillskip=\skip84
+\RaggedRightParfillskip=\skip85
+\JustifyingParfillskip=\skip86
+\CenteringParindent=\skip87
+\RaggedLeftParindent=\skip88
+\RaggedRightParindent=\skip89
+\JustifyingParindent=\skip90
+)
+luaotfload | cache : Lookup cache loaded from C:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
+luaotfload | aux : font no 18 (nil) defines no feature for script latn
+
+Package fontspec Info: Poppins scale = 0.7864935981028666.
+
+
+Package fontspec Info: Poppins scale = 0.7864935981028666.
+
+luaotfload | aux : font no 18 (nil) does not define feature smcp for script dflt with language dflt
+
+Package fontspec Info: Poppins/B scale = 0.772399334594262.
+
+luaotfload | aux : font no 23 (nil) does not define feature smcp for script dflt with language dflt
+
+Package fontspec Info: Poppins/I scale = 0.7864935981028666.
+
+luaotfload | aux : font no 24 (nil) does not define feature smcp for script dflt with language dflt
+
+Package fontspec Info: Poppins/BI scale = 0.772399334594262.
+
+luaotfload | aux : font no 25 (nil) does not define feature smcp for script dflt with language dflt
+
+Package fontspec Info: Font family 'Poppins(0)' created for font 'Poppins'
+(fontspec)             with options
+(fontspec)             [Scale=MatchLowercase,Ligatures=TeX,Scale=1].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"Poppins:mode=node;script=DFLT;language=dflt;+tlig;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"Poppins/B:mode=node;script=DFLT;language=dflt;+tlig;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"Poppins/I:mode=node;script=DFLT;language=dflt;+tlig;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"Poppins/BI:mode=node;script=DFLT;language=dflt;+tlig;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+luaotfload | aux : font no 27 (nil) defines no feature for script latn
+LaTeX Font Info:    Font shape `TU/Poppins(0)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 104.
+
+Package fontspec Info: Poppins scale = 0.9999976796313398.
+
+
+Package fontspec Info: Poppins scale = 0.9999976796313398.
+
+luaotfload | aux : font no 27 (nil) does not define feature smcp for script dflt with language dflt
+
+Package fontspec Info: Poppins/B scale = 0.9820773420231068.
+
+luaotfload | aux : font no 33 (nil) does not define feature smcp for script dflt with language dflt
+
+Package fontspec Info: Poppins/I scale = 0.9999976796313398.
+
+luaotfload | aux : font no 34 (nil) does not define feature smcp for script dflt with language dflt
+
+Package fontspec Info: Poppins/BI scale = 0.9820773420231068.
+
+luaotfload | aux : font no 35 (nil) does not define feature smcp for script dflt with language dflt
+
+Package fontspec Info: Font family 'Poppins(1)' created for font 'Poppins'
+(fontspec)             with options [Scale=MatchLowercase,Renderer=Basic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999976796313398]"Poppins:mode=base;script=DFLT;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9820773420231068]"Poppins/B:mode=base;script=DFLT;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.9999976796313398]"Poppins/I:mode=base;script=DFLT;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.9820773420231068]"Poppins/BI:mode=base;script=DFLT;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/Poppins(1)/m/n on input line 104.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> TU/Poppins(1)/m/it on input line 104.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> TU/Poppins(1)/b/n on input line 104.
+(c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/lualatex/selnolig/selnolig.sty
+=== Package selnolig, Version 0.302, Date 2015/10/26 ===
+Package: selnolig 2015/10/26
+(c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
+Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
+(c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/luatex/ctablestack/ctablestack.sty
+Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
+\@catcodetablestackcnt=\count339
+)
+\CatcodeTableOther=\catcodetable12
+\CatcodeTableExpl=\catcodetable13
+)
+Inserting `Suppress ligatures selectively' in `ligaturing'.) (./womens_history_story_draft.aux)
+\openout1 = womens_history_story_draft.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 152.
+LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 152.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 152.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 152.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 152.
+
+Package fontspec Info: latinmodern-math scale = 1.271459464881562.
+
+
+Package fontspec Info: latinmodern-math scale = 1.271459464881562.
+
+
+Package fontspec Info: latinmodern-math scale = 1.271459464881562.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,FontAdjustment={\__um_luatex_copy_fontdimens:
+(fontspec)             },BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1.271459464881562]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.271459464881562]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: 
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
+(Font)              scaled to size 15.25745pt on input line 152.
+
+Package fontspec Info: latinmodern-math scale = 1.271459464881562.
+
+
+Package fontspec Info: latinmodern-math scale = 1.271459464881562.
+
+
+Package fontspec Info: latinmodern-math scale = 1.271459464881562.
+
+
+Package fontspec Info: latinmodern-math scale = 1.271459464881562.
+
+
+Package fontspec Info: latinmodern-math scale = 1.271459464881562.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.2-10.2,Font=latinmodern-math.otf,Style=MathScript},{Size=-7.2,Font=latinmodern-math.otf,Style=MathScriptScript}},FontAdjustment={\__um_luatex_copy_fontdimens:
+(fontspec)             },BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <10.2->s*[1.271459464881562]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;"<7.2-10.2>s*[1.271459464881562]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;+ssty=0;"<-7.2>s*[1.271459464881562]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.271459464881562]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: 
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 15.25745pt on input line 152.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 152.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 152.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 152.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 152.
+
+Package fontspec Info: latinmodern-math scale = 1.271459464881562.
+
+
+Package fontspec Info: latinmodern-math scale = 1.27158661082805.
+
+
+Package fontspec Info: latinmodern-math scale = 1.271459464881562.
+
+
+Package fontspec Info: latinmodern-math scale = 1.27158661082805.
+
+
+Package fontspec Info: latinmodern-math scale = 1.271459464881562.
+
+
+Package fontspec Info: latinmodern-math scale = 1.27158661082805.
+
+
+Package fontspec Info: latinmodern-math scale = 1.271459464881562.
+
+
+Package fontspec Info: latinmodern-math scale = 1.27158661082805.
+
+
+Package fontspec Info: latinmodern-math scale = 1.271459464881562.
+
+
+Package fontspec Info: latinmodern-math scale = 1.27158661082805.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.2-10.2,Font=latinmodern-math.otf,Style=MathScript},{Size=-7.2,Font=latinmodern-math.otf,Style=MathScriptScript}},FontAdjustment={\__um_luatex_copy_fontdimens:
+(fontspec)             },BoldFont={latinmodern-math.otf},ScaleAgain=1.0001,FontAdjustment={\fontdimen
+(fontspec)             8\font =10.32928pt\relax \fontdimen 9\font
+(fontspec)             =6.01143pt\relax \fontdimen 10\font =6.77429pt\relax
+(fontspec)             \fontdimen 11\font =10.4666pt\relax \fontdimen 12\font
+(fontspec)             =5.26381pt\relax \fontdimen 13\font =5.53845pt\relax
+(fontspec)             \fontdimen 14\font =5.53845pt\relax \fontdimen 15\font
+(fontspec)             =4.4094pt\relax \fontdimen 16\font =3.76859pt\relax
+(fontspec)             \fontdimen 17\font =3.76859pt\relax \fontdimen 18\font
+(fontspec)             =3.81436pt\relax \fontdimen 19\font =3.05148pt\relax
+(fontspec)             \fontdimen 22\font =3.81436pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <10.2->s*[1.27158661082805]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;"<7.2-10.2>s*[1.27158661082805]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;+ssty=0;"<-7.2>s*[1.27158661082805]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: \fontdimen 8\font
+(fontspec)             =10.32928pt\relax \fontdimen 9\font =6.01143pt\relax
+(fontspec)             \fontdimen 10\font =6.77429pt\relax \fontdimen 11\font
+(fontspec)             =10.4666pt\relax \fontdimen 12\font =5.26381pt\relax
+(fontspec)             \fontdimen 13\font =5.53845pt\relax \fontdimen 14\font
+(fontspec)             =5.53845pt\relax \fontdimen 15\font =4.4094pt\relax
+(fontspec)             \fontdimen 16\font =3.76859pt\relax \fontdimen 17\font
+(fontspec)             =3.76859pt\relax \fontdimen 18\font =3.81436pt\relax
+(fontspec)             \fontdimen 19\font =3.05148pt\relax \fontdimen 22\font
+(fontspec)             =3.81436pt\relax \fontdimen 20\font =0pt\relax
+(fontspec)             \fontdimen 21\font =0pt\relax 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.27158661082805]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: \fontdimen 8\font
+(fontspec)             =10.32928pt\relax \fontdimen 9\font =6.01143pt\relax
+(fontspec)             \fontdimen 10\font =6.77429pt\relax \fontdimen 11\font
+(fontspec)             =10.4666pt\relax \fontdimen 12\font =5.26381pt\relax
+(fontspec)             \fontdimen 13\font =5.53845pt\relax \fontdimen 14\font
+(fontspec)             =5.53845pt\relax \fontdimen 15\font =4.4094pt\relax
+(fontspec)             \fontdimen 16\font =3.76859pt\relax \fontdimen 17\font
+(fontspec)             =3.76859pt\relax \fontdimen 18\font =3.81436pt\relax
+(fontspec)             \fontdimen 19\font =3.05148pt\relax \fontdimen 22\font
+(fontspec)             =3.81436pt\relax \fontdimen 20\font =0pt\relax
+(fontspec)             \fontdimen 21\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 152.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 152.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 152.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 152.
+
+Package fontspec Info: latinmodern-math scale = 1.271459464881562.
+
+
+Package fontspec Info: latinmodern-math scale = 1.271332318935074.
+
+
+Package fontspec Info: latinmodern-math scale = 1.271459464881562.
+
+
+Package fontspec Info: latinmodern-math scale = 1.271332318935074.
+
+
+Package fontspec Info: latinmodern-math scale = 1.271459464881562.
+
+
+Package fontspec Info: latinmodern-math scale = 1.271332318935074.
+
+
+Package fontspec Info: latinmodern-math scale = 1.271459464881562.
+
+
+Package fontspec Info: latinmodern-math scale = 1.271332318935074.
+
+
+Package fontspec Info: latinmodern-math scale = 1.271459464881562.
+
+
+Package fontspec Info: latinmodern-math scale = 1.271332318935074.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.2-10.2,Font=latinmodern-math.otf,Style=MathScript},{Size=-7.2,Font=latinmodern-math.otf,Style=MathScriptScript}},FontAdjustment={\__um_luatex_copy_fontdimens:
+(fontspec)             },BoldFont={latinmodern-math.otf},ScaleAgain=0.9999,FontAdjustment={\fontdimen
+(fontspec)             8\font =0.61029pt\relax \fontdimen 9\font
+(fontspec)             =3.05148pt\relax \fontdimen 10\font =2.54799pt\relax
+(fontspec)             \fontdimen 11\font =1.69357pt\relax \fontdimen 12\font
+(fontspec)             =9.15446pt\relax \fontdimen 13\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <10.2->s*[1.271332318935074]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;"<7.2-10.2>s*[1.271332318935074]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;+ssty=0;"<-7.2>s*[1.271332318935074]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: \fontdimen 8\font
+(fontspec)             =0.61029pt\relax \fontdimen 9\font =3.05148pt\relax
+(fontspec)             \fontdimen 10\font =2.54799pt\relax \fontdimen 11\font
+(fontspec)             =1.69357pt\relax \fontdimen 12\font =9.15446pt\relax
+(fontspec)             \fontdimen 13\font =0pt\relax 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.271332318935074]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \__um_luatex_copy_fontdimens: \fontdimen 8\font
+(fontspec)             =0.61029pt\relax \fontdimen 9\font =3.05148pt\relax
+(fontspec)             \fontdimen 10\font =2.54799pt\relax \fontdimen 11\font
+(fontspec)             =1.69357pt\relax \fontdimen 12\font =9.15446pt\relax
+(fontspec)             \fontdimen 13\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 152.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 152.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 152.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 152.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 10.68019pt on input line 152.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.62872pt on input line 152.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 152.
+(c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 15.2591pt on input line 152.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.68135pt on input line 152.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.62955pt on input line 152.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 15.25598pt on input line 152.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 10.67917pt on input line 152.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.62799pt on input line 152.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 152.
+(c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 152.
+(c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+(c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=600.0pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=75.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring OFF on input line 152.
+(./womens_history_story_draft.out) (./womens_history_story_draft.out)
+\@outlinefile=\write5
+
+\openout5 = womens_history_story_draft.out
+Package soulpos Info: Loading soulutf8 on input line 152.
+(c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/soulutf8/soulutf8.sty
+Package: soulutf8 2019/12/15 v1.2 Permit use of UTF-8 characters in soul (HO)
+(c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks29
+\SOUL@lasttoken=\toks30
+\SOUL@cmds=\toks31
+\SOUL@buffer=\toks32
+\SOUL@token=\toks33
+\SOUL@spaceskip=\skip91
+\SOUL@ttwidth=\dimen175
+\SOUL@uldp=\dimen176
+\SOUL@ulht=\dimen177
+)) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fmtcount/fc-english.def
+File: fc-english.def 2016/01/12
+)
+Package ragged2e Info: ABD: executing \RaggedRight on input line 152.
+luaotfload | aux : font no 18 (nil) defines no feature for script latn
+
+Package fontspec Info: Poppins scale = 0.9999976796313398.
+
+LaTeX Font Info:    Font shape `TU/Poppins(0)/m/n' will be
+(Font)              scaled to size 17.28pt on input line 158.
+LaTeX Font Info:    Font shape `TU/Poppins(0)/b/n' will be
+(Font)              scaled to size 17.28pt on input line 158.
+<C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png, id=16, 294.6207pt x 48.18pt>
+File: C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png Graphic file (type png)
+<use C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png>
+Package luatex.def Info: C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png  used on input line 160.
+(luatex.def)             Requested size: 469.79332pt x 76.82634pt.
+LaTeX Font Info:    Font shape `TU/Poppins(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 171.
+<X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png, id=20, 503.9628pt x 89.3739pt>
+File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
+<use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 179.
+(luatex.def)             Requested size: 469.7725pt x 83.3105pt.
+
+Package fancyhdr Warning: \headheight is too small (75.0pt): 
+(fancyhdr)                Make it at least 87.66054pt, for example:
+(fancyhdr)                \setlength{\headheight}{87.66054pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
+
+LaTeX Font Info:    Font shape `TU/Poppins(0)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 179.
+[1
+
+
+\openout4 = womens_history_story_draft.upa
+{c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<x:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png><c:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png>]
+File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
+<use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 307.
+(luatex.def)             Requested size: 469.7725pt x 83.3105pt.
+
+Package fancyhdr Warning: \headheight is too small (75.0pt): 
+(fancyhdr)                Make it at least 87.66054pt, for example:
+(fancyhdr)                \setlength{\headheight}{87.66054pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
+
+[2]
+File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
+<use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 311.
+(luatex.def)             Requested size: 469.7725pt x 83.3105pt.
+
+Package fancyhdr Warning: \headheight is too small (75.0pt): 
+(fancyhdr)                Make it at least 87.66054pt, for example:
+(fancyhdr)                \setlength{\headheight}{87.66054pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
+
+[3]
+LaTeX Font Info:    Font shape `TU/Poppins(0)/m/n' will be
+(Font)              scaled to size 14.4pt on input line 317.
+LaTeX Font Info:    Font shape `TU/Poppins(0)/b/n' will be
+(Font)              scaled to size 14.4pt on input line 317.
+<womens_history_story_draft_files/figure-latex/unnamed-chunk-2-1.pdf, id=41, 469.755pt x 325.215pt>
+File: womens_history_story_draft_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf)
+<use womens_history_story_draft_files/figure-latex/unnamed-chunk-2-1.pdf>
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/unnamed-chunk-2-1.pdf  used on input line 325.
+(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+
+Overfull \hbox (180.25078pt too wide) in paragraph at lines 324--326
+[]\TU/Poppins(0)/m/n/12 Note to Megan: add axis ti-tles []  
+ []
+
+File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
+<use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 347.
+(luatex.def)             Requested size: 469.7725pt x 83.3105pt.
+
+Package fancyhdr Warning: \headheight is too small (75.0pt): 
+(fancyhdr)                Make it at least 87.66054pt, for example:
+(fancyhdr)                \setlength{\headheight}{87.66054pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
+
+[4<./womens_history_story_draft_files/figure-latex/unnamed-chunk-2-1.pdf>]
+<womens_history_story_draft_files/figure-latex/unnamed-chunk-3-1.pdf, id=49, 469.755pt x 325.215pt>
+File: womens_history_story_draft_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
+<use womens_history_story_draft_files/figure-latex/unnamed-chunk-3-1.pdf>
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/unnamed-chunk-3-1.pdf  used on input line 349.
+(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
+<use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 355.
+(luatex.def)             Requested size: 469.7725pt x 83.3105pt.
+
+Package fancyhdr Warning: \headheight is too small (75.0pt): 
+(fancyhdr)                Make it at least 87.66054pt, for example:
+(fancyhdr)                \setlength{\headheight}{87.66054pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
+
+[5<./womens_history_story_draft_files/figure-latex/unnamed-chunk-3-1.pdf>]
+<womens_history_story_draft_files/figure-latex/unnamed-chunk-4-1.pdf, id=57, 469.755pt x 325.215pt>
+File: womens_history_story_draft_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
+<use womens_history_story_draft_files/figure-latex/unnamed-chunk-4-1.pdf>
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/unnamed-chunk-4-1.pdf  used on input line 361.
+(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+<womens_history_story_draft_files/figure-latex/unnamed-chunk-5-1.pdf, id=58, 469.755pt x 325.215pt>
+File: womens_history_story_draft_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
+<use womens_history_story_draft_files/figure-latex/unnamed-chunk-5-1.pdf>
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/unnamed-chunk-5-1.pdf  used on input line 373.
+(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
+<use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 375.
+(luatex.def)             Requested size: 469.7725pt x 83.3105pt.
+
+Package fancyhdr Warning: \headheight is too small (75.0pt): 
+(fancyhdr)                Make it at least 87.66054pt, for example:
+(fancyhdr)                \setlength{\headheight}{87.66054pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
+
+[6<./womens_history_story_draft_files/figure-latex/unnamed-chunk-4-1.pdf>]
+<womens_history_story_draft_files/figure-latex/unnamed-chunk-6-1.pdf, id=65, 469.755pt x 325.215pt>
+File: womens_history_story_draft_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type pdf)
+<use womens_history_story_draft_files/figure-latex/unnamed-chunk-6-1.pdf>
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/unnamed-chunk-6-1.pdf  used on input line 385.
+(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
+<use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 387.
+(luatex.def)             Requested size: 469.7725pt x 83.3105pt.
+
+Package fancyhdr Warning: \headheight is too small (75.0pt): 
+(fancyhdr)                Make it at least 87.66054pt, for example:
+(fancyhdr)                \setlength{\headheight}{87.66054pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
+
+[7<./womens_history_story_draft_files/figure-latex/unnamed-chunk-5-1.pdf>]
+<womens_history_story_draft_files/figure-latex/unnamed-chunk-7-1.pdf, id=72, 469.755pt x 325.215pt>
+File: womens_history_story_draft_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
+<use womens_history_story_draft_files/figure-latex/unnamed-chunk-7-1.pdf>
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/unnamed-chunk-7-1.pdf  used on input line 397.
+(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
+<use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 399.
+(luatex.def)             Requested size: 469.7725pt x 83.3105pt.
+
+Package fancyhdr Warning: \headheight is too small (75.0pt): 
+(fancyhdr)                Make it at least 87.66054pt, for example:
+(fancyhdr)                \setlength{\headheight}{87.66054pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
+
+[8<./womens_history_story_draft_files/figure-latex/unnamed-chunk-6-1.pdf>]
+<womens_history_story_draft_files/figure-latex/unnamed-chunk-8-1.pdf, id=79, 469.755pt x 325.215pt>
+File: womens_history_story_draft_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type pdf)
+<use womens_history_story_draft_files/figure-latex/unnamed-chunk-8-1.pdf>
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/unnamed-chunk-8-1.pdf  used on input line 418.
+(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
+<use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 420.
+(luatex.def)             Requested size: 469.7725pt x 83.3105pt.
+
+Package fancyhdr Warning: \headheight is too small (75.0pt): 
+(fancyhdr)                Make it at least 87.66054pt, for example:
+(fancyhdr)                \setlength{\headheight}{87.66054pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
+
+[9<./womens_history_story_draft_files/figure-latex/unnamed-chunk-7-1.pdf>]
+<womens_history_story_draft_files/figure-latex/unnamed-chunk-9-1.pdf, id=86, 469.755pt x 325.215pt>
+File: womens_history_story_draft_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (type pdf)
+<use womens_history_story_draft_files/figure-latex/unnamed-chunk-9-1.pdf>
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/unnamed-chunk-9-1.pdf  used on input line 430.
+(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
+<use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 432.
+(luatex.def)             Requested size: 469.7725pt x 83.3105pt.
+
+Package fancyhdr Warning: \headheight is too small (75.0pt): 
+(fancyhdr)                Make it at least 87.66054pt, for example:
+(fancyhdr)                \setlength{\headheight}{87.66054pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
+
+[10<./womens_history_story_draft_files/figure-latex/unnamed-chunk-8-1.pdf>] [11<./womens_history_story_draft_files/figure-latex/unnamed-chunk-9-1.pdf>] (./womens_history_story_draft.aux * soulpos - computing points - it may take a few seconds *
+\openout4 = womens_history_story_draft.upb
+ (./womens_history_story_draft.upa))
+Package rerunfilecheck Info: File `womens_history_story_draft.out' has not changed.
+(rerunfilecheck)             Checksum: A52F761A208B0721A22F0901395933D9;548.
 )
 
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.99 \usepackage{fontspec}\fancyhead[C]\fancyhead[
-                                                L]{\includegraphics{X:/DSA/s...
-
 Here is how much of LuaTeX's memory you used:
- 21916 strings out of 478294
+ 24246 strings out of 478294
  100000,1977958 words of node,token memory allocated
- 473 words of node memory still in use:
-   4 hlist, 1 rule, 1 local_par, 1 dir, 1 glue, 3 kern, 1 glyph, 7 attribute, 57 glue_spec, 7 attribute_list, 1 temp, 1 write, 1 pdf_colorstack nodes
-   avail lists: 2:8,3:2,5:2,7:1,9:2
- 41504 multiletter control sequences out of 65536+600000
- 16 fonts using 602883 bytes
- 86i,0n,91p,1496b,148s stack positions out of 10000i,1000n,20000p,200000b,200000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 637 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 8 attribute, 77 glue_spec, 8 attribute_list, 1 write, 1 user_defined nodes
+   avail lists: 2:440,3:173,4:184,5:83,6:45,7:9096,8:28,9:354,10:17,11:496
+ 43492 multiletter control sequences out of 65536+600000
+ 64 fonts using 10583691 bytes
+ 86i,16n,122p,1038b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf><c:/Windows/Fonts/Poppins-Regular.ttf><c:/Windows/Fonts/Poppins-Bold.ttf>
+Output written on womens_history_story_draft.pdf (11 pages, 1272876 bytes).
+
+PDF statistics: 124 PDF objects out of 1000 (max. 8388607)
+ 82 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 131072)
+ 25 words of extra memory for PDF output out of 10000 (max. 100000000)
+
