@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.2.16)  16 FEB 2023 14:40
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.2.16)  16 FEB 2023 14:45
  restricted system commands enabled.
 **womens_history_story_draft.tex
 (./womens_history_story_draft.tex
@@ -1007,17 +1007,15 @@ LaTeX Font Info:    Font shape `TU/Poppins(0)/m/n' will be
 (Font)              scaled to size 17.28pt on input line 158.
 LaTeX Font Info:    Font shape `TU/Poppins(0)/b/n' will be
 (Font)              scaled to size 17.28pt on input line 158.
-<C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png, id=12, 294.6207pt x 48.18pt>
+<C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png, id=16, 294.6207pt x 48.18pt>
 File: C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png Graphic file (type png)
 <use C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png>
 Package luatex.def Info: C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png  used on input line 160.
 (luatex.def)             Requested size: 469.79332pt x 76.82634pt.
-LaTeX Font Info:    Font shape `TU/Poppins(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 176.
-<X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png, id=17, 503.9628pt x 89.3739pt>
+<X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png, id=19, 503.9628pt x 89.3739pt>
 File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
 <use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 181.
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 170.
 (luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
@@ -1027,58 +1025,38 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
 
 LaTeX Font Info:    Font shape `TU/Poppins(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 181.
+(Font)              scaled to size 8.0pt on input line 170.
 [1
 
 
 \openout4 = womens_history_story_draft.upa
 {c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<x:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png><c:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png>]
 LaTeX Font Info:    Font shape `TU/Poppins(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 185.
+(Font)              scaled to size 14.4pt on input line 188.
 LaTeX Font Info:    Font shape `TU/Poppins(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 185.
-File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
-<use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 193.
-(luatex.def)             Requested size: 469.7725pt x 83.3105pt.
-
-Package fancyhdr Warning: \headheight is too small (75.0pt): 
-(fancyhdr)                Make it at least 87.66054pt, for example:
-(fancyhdr)                \setlength{\headheight}{87.66054pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
-
+(Font)              scaled to size 14.4pt on input line 188.
 [2]
-<womens_history_story_draft_files/figure-latex/trip by gender-1.pdf, id=36, 433.62pt x 289.08pt>
+<womens_history_story_draft_files/figure-latex/trip by gender-1.pdf, id=39, 433.62pt x 289.08pt>
 File: womens_history_story_draft_files/figure-latex/trip by gender-1.pdf Graphic file (type pdf)
 <use womens_history_story_draft_files/figure-latex/trip by gender-1.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/trip by gender-1.pdf  used on input line 195.
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/trip by gender-1.pdf  used on input line 198.
 (luatex.def)             Requested size: 433.63878pt x 289.09251pt.
-File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
-<use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 209.
-(luatex.def)             Requested size: 469.7725pt x 83.3105pt.
-
-Package fancyhdr Warning: \headheight is too small (75.0pt): 
-(fancyhdr)                Make it at least 87.66054pt, for example:
-(fancyhdr)                \setlength{\headheight}{87.66054pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
-
-[3<./womens_history_story_draft_files/figure-latex/trip by gender-1.pdf>]
+LaTeX Font Info:    Font shape `TU/Poppins(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 204.
+[3<./womens_history_story_draft_files/figure-latex/trip by gender-1.pdf>] [4]
 ! Undefined control sequence.
 <recently read> \subfloat 
           
-l.237 \subfloat
-             [Employment\label{fig:matrix-1}]{\includegraphics[width=0.5\lin...
+l.245 \subfloat
+             [Employment\label{fig:matrix-1}]{\includegraphics{womens_histor...
 
 Here is how much of LuaTeX's memory you used:
- 24098 strings out of 478294
+ 24088 strings out of 478294
  100000,1977958 words of node,token memory allocated
- 19598 words of node memory still in use:
-   58 hlist, 5 vlist, 7 rule, 3 mark, 160 disc, 5 local_par, 3 dir, 4 math, 419 glue, 12 kern, 42 penalty, 1853 glyph, 95 attribute, 91 glue_spec, 95 attribute_list, 2 temp, 3 write, 1 user_defined, 2 pdf_start_link, 2 pdf_end_link, 2 pdf_dest, 2 pdf_action, 17 pdf_colorstack nodes
-   avail lists: 2:163,3:129,4:65,5:44,6:39,7:4633,8:25,9:291,10:17,11:254
- 43449 multiletter control sequences out of 65536+600000
+ 5475 words of node memory still in use:
+   31 hlist, 3 vlist, 5 rule, 3 mark, 29 disc, 3 local_par, 3 dir, 132 glue, 10 kern, 30 penalty, 407 glyph, 63 attribute, 91 glue_spec, 63 attribute_list, 2 temp, 3 write, 1 user_defined, 2 pdf_dest, 11 pdf_colorstack nodes
+   avail lists: 2:162,3:92,4:57,5:36,6:32,7:6043,8:17,9:263,10:17,11:308
+ 43450 multiletter control sequences out of 65536+600000
  64 fonts using 10583731 bytes
- 86i,15n,122p,1730b,474s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,15n,122p,1730b,405s stack positions out of 10000i,1000n,20000p,200000b,200000s
 !  ==> Fatal error occurred, no output PDF file produced!
