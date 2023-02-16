@@ -24,18 +24,13 @@ header-includes:
   - \usepackage{fontspec}
 
 ---
-
 \setmainfont{Poppins}
-
-
 
 # Understanding Women's Travel for Women's History Month
 ```{r setup, include=FALSE}
 ### Making the Charts and pdf documents now
-.libPaths("C:/Users/MGrzybowski/AppData/Local/R/win-library/4.2")
+#.libPaths("C:/Users/MGrzybowski/AppData/Local/R/win-library/4.2")
 
-
-source('C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/womens_history_story_draft_datacrunching.R')
 library(dplyr)
 library(stringr)
 library(ggplot2)
@@ -44,7 +39,6 @@ library(odbc)
 library(DBI)
 library(tidyr)
 library(psrcplot)
-tinytex::reinstall_tinytex()
 library(tidyverse)
 library(knitr)
 library(magick)
@@ -52,16 +46,17 @@ library(openxlsx)
 library(htmlwidgets)
 library(magrittr)
 
+#tinytex::reinstall_tinytex()
+library(tinytex)
+
+# File name for Trend Data file to be created
+setwd("C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example")
 output_dir<-file.path(getwd(), 'outputs')
-
-
 
 if(!dir.exists(output_dir)){ 
   dir.create(output_dir)
 }
 
-#setwd("C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example")
-#output_path <- "C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example"
 network_file_loc<-'X:/DSA/Trends/equity/images'
 
 # Create Image 
@@ -69,16 +64,18 @@ image1 <- image_read(file.path(network_file_loc, 'women.jpg'))
 image2 <- image_read(file.path(network_file_loc, "ferry.jpg"))
 image3 <- image_read(file.path(network_file_loc, "streetart.jpg"))
 image4<-  image_read(file.path(network_file_loc, "transit.jpg"))
-image5<-  image_read(file.path(network_file_loc, "women2.jpg"))
-input <- c(image_scale(image1, "x200"), image_scale(image2, "x200"), image_scale(image3, "x200"),  image_scale(image4, "x200"), image_scale(image5, "x200"))
-women_image_header <- image_append(input)
 
+input <- c(image_scale(image1, "x200"), image_scale(image2, "x200"), image_scale(image3, "x200"),  image_scale(image4, "x200"))
 
-image_write(women_image_header, path="women_image_header.png", format="png")
+women2_image_header <- image_append(input)
+image_write(women2_image_header, path="women2_image_header.png", format="png")
+women2_image_header
+
 install_psrc_fonts()
-women_image_header
+
+source('C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/womens_history_story_draft_datacrunching.R')
 ```
-![](C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women_image_header.png){width=100%}
+![](C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png){width=100%}
 
 
 Women have \href{http://libraryarchives.metro.net/DB_Attachments/2019-0294/UnderstandingHowWomenTravel_FullReport_FINAL.pdf}{\underline{\textcolor{blue}{transportation needs that have not historically been met}}}. The regional transportation system, including transit, was designed around the need to quickly get to work at central locations. Women carry significantly more of the care-giving burden's of society and thus need a system that works safely for traveling with others to a variety of locations at all times of day. Women also represent a large portion of older populations who have unique transportation needs, not well-served by our system built for driving and going to work locations. Women are also more likely to live in poverty and have lower incomes than men.
@@ -254,7 +251,7 @@ The transportation system is set up for people to get quickly to work.
 
 
 Note to Megan: add axis titles
-```{r}
+```{r, echo = FALSE}
 static_column_chart(t= summs_2017_2019, x='simple_purpose', y='share',  fill='gender', moe='share_moe', est='percent', title= 'Trip Purpose by Gender', source= 'Source: 2017/2019 Household Travel Survey')
 
 
