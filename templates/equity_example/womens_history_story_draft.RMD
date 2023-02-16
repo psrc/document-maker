@@ -45,6 +45,7 @@ library(odbc)
 library(DBI)
 library(tidyr)
 options(tinytex.verbose = TRUE)
+tinytex::tlmgr_update()
 library(psrcplot)
 library(tidyverse)
 library(knitr)
@@ -82,7 +83,7 @@ source('C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/w
 ```
 ![](C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png){width=100%}
 
-
+\begin{document}
 Women have \href{http://libraryarchives.metro.net/DB_Attachments/2019-0294/UnderstandingHowWomenTravel_FullReport_FINAL.pdf}{\underline{\textcolor{blue}{transportation needs that have not historically been met}}}. The regional transportation system, including transit, was designed around the need to quickly get to work at central locations. Women carry significantly more of the care-giving burden's of society and thus need a system that works safely for traveling with others to a variety of locations at all times of day. Women also represent a large portion of older populations who have unique transportation needs, not well-served by our system built for driving and going to work locations. Women are also more likely to live in poverty and have lower incomes than men.
 
 As the world evolves post-COVID towards greater telecommuting for some people and continued trends in aging, will the transportation system evolve for women?

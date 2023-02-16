@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.2.16)  16 FEB 2023 10:47
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.2.16)  16 FEB 2023 10:55
  restricted system commands enabled.
 **womens_history_story_draft.tex
 (./womens_history_story_draft.tex
@@ -470,22 +470,22 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@orf=\skip76
 )
 
-! LaTeX Error: There's no line here to end.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.99 \usepackage{fontspec} \\f
-                            ancyhead[C]{} \\fancyhead[L]{\\includegraphics{X...
+l.99 \usepackage{fontspec}\fancyhead[C]\fancyhead[
+                                                L]{\includegraphics{X:/DSA/s...
 
 Here is how much of LuaTeX's memory you used:
  21916 strings out of 478294
  100000,1977958 words of node,token memory allocated
- 443 words of node memory still in use:
-   3 hlist, 1 rule, 1 dir, 3 kern, 1 glyph, 5 attribute, 57 glue_spec, 5 attribute_list, 1 if_stack, 1 write, 1 pdf_colorstack nodes
-   avail lists: 2:12,3:2,5:2,7:2,9:3
+ 473 words of node memory still in use:
+   4 hlist, 1 rule, 1 local_par, 1 dir, 1 glue, 3 kern, 1 glyph, 7 attribute, 57 glue_spec, 7 attribute_list, 1 temp, 1 write, 1 pdf_colorstack nodes
+   avail lists: 2:8,3:2,5:2,7:1,9:2
  41504 multiletter control sequences out of 65536+600000
  16 fonts using 602883 bytes
- 86i,0n,91p,1383b,148s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,0n,91p,1496b,148s stack positions out of 10000i,1000n,20000p,200000b,200000s
 !  ==> Fatal error occurred, no output PDF file produced!
