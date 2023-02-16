@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.2.16)  16 FEB 2023 11:52
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.2.16)  16 FEB 2023 14:17
  restricted system commands enabled.
 **womens_history_story_draft.tex
 (./womens_history_story_draft.tex
@@ -245,21 +245,6 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen158
 \Gm@layoutvoffset=\dimen159
 \Gm@dimlist=\toks22
-) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2023/01/19 4.5a verbatim text (tvz,hv)
-\FV@CodeLineNo=\count288
-\FV@InFile=\read2
-\FV@TabBox=\box54
-\c@FancyVerbLine=\count289
-\FV@StepNumber=\count290
-\FV@OutFile=\write3
-) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
-Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip53
-\fb@frw=\dimen160
-\fb@frh=\dimen161
-\FrameRule=\dimen162
-\FrameSep=\dimen163
 ) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
@@ -271,19 +256,19 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: luatex.def on input line 107.
 )
-\Gin@req@height=\dimen164
-\Gin@req@width=\dimen165
+\Gin@req@height=\dimen160
+\Gin@req@width=\dimen161
 ) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip54
-\f@nch@O@elh=\skip55
-\f@nch@O@erh=\skip56
-\f@nch@O@olh=\skip57
-\f@nch@O@orh=\skip58
-\f@nch@O@elf=\skip59
-\f@nch@O@erf=\skip60
-\f@nch@O@olf=\skip61
-\f@nch@O@orf=\skip62
+\f@nch@headwidth=\skip53
+\f@nch@O@elh=\skip54
+\f@nch@O@erh=\skip55
+\f@nch@O@olh=\skip56
+\f@nch@O@orh=\skip57
+\f@nch@O@elf=\skip58
+\f@nch@O@erf=\skip59
+\f@nch@O@olf=\skip60
+\f@nch@O@orf=\skip61
 ) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
@@ -318,11 +303,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count291
+\c@section@level=\count288
 )
-\@linkdim=\dimen166
-\Hy@linkcounter=\count292
-\Hy@pagecounter=\count293
+\@linkdim=\dimen162
+\Hy@linkcounter=\count289
+\Hy@pagecounter=\count290
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
 ) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
@@ -330,7 +315,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count294
+\Hy@SavedSpaceFactor=\count291
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
 )
@@ -342,21 +327,21 @@ Package hyperref Info: Plain pages OFF on input line 4192.
 Package hyperref Info: Backreferencing OFF on input line 4197.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4425.
-\c@Hy@tempcnt=\count295
+\c@Hy@tempcnt=\count292
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen167
+\XeTeXLinkMargin=\dimen163
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count296
-\Field@Width=\dimen168
-\Fld@charsize=\dimen169
+\Fld@menulength=\count293
+\Field@Width=\dimen164
+\Fld@charsize=\dimen165
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
@@ -368,9 +353,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count297
-\c@Item=\count298
-\c@Hfootnote=\count299
+\Hy@abspage=\count294
+\c@Item=\count295
+\c@Hfootnote=\count296
 )
 Package hyperref Info: Driver (autodetected): hluatex.
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hluatex.def
@@ -381,8 +366,8 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count300
-\c@bookmark@seq@number=\count301
+\Fld@listcount=\count297
+\c@bookmark@seq@number=\count298
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -390,7 +375,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip63
+\Hy@SectionHShift=\skip62
 ) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdfcomment/pdfcomment.sty
 Package: pdfcomment 2018/11/01 pdfcomment.sty v2.4a - Josef Kleber (C) 2008-2012, 2015-2016, 2018
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
@@ -399,25 +384,25 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 \XKV@toks=\toks24
 \XKV@tempa@toks=\toks25
 )
-\XKV@depth=\count302
+\XKV@depth=\count299
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\c@pc@count@i=\count303
-\c@pc@count@ii=\count304
-\c@pc@count@iii=\count305
-\c@pc@count@iv=\count306
-\pc@mathannot@box=\box55
-\pc@nullbox=\box56
-\pc@dima=\skip64
-\pc@dimb=\skip65
-\pc@Sposx=\skip66
-\pc@Sposy=\skip67
-\pc@Eposx=\skip68
-\pc@Eposy=\skip69
-\pc@column=\skip70
-\pc@box@width=\skip71
-\pc@box@height=\skip72
-\pc@box@depth=\skip73
+\c@pc@count@i=\count300
+\c@pc@count@ii=\count301
+\c@pc@count@iii=\count302
+\c@pc@count@iv=\count303
+\pc@mathannot@box=\box54
+\pc@nullbox=\box55
+\pc@dima=\skip63
+\pc@dimb=\skip64
+\pc@Sposx=\skip65
+\pc@Sposy=\skip66
+\pc@Eposx=\skip67
+\pc@Eposy=\skip68
+\pc@column=\skip69
+\pc@box@width=\skip70
+\pc@box@height=\skip71
+\pc@box@depth=\skip72
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/luatex85/luatex85.sty
 Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
 ) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/datetime2/datetime2.sty
@@ -436,35 +421,35 @@ Package zref Info: New property list: savepos on input line 79.
 Package zref Info: New property: posx on input line 84.
 Package zref Info: New property: posy on input line 85.
 )
-\c@zref@unique=\count307
+\c@zref@unique=\count304
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 ) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count308
-\calc@Bcount=\count309
-\calc@Adimen=\dimen170
-\calc@Bdimen=\dimen171
-\calc@Askip=\skip74
-\calc@Bskip=\skip75
+\calc@Acount=\count305
+\calc@Bcount=\count306
+\calc@Adimen=\dimen166
+\calc@Bdimen=\dimen167
+\calc@Askip=\skip73
+\calc@Bskip=\skip74
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count310
-\calc@Cskip=\skip76
+\calc@Ccount=\count307
+\calc@Cskip=\skip75
 ) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/marginnote/marginnote.sty
 Package: marginnote 2018/08/09 v1.4b non floating margin notes for LaTeX
-\c@mn@abspage=\count311
+\c@mn@abspage=\count308
 ) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 ) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 ) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/soulpos/soulpos.sty
 Package: soulpos 2021/10/15 v1.2 Fancy underlining
-\ulp@subcnt=\count312
-\ulp@cnt=\count313
-\ulp@out=\write4
-\ulp@in=\read3
-\ulwidth=\dimen172
+\ulp@subcnt=\count309
+\ulp@cnt=\count310
+\ulp@out=\write3
+\ulp@in=\read2
+\ulwidth=\dimen168
 )
 Package zref Info: New property list: pdfcomment on input line 2735.
 Package zref Info: New property: PCPDFOBJID on input line 2736.
@@ -476,36 +461,36 @@ Package: fmtcount 2020/01/30 v3.07
 Package: fcprefix 2012/09/28
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
 Package: fcnumparser 2017/06/15
-\fc@digit@counter=\count314
+\fc@digit@counter=\count311
 ))
-\c@padzeroesN=\count315
-\fc@tmpcatcode=\count316
-\@DT@modctr=\count317
-\@ordinalctr=\count318
-\@orgargctr=\count319
-\@strctr=\count320
-\@tmpstrctr=\count321
-\@DT@loopN=\count322
-\@DT@X=\count323
+\c@padzeroesN=\count312
+\fc@tmpcatcode=\count313
+\@DT@modctr=\count314
+\@ordinalctr=\count315
+\@orgargctr=\count316
+\@strctr=\count317
+\@tmpstrctr=\count318
+\@DT@loopN=\count319
+\@DT@X=\count320
 ) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/datetime/datetime-defaults.sty
 Package: datetime-defaults 2013/09/10
 )
-\@day=\count324
-\@month=\count325
-\@year=\count326
-\c@HOUR=\count327
-\c@HOURXII=\count328
-\c@MINUTE=\count329
-\c@TOHOUR=\count330
-\c@TOMINUTE=\count331
-\c@SECOND=\count332
-\currenthour=\count333
-\currentminute=\count334
-\currentsecond=\count335
+\@day=\count321
+\@month=\count322
+\@year=\count323
+\c@HOUR=\count324
+\c@HOURXII=\count325
+\c@MINUTE=\count326
+\c@TOHOUR=\count327
+\c@TOMINUTE=\count328
+\c@SECOND=\count329
+\currenthour=\count330
+\currentminute=\count331
+\currentsecond=\count332
 Package datetime Info: No datetime.cfg file found, using default settings on input line 308.
-\@dtctr=\count336
-\dayofyear=\count337
-\dayofweek=\count338
+\@dtctr=\count333
+\dayofyear=\count334
+\dayofweek=\count335
 LaTeX Info: Redefining \today on input line 736.
 \dt@a=\toks26
 \dt@b=\toks27
@@ -518,8 +503,8 @@ LaTeX Warning: Command \@arrayparboxrestore  has changed.
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2022/03/08 v6.0d a miscellany of footnote facilities
 \FN@temptoken=\toks28
-\footnotemargin=\dimen173
-\@outputbox@depth=\dimen174
+\footnotemargin=\dimen169
+\@outputbox@depth=\dimen170
 Package footmisc Info: Declaring symbol style bringhurst on input line 695.
 Package footmisc Info: Declaring symbol style chicago on input line 703.
 Package footmisc Info: Declaring symbol style wiley on input line 712.
@@ -527,20 +512,20 @@ Package footmisc Info: Declaring symbol style lamport-robust on input line 723.
 Package footmisc Info: Declaring symbol style lamport* on input line 743.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 764.
 )
-\CenteringLeftskip=\skip77
-\RaggedLeftLeftskip=\skip78
-\RaggedRightLeftskip=\skip79
-\CenteringRightskip=\skip80
-\RaggedLeftRightskip=\skip81
-\RaggedRightRightskip=\skip82
-\CenteringParfillskip=\skip83
-\RaggedLeftParfillskip=\skip84
-\RaggedRightParfillskip=\skip85
-\JustifyingParfillskip=\skip86
-\CenteringParindent=\skip87
-\RaggedLeftParindent=\skip88
-\RaggedRightParindent=\skip89
-\JustifyingParindent=\skip90
+\CenteringLeftskip=\skip76
+\RaggedLeftLeftskip=\skip77
+\RaggedRightLeftskip=\skip78
+\CenteringRightskip=\skip79
+\RaggedLeftRightskip=\skip80
+\RaggedRightRightskip=\skip81
+\CenteringParfillskip=\skip82
+\RaggedLeftParfillskip=\skip83
+\RaggedRightParfillskip=\skip84
+\JustifyingParfillskip=\skip85
+\CenteringParindent=\skip86
+\RaggedLeftParindent=\skip87
+\RaggedRightParindent=\skip88
+\JustifyingParindent=\skip89
 )
 luaotfload | cache : Lookup cache loaded from C:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
 luaotfload | aux : font no 18 (nil) defines no feature for script latn
@@ -586,7 +571,7 @@ Package fontspec Info: Font family 'Poppins(0)' created for font 'Poppins'
 
 luaotfload | aux : font no 27 (nil) defines no feature for script latn
 LaTeX Font Info:    Font shape `TU/Poppins(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 104.
+(Font)              scaled to size 12.0pt on input line 64.
 
 Package fontspec Info: Poppins scale = 0.9999976796313398.
 
@@ -627,11 +612,11 @@ Package fontspec Info: Font family 'Poppins(1)' created for font 'Poppins'
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/Poppins(1)/m/n on input line 104.
+(Font)                  OT1/lmr/m/n --> TU/Poppins(1)/m/n on input line 64.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/Poppins(1)/m/it on input line 104.
+(Font)                  OT1/lmr/m/it --> TU/Poppins(1)/m/it on input line 64.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/Poppins(1)/b/n on input line 104.
+(Font)                  OT1/lmr/bx/n --> TU/Poppins(1)/b/n on input line 64.
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/lualatex/selnolig/selnolig.sty
 === Package selnolig, Version 0.302, Date 2015/10/26 ===
 Package: selnolig 2015/10/26
@@ -639,7 +624,7 @@ Package: selnolig 2015/10/26
 Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/luatex/ctablestack/ctablestack.sty
 Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
-\@catcodetablestackcnt=\count339
+\@catcodetablestackcnt=\count336
 )
 \CatcodeTableOther=\catcodetable12
 \CatcodeTableExpl=\catcodetable13
@@ -647,34 +632,34 @@ Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
 Inserting `Suppress ligatures selectively' in `ligaturing'.) (./womens_history_story_draft.aux)
 \openout1 = womens_history_story_draft.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 152.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 152.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 152.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 152.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 112.
 
 Package fontspec Info: latinmodern-math scale = 1.271459464881562.
 
@@ -705,7 +690,7 @@ Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
 (fontspec)             \__um_luatex_copy_fontdimens: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 15.25745pt on input line 152.
+(Font)              scaled to size 15.25745pt on input line 112.
 
 Package fontspec Info: latinmodern-math scale = 1.271459464881562.
 
@@ -742,15 +727,15 @@ Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
 (fontspec)             \__um_luatex_copy_fontdimens: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 15.25745pt on input line 152.
+(Font)              scaled to size 15.25745pt on input line 112.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 152.
+(Font)              `operators' in the math version `normal' on input line 112.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 152.
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 112.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 152.
+(Font)              `operators' in the math version `bold' on input line 112.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 152.
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 112.
 
 Package fontspec Info: latinmodern-math scale = 1.271459464881562.
 
@@ -832,13 +817,13 @@ Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
 (fontspec)             \fontdimen 21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 152.
+(Font)              `symbols' in the math version `normal' on input line 112.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 152.
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 112.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 152.
+(Font)              `symbols' in the math version `bold' on input line 112.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 152.
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 112.
 
 Package fontspec Info: latinmodern-math scale = 1.271459464881562.
 
@@ -902,38 +887,38 @@ Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
 (fontspec)             \fontdimen 13\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 152.
+(Font)              `largesymbols' in the math version `normal' on input line 112.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 152.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 112.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 152.
+(Font)              `largesymbols' in the math version `bold' on input line 112.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 152.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 112.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.68019pt on input line 152.
+(Font)              scaled to size 10.68019pt on input line 112.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.62872pt on input line 152.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 152.
+(Font)              scaled to size 7.62872pt on input line 112.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 112.
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 15.2591pt on input line 152.
+(Font)              scaled to size 15.2591pt on input line 112.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.68135pt on input line 152.
+(Font)              scaled to size 10.68135pt on input line 112.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.62955pt on input line 152.
+(Font)              scaled to size 7.62955pt on input line 112.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 15.25598pt on input line 152.
+(Font)              scaled to size 15.25598pt on input line 112.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.67917pt on input line 152.
+(Font)              scaled to size 10.67917pt on input line 112.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.62799pt on input line 152.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 152.
+(Font)              scaled to size 7.62799pt on input line 112.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 112.
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 152.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 112.
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
@@ -976,12 +961,12 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 152.
+Package hyperref Info: Link coloring OFF on input line 112.
 (./womens_history_story_draft.out) (./womens_history_story_draft.out)
-\@outlinefile=\write5
+\@outlinefile=\write4
 
-\openout5 = womens_history_story_draft.out
-Package soulpos Info: Loading soulutf8 on input line 152.
+\openout4 = womens_history_story_draft.out
+Package soulpos Info: Loading soulutf8 on input line 112.
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/soulutf8/soulutf8.sty
 Package: soulutf8 2019/12/15 v1.2 Permit use of UTF-8 characters in soul (HO)
 (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/soul/soul.sty
@@ -991,33 +976,33 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@cmds=\toks31
 \SOUL@buffer=\toks32
 \SOUL@token=\toks33
-\SOUL@spaceskip=\skip91
-\SOUL@ttwidth=\dimen175
-\SOUL@uldp=\dimen176
-\SOUL@ulht=\dimen177
+\SOUL@spaceskip=\skip90
+\SOUL@ttwidth=\dimen171
+\SOUL@uldp=\dimen172
+\SOUL@ulht=\dimen173
 )) (c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fmtcount/fc-english.def
 File: fc-english.def 2016/01/12
 )
-Package ragged2e Info: ABD: executing \RaggedRight on input line 152.
+Package ragged2e Info: ABD: executing \RaggedRight on input line 112.
 luaotfload | aux : font no 18 (nil) defines no feature for script latn
 
 Package fontspec Info: Poppins scale = 0.9999976796313398.
 
 LaTeX Font Info:    Font shape `TU/Poppins(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 158.
+(Font)              scaled to size 17.28pt on input line 118.
 LaTeX Font Info:    Font shape `TU/Poppins(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 158.
-<C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png, id=16, 294.6207pt x 48.18pt>
+(Font)              scaled to size 17.28pt on input line 118.
+<C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png, id=20, 294.6207pt x 48.18pt>
 File: C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png Graphic file (type png)
 <use C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png>
-Package luatex.def Info: C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png  used on input line 160.
+Package luatex.def Info: C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png  used on input line 120.
 (luatex.def)             Requested size: 469.79332pt x 76.82634pt.
 LaTeX Font Info:    Font shape `TU/Poppins(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 171.
-<X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png, id=20, 503.9628pt x 89.3739pt>
+(Font)              scaled to size 12.0pt on input line 136.
+<X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png, id=25, 503.9628pt x 89.3739pt>
 File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
 <use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 179.
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 141.
 (luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
@@ -1027,15 +1012,24 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
 
 LaTeX Font Info:    Font shape `TU/Poppins(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 179.
+(Font)              scaled to size 8.0pt on input line 141.
 [1
 
 
-\openout4 = womens_history_story_draft.upa
+\openout3 = womens_history_story_draft.upa
 {c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<x:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png><c:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png>]
+LaTeX Font Info:    Font shape `TU/Poppins(0)/m/n' will be
+(Font)              scaled to size 14.4pt on input line 145.
+LaTeX Font Info:    Font shape `TU/Poppins(0)/b/n' will be
+(Font)              scaled to size 14.4pt on input line 145.
+<womens_history_story_draft_files/figure-latex/trip by gender-1.pdf, id=38, 433.62pt x 289.08pt>
+File: womens_history_story_draft_files/figure-latex/trip by gender-1.pdf Graphic file (type pdf)
+<use womens_history_story_draft_files/figure-latex/trip by gender-1.pdf>
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/trip by gender-1.pdf  used on input line 155.
+(luatex.def)             Requested size: 433.63878pt x 289.09251pt.
 File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
 <use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 307.
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 159.
 (luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
@@ -1047,7 +1041,7 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 [2]
 File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
 <use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 311.
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 169.
 (luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
@@ -1056,24 +1050,20 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
 
-[3]
-LaTeX Font Info:    Font shape `TU/Poppins(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 317.
-LaTeX Font Info:    Font shape `TU/Poppins(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 317.
-<womens_history_story_draft_files/figure-latex/unnamed-chunk-2-1.pdf, id=41, 469.755pt x 325.215pt>
-File: womens_history_story_draft_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf)
-<use womens_history_story_draft_files/figure-latex/unnamed-chunk-2-1.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/unnamed-chunk-2-1.pdf  used on input line 325.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-
-Overfull \hbox (180.25078pt too wide) in paragraph at lines 324--326
-[]\TU/Poppins(0)/m/n/12 Note to Megan: add axis ti-tles []  
- []
-
+[3<./womens_history_story_draft_files/figure-latex/trip by gender-1.pdf>]
+<womens_history_story_draft_files/figure-latex/PUMS employment by gender-1.pdf, id=55, 289.08pt x 144.54pt>
+File: womens_history_story_draft_files/figure-latex/PUMS employment by gender-1.pdf Graphic file (type pdf)
+<use womens_history_story_draft_files/figure-latex/PUMS employment by gender-1.pdf>
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/PUMS employment by gender-1.pdf  used on input line 185.
+(luatex.def)             Requested size: 289.09251pt x 144.54623pt.
+<womens_history_story_draft_files/figure-latex/Trip Distance by Gender-1.pdf, id=56, 289.08pt x 144.54pt>
+File: womens_history_story_draft_files/figure-latex/Trip Distance by Gender-1.pdf Graphic file (type pdf)
+<use womens_history_story_draft_files/figure-latex/Trip Distance by Gender-1.pdf>
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/Trip Distance by Gender-1.pdf  used on input line 191.
+(luatex.def)             Requested size: 289.09251pt x 144.54623pt.
 File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
 <use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 347.
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 193.
 (luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
@@ -1082,15 +1072,15 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
 
-[4<./womens_history_story_draft_files/figure-latex/unnamed-chunk-2-1.pdf>]
-<womens_history_story_draft_files/figure-latex/unnamed-chunk-3-1.pdf, id=49, 469.755pt x 325.215pt>
-File: womens_history_story_draft_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
-<use womens_history_story_draft_files/figure-latex/unnamed-chunk-3-1.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/unnamed-chunk-3-1.pdf  used on input line 349.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+[4<./womens_history_story_draft_files/figure-latex/PUMS employment by gender-1.pdf>]
+<womens_history_story_draft_files/figure-latex/Trips by Number of Travellers-1.pdf, id=65, 433.62pt x 289.08pt>
+File: womens_history_story_draft_files/figure-latex/Trips by Number of Travellers-1.pdf Graphic file (type pdf)
+<use womens_history_story_draft_files/figure-latex/Trips by Number of Travellers-1.pdf>
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/Trips by Number of Travellers-1.pdf  used on input line 197.
+(luatex.def)             Requested size: 433.63878pt x 289.09251pt.
 File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
 <use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 355.
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 201.
 (luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
@@ -1099,20 +1089,20 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
 
-[5<./womens_history_story_draft_files/figure-latex/unnamed-chunk-3-1.pdf>]
-<womens_history_story_draft_files/figure-latex/unnamed-chunk-4-1.pdf, id=57, 469.755pt x 325.215pt>
-File: womens_history_story_draft_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
-<use womens_history_story_draft_files/figure-latex/unnamed-chunk-4-1.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/unnamed-chunk-4-1.pdf  used on input line 361.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-<womens_history_story_draft_files/figure-latex/unnamed-chunk-5-1.pdf, id=58, 469.755pt x 325.215pt>
-File: womens_history_story_draft_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
-<use womens_history_story_draft_files/figure-latex/unnamed-chunk-5-1.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/unnamed-chunk-5-1.pdf  used on input line 373.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+[5<./womens_history_story_draft_files/figure-latex/Trip Distance by Gender-1.pdf><./womens_history_story_draft_files/figure-latex/Trips by Number of Travellers-1.pdf>]
+<womens_history_story_draft_files/figure-latex/Age group by gender-1.pdf, id=76, 433.62pt x 289.08pt>
+File: womens_history_story_draft_files/figure-latex/Age group by gender-1.pdf Graphic file (type pdf)
+<use womens_history_story_draft_files/figure-latex/Age group by gender-1.pdf>
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/Age group by gender-1.pdf  used on input line 203.
+(luatex.def)             Requested size: 433.63878pt x 289.09251pt.
+<womens_history_story_draft_files/figure-latex/Bike trips-1.pdf, id=77, 433.62pt x 289.08pt>
+File: womens_history_story_draft_files/figure-latex/Bike trips-1.pdf Graphic file (type pdf)
+<use womens_history_story_draft_files/figure-latex/Bike trips-1.pdf>
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/Bike trips-1.pdf  used on input line 209.
+(luatex.def)             Requested size: 433.63878pt x 289.09251pt.
 File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
 <use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 375.
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 211.
 (luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
@@ -1121,15 +1111,15 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
 
-[6<./womens_history_story_draft_files/figure-latex/unnamed-chunk-4-1.pdf>]
-<womens_history_story_draft_files/figure-latex/unnamed-chunk-6-1.pdf, id=65, 469.755pt x 325.215pt>
-File: womens_history_story_draft_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type pdf)
-<use womens_history_story_draft_files/figure-latex/unnamed-chunk-6-1.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/unnamed-chunk-6-1.pdf  used on input line 385.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+[6<./womens_history_story_draft_files/figure-latex/Age group by gender-1.pdf>]
+<womens_history_story_draft_files/figure-latex/2017/2019 to 2021-1.pdf, id=84, 433.62pt x 289.08pt>
+File: womens_history_story_draft_files/figure-latex/2017/2019 to 2021-1.pdf Graphic file (type pdf)
+<use womens_history_story_draft_files/figure-latex/2017/2019 to 2021-1.pdf>
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/2017/2019 to 2021-1.pdf  used on input line 220.
+(luatex.def)             Requested size: 433.63878pt x 289.09251pt.
 File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
 <use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 387.
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 222.
 (luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
@@ -1138,15 +1128,15 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
 
-[7<./womens_history_story_draft_files/figure-latex/unnamed-chunk-5-1.pdf>]
-<womens_history_story_draft_files/figure-latex/unnamed-chunk-7-1.pdf, id=72, 469.755pt x 325.215pt>
-File: womens_history_story_draft_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
-<use womens_history_story_draft_files/figure-latex/unnamed-chunk-7-1.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/unnamed-chunk-7-1.pdf  used on input line 397.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+[7<./womens_history_story_draft_files/figure-latex/Bike trips-1.pdf>]
+<womens_history_story_draft_files/figure-latex/2017/2019 to 2021 trips-1.pdf, id=92, 433.62pt x 289.08pt>
+File: womens_history_story_draft_files/figure-latex/2017/2019 to 2021 trips-1.pdf Graphic file (type pdf)
+<use womens_history_story_draft_files/figure-latex/2017/2019 to 2021 trips-1.pdf>
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/2017/2019 to 2021 trips-1.pdf  used on input line 226.
+(luatex.def)             Requested size: 433.63878pt x 289.09251pt.
 File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
 <use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 399.
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 228.
 (luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
@@ -1155,15 +1145,10 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
 
-[8<./womens_history_story_draft_files/figure-latex/unnamed-chunk-6-1.pdf>]
-<womens_history_story_draft_files/figure-latex/unnamed-chunk-8-1.pdf, id=79, 469.755pt x 325.215pt>
-File: womens_history_story_draft_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type pdf)
-<use womens_history_story_draft_files/figure-latex/unnamed-chunk-8-1.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/unnamed-chunk-8-1.pdf  used on input line 418.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
+[8<./womens_history_story_draft_files/figure-latex/2017/2019 to 2021-1.pdf>]
 File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
 <use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 420.
+Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 238.
 (luatex.def)             Requested size: 469.7725pt x 83.3105pt.
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
@@ -1172,44 +1157,27 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
 
-[9<./womens_history_story_draft_files/figure-latex/unnamed-chunk-7-1.pdf>]
-<womens_history_story_draft_files/figure-latex/unnamed-chunk-9-1.pdf, id=86, 469.755pt x 325.215pt>
-File: womens_history_story_draft_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (type pdf)
-<use womens_history_story_draft_files/figure-latex/unnamed-chunk-9-1.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/unnamed-chunk-9-1.pdf  used on input line 430.
-(luatex.def)             Requested size: 469.75386pt x 325.2142pt.
-File: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png Graphic file (type png)
-<use X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png>
-Package luatex.def Info: X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png  used on input line 432.
-(luatex.def)             Requested size: 469.7725pt x 83.3105pt.
-
-Package fancyhdr Warning: \headheight is too small (75.0pt): 
-(fancyhdr)                Make it at least 87.66054pt, for example:
-(fancyhdr)                \setlength{\headheight}{87.66054pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.66054pt}.
-
-[10<./womens_history_story_draft_files/figure-latex/unnamed-chunk-8-1.pdf>] [11<./womens_history_story_draft_files/figure-latex/unnamed-chunk-9-1.pdf>] (./womens_history_story_draft.aux * soulpos - computing points - it may take a few seconds *
-\openout4 = womens_history_story_draft.upb
+[9<./womens_history_story_draft_files/figure-latex/2017/2019 to 2021 trips-1.pdf>] (./womens_history_story_draft.aux * soulpos - computing points - it may take a few seconds *
+\openout3 = womens_history_story_draft.upb
  (./womens_history_story_draft.upa))
 Package rerunfilecheck Info: File `womens_history_story_draft.out' has not changed.
-(rerunfilecheck)             Checksum: A52F761A208B0721A22F0901395933D9;548.
+(rerunfilecheck)             Checksum: 8F8D7E5777385F55E194872012098BE3;918.
 )
 
 Here is how much of LuaTeX's memory you used:
- 24246 strings out of 478294
+ 23733 strings out of 478294
  100000,1977958 words of node,token memory allocated
- 637 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 8 attribute, 77 glue_spec, 8 attribute_list, 1 write, 1 user_defined nodes
-   avail lists: 2:440,3:173,4:184,5:83,6:45,7:9096,8:28,9:354,10:17,11:496
- 43492 multiletter control sequences out of 65536+600000
- 64 fonts using 10583691 bytes
- 86i,16n,122p,1038b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 632 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 8 attribute, 76 glue_spec, 8 attribute_list, 1 write, 1 user_defined nodes
+   avail lists: 1:1,2:339,3:178,4:82,5:69,6:46,7:6905,8:29,9:350,10:17,11:414
+ 43003 multiletter control sequences out of 65536+600000
+ 64 fonts using 10583771 bytes
+ 86i,15n,122p,1729b,474s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf><c:/Windows/Fonts/Poppins-Regular.ttf><c:/Windows/Fonts/Poppins-Bold.ttf>
-Output written on womens_history_story_draft.pdf (11 pages, 1272876 bytes).
+Output written on womens_history_story_draft.pdf (9 pages, 1433195 bytes).
 
-PDF statistics: 124 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
- 19 named destinations out of 1000 (max. 131072)
- 25 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 128 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
+ 21 named destinations out of 1000 (max. 131072)
+ 33 words of extra memory for PDF output out of 10000 (max. 100000000)
 
