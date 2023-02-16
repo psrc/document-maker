@@ -44,7 +44,7 @@ library(odbc)
 library(DBI)
 library(tidyr)
 library(psrcplot)
-library(tinytex)
+tinytex::reinstall_tinytex()
 library(tidyverse)
 library(knitr)
 library(magick)
@@ -52,16 +52,16 @@ library(openxlsx)
 library(htmlwidgets)
 library(magrittr)
 
-#output_dir<-file.path(getwd(), 'equity_example')
+output_dir<-file.path(getwd(), 'outputs')
 
 
 
-#if(!dir.exists(output_dir)){ 
- # dir.create(output_dir)
-#}
+if(!dir.exists(output_dir)){ 
+  dir.create(output_dir)
+}
 
-setwd("C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example")
-output_path <- "C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example"
+#setwd("C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example")
+#output_path <- "C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example"
 network_file_loc<-'X:/DSA/Trends/equity/images'
 
 # Create Image 
