@@ -1,14 +1,18 @@
 ---
-output: 
+author: "Suzanne Childress & Meg Grzybowski"
+date: "2023-02-16"
+output:
   pdf_document:
     latex_engine: lualatex
+  includes:
+    in_header: "X:/DSA/shiny-uploads/images/trend_format.tex"
+  word_document: default
 fontsize: 12pt
-  
 header-includes:
-  - \usepackage{xcolor}
-  - \usepackage{hyperref}
-  - \usepackage{pdfcomment}
-  - \usepackage{fancyhdr}
+- \usepackage{xcolor}
+- \usepackage{hyperref}
+- \usepackage{pdfcomment}
+- \usepackage{fancyhdr}
    \pagestyle{fancy}
    \setlength{\headheight}{75pt}
    \setlength{\textheight}{600pt}
@@ -21,16 +25,18 @@ header-includes:
    \renewcommand{\headrulewidth}{0pt}
    \renewcommand{\footrulewidth}{4pt}
    \renewcommand{\footrule}{\hbox to \headwidth{\color[HTML]{BCBEC0}\leaders\hrule height \footrulewidth\hfill}}
-  - \usepackage{fontspec}
-
+- \usepackage{fontspec}\fancyhead[C]\fancyhead[L]{\includegraphics{X:/DSA/shiny-uploads/images/PST_Equity_Edition-Trend_header.png}}
 ---
 \setmainfont{Poppins}
 
 # Understanding Women's Travel for Women's History Month
 ```{r setup, include=FALSE}
 ### Making the Charts and pdf documents now
-#.libPaths("C:/Users/MGrzybowski/AppData/Local/R/win-library/4.2")
+#install.packages("tinytex")
+#update.packages(ask = FALSE, checkBuilt = TRUE)
+#tinytex::tlmgr_update()
 
+library(rlang)
 library(dplyr)
 library(stringr)
 library(ggplot2)
@@ -38,6 +44,7 @@ library(forcats)
 library(odbc)
 library(DBI)
 library(tidyr)
+options(tinytex.verbose = TRUE)
 library(psrcplot)
 library(tidyverse)
 library(knitr)
@@ -46,11 +53,9 @@ library(openxlsx)
 library(htmlwidgets)
 library(magrittr)
 
-#tinytex::reinstall_tinytex()
-library(tinytex)
-
 # File name for Trend Data file to be created
 setwd("C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example")
+
 output_dir<-file.path(getwd(), 'outputs')
 
 if(!dir.exists(output_dir)){ 
