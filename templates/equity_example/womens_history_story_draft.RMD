@@ -8,7 +8,7 @@ fontsize: 12pt
   
 ---
 
-# Women's Travel Needs Often Go Overlooked & Unmet
+# Women's Travel Needs Often Go Overlooked
 
 ```{r setup, include=FALSE}
 ### Making the Charts and pdf documents now
@@ -62,7 +62,7 @@ source(here::here('templates/equity_example/womens_history_story_draft_datacrunc
 \begin{flushleft}
 The way in which we design our urban environments oftentimes overlooks the needs of families and female-identifying residents. Leslie Kern's book \href{https://metropolismag.com/viewpoints/leslie-kern-feminist-city/}{\underline{\textcolor{blue}{Feminist City}}} explores some of the ways in which we can redesign and shape our cities through a mor equitable process. \smallskip
 
-One example in particular, is how women have \href{http://libraryarchives.metro.net/DB_Attachments/2019-0294/UnderstandingHowWomenTravel_FullReport_FINAL.pdf}{\underline{\textcolor{blue}{transportation needs that have not historically been met}}} in urban environments. The regional transportation system (including transit) was traditionally designed around the need to quickly get to work at central locations. Women tend to carry significantly more of the care-giving burdens of society and thus need a system that works \bftext{safely} for traveling with others to a variety of locations \bftext{at all times of day}. Women also represent a large portion of older populations who have unique transportation needs that are not well-served by our system built around driving and work destinations. Furthermore, women are more likely to live in poverty and have lower incomes than men, which impact many aspects of transit needs and housing needs or limitations. (Read our Equity Trend story from last year about \href{https://www.psrc.org/about-us/media-hub/womens-history-month-progress-and-paychecks}{\underline{\textcolor{blue}{Women's History Month: progress and paychecks}}} for income disparities). \smallskip
+One example in particular, is how women have \href{http://libraryarchives.metro.net/DB_Attachments/2019-0294/UnderstandingHowWomenTravel_FullReport_FINAL.pdf}{\underline{\textcolor{blue}{transportation needs that have not historically been met}}} in urban environments. The regional transportation system (including transit) was traditionally designed around the need to quickly get to work at central locations. Women tend to carry significantly more of the care-giving burdens of society and thus need a system that works \textbf{safely} for traveling with others to a variety of locations \textbf{at all times of day}. Women also represent a large portion of older populations who have unique transportation needs that are not well-served by our system built around driving and work destinations. Furthermore, women are more likely to live in poverty and have lower incomes than men, which impact many aspects of transit needs and housing needs or limitations. (Read our Equity Trend story from last year about \href{https://www.psrc.org/about-us/media-hub/womens-history-month-progress-and-paychecks}{\underline{\textcolor{blue}{Women's History Month: progress and paychecks}}} for income disparities). \smallskip
 
 With the arrival of the COVID-19 pandemic, we saw a greater trend towards telecommuting for some people and continued trends in aging. With these new considerations at play, compounded with the existence on previous burdens on women, when will the transportation system evolve for women?
 \end{flushleft}
@@ -89,7 +89,9 @@ xlsx_file <- "womens_history.xlsx"
 ## Travel Behavior and Transit Trends
 
 \begin{flushleft}
-Through the analysis in this report, key trends have emerged that differentiate female-identifying resident’s travel patterns from men’s travel patterns, across all modes. Across all modes, more women are making many more trips \bftext{(7 or more)} per day than men. Inversely, more women than men are also not making any trips per day. This means women may experience more exposure to travel burdens (cost, stress, or safety risks), or may be more likely to be isolated or disconnected from the opportunities that travel affords. They exist more frequently on both sides of the spectrum.
+Through the analysis in this report, key trends have emerged that differentiate female-identifying resident’s travel patterns from men’s travel patterns, across all modes. Across all modes, more women are making many more trips \textbf{(7 or more)} per day than men. Inversely, more women than men are also not making any trips per day. This means women may experience more exposure to travel burdens (cost, stress, or safety risks), or may be more likely to be isolated or disconnected from the opportunities that travel affords. They exist more frequently on both sides of the spectrum.
+
+Womens' trips are more varied to a broader spread of destinations, and are more likely to primarily serve the needs of someone else (Figure 1). Women are more likely to live in a car-free or car-light household, take more trips with other people, take fewer single-occupant car trips than men, and are more likely to carpool or get a ride from a family member or friend if they don’t have a driver’s license. 
 \end{flushleft}
 
 ```{r trip by gender, fig.dim=c(6,4), echo = FALSE}
@@ -100,8 +102,6 @@ static_column_chart(t= summs_2017_2019, x='simple_purpose', y='share',  fill='ge
 ```
 
 \begin{flushleft}
-Womens' trips are more varied to a broader spread of destinations, and are more likely to primarily serve the needs of someone else (Figure 1). Women are more likely to live in a car-free or car-light household, take more trips with other people, take fewer single-occupant car trips than men, and are more likely to carpool or get a ride from a family member or friend if they don’t have a driver’s license. 
-
 Women in households with more than two people tend to travel more with other people than men (Figure 2). Transit is often not well set up for people who are traveling with strollers. The walk and bike network are not built out for people of all ages to use.
 \end{flushleft}
 
@@ -122,14 +122,14 @@ static_column_chart(t= trav_summs_2017_2019,
 \begin{flushleft}
 Women bike much less than men. Some of this is undoubtedly because of bike network design does not feel well-suited or safe for all people of different ages and abilities. There are many considerations as to why women do not feel comfortable riding bicycles as a form of transit, as seen in a study performed by the \href{https://www.itdp.org/2022/07/06/cyclings-gender-gap/}{\underline{\textcolor{blue}{Institute for Transportation and Development Policy}}} in 2022.  
 
-As a result of some of these considerations, in the Puget Sound Region in 2019 only \bftext{30,000} bike trips were made by women but \bftext{74,000} were made by men (Figure 3). 
+As a result of some of these considerations, in the Puget Sound Region in 2019 only \textbf{30,000} bike trips were made by women but \textbf{74,000} were made by men (Figure 3). 
 
 How can the transportation and land use system better accommodate older people, household maintenance and caregiving needs? Addressing these questions will improve the system for all genders.
 \end{flushleft}
 
-```{r Bike trips, fig.dim=c(3,2), echo = FALSE}
+```{r Bike trips, fig.dim=c(6,4), echo = FALSE}
 static_column_chart(t= mode_summs_2017_2019, x='mode_simple', y='count',  fill='gender', est='number', title= "Figure 3. Number of Bike Trips by Gender", source = 'Source: 2019 PSRC Household Travel Survey Data')+
-    labs(x = "Gender", y= "Number of Trips")
+    labs(x = "Gender")
 
 ```
 
@@ -148,6 +148,11 @@ These findings suggest that women are required to adjust their own schedule and 
 
 These travel behavior findings point towards many opportunities to adjust the services provided by Metro to better meet the travel needs expressed by those who are using transit. Development of a Gender Action Plan - or a tactical plan to implement policy, design, and service changes throughout the agency - wouldn help to articulate the immediate opportunities and long-term goals that would create a system that better serves women. Adjustments to services, vehicle design, and policy would help minimize the time, cost, safety, and physical burdens and additional emotional labor of riding transit for the more than half of all riders who are women. Gemma Hartley's book speaks to this added level of acrobatics that women oftentimes face when navigating caretaking, professional, and personal hurdles in \href{https://www.gemmahartley.com/}{\underline{\textcolor{blue}{Fed Up: Emotional Labor, Women and the Way Forward}}}.
 \end{flushleft}
+
+\newpage
+\setlength{\headheight}{10pt}
+\setlength{\textheight}{665pt}
+\fancyhead[L]{}
 
 ## Nationwide Data Shows Similar Burdens and Constraints
 
@@ -185,7 +190,7 @@ distance <- static_column_chart(t= summs_2017_2019_dist,
 
 ```
 
-```{r matrix, fig.height = 2.3, fig.width = 4, fig.cap= "Source: ACS 2019 1-year; Sex by Employment Status and 2017/2019 Household Travel Survey", fig.subcap=c('Employment', 'Trip Distance'), fig.ncol = 2, out.width = "50%", fig.pos= "H", echo = FALSE}
+```{r matrix, fig.height = 2.3, fig.width = 4, fig.ncol = 2, out.width = "50%", fig.pos= "H", echo = FALSE}
 
 employ__gender_chart_19
 distance
@@ -219,7 +224,7 @@ static_column_chart(pums19_sex_age,
 COVID-19 brought about abrupt changes to the transportation landscape. The 2021 Household Travel survey showed big changes in travel behavior. More people were walking and biking, and less people were using transit. Many more people began to telework. Women teleworked more than men, before COVID-19, and the data shows this increase even more in 2021. In 2021, 41\% of women teleworked, as compared to 33\% of men. The difference between telework rates relates to women's job sectors as compared to men, and also household responsibilities.
 \end{flushleft}
 
-```{r 2017/2019 to 2021 charts, fig.dim=c(3,2), echo = FALSE}
+```{r 2017/2019 to 2021 charts, fig.dim=c(6,4), echo = FALSE}
 telecommute <- static_line_chart(t= work_loc_trend, 
                                  x='survey', 
                                  y='share',  

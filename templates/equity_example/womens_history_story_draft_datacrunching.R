@@ -154,17 +154,17 @@ data_17_19<-data_17_19%>%mutate(NoVehicles=ifelse(vehicle_count=='0 (no vehicles
   
   mutate(race_short= str_extract(race_eth_broad,  "^[^ ]+"))%>%
   mutate(simple_purpose=ifelse(dest_purpose_cat=='Home', origin_purpose_cat, dest_purpose_cat))%>%
-  mutate(simple_purpose=case_when(simple_purpose=='Work'~ 'Work/School',
-                                  simple_purpose=='School'~ 'Work/School',
-                                  simple_purpose=='Work-related'~ 'Work/School',
+  mutate(simple_purpose=case_when(simple_purpose=='Work'~ 'Work School',
+                                  simple_purpose=='School'~ 'Work School',
+                                  simple_purpose=='Work-related'~ 'Work or School',
                                   simple_purpose=='Shop'~ 'Shop',
                                   simple_purpose=='Escort'~ 'Escort Passenger',
-                                  simple_purpose=='Errand/Other'~ 'Errands/Other',
-                                  simple_purpose=='Change mode'~ 'Errands/Other',
-                                  simple_purpose=='Social/Recreation' ~ 'Social/Recreation/Meal',
-                                  simple_purpose=='Meal' ~ 'Social/Recreation/Meal',
-                                  simple_purpose=='Home' ~'Errands/Other',
-                                  is.na(simple_purpose) ~ 'Errands/Other',
+                                  simple_purpose=='Errand/Other'~ 'Errands Other',
+                                  simple_purpose=='Change mode'~ 'Errands Other',
+                                  simple_purpose=='Social/Recreation' ~ 'Social, Recreation, Meal',
+                                  simple_purpose=='Meal' ~ 'Social, Recreation, Meal',
+                                  simple_purpose=='Home' ~'Errands Other',
+                                  is.na(simple_purpose) ~ 'Errands Other',
                                   TRUE ~ simple_purpose))%>%mutate(rgc=as.factor(final_home_is_rgc))%>%
   mutate(non_motorized_mode=ifelse((mode_simple=='Walk'|mode_simple=='Bike'),'Walk/Bike', 'Not Walk/Bike'))%>%
   mutate(mode_acc_walk=ifelse(mode_acc=='Walked or jogged', 'Walked or jogged', 'Other Access Mode'))%>%
@@ -197,17 +197,17 @@ data_21<-data_21%>%mutate(NoVehicles=ifelse(vehicle_count=='0 (no vehicles)', 'N
                                TRUE ~ gender))%>%
   mutate(work_purpose=ifelse(dest_purpose_cat=='Work', 'Work', 'Not Work'))%>%
   mutate(simple_purpose=ifelse(dest_purpose_cat=='Home', origin_purpose_cat, dest_purpose_cat))%>%
-  mutate(simple_purpose=case_when(simple_purpose=='Work'~ 'Work/School',
-                                  simple_purpose=='School'~ 'Work/School',
-                                  simple_purpose=='Work-related'~ 'Work/School',
+  mutate(simple_purpose=case_when(simple_purpose=='Work'~ 'Work School',
+                                  simple_purpose=='School'~ 'Work School',
+                                  simple_purpose=='Work-related'~ 'Work School',
                                   simple_purpose=='Shop'~ 'Shop',
                                   simple_purpose=='Escort'~ 'Escort Passenger',
-                                  simple_purpose=='Errand/Other'~ 'Errands/Other',
-                                  simple_purpose=='Change mode'~ 'Errands/Other',
-                                  simple_purpose=='Social/Recreation' ~ 'Social/Recreation/Meal',
-                                  simple_purpose=='Meal' ~ 'Social/Recreation/Meal',
-                                  simple_purpose=='Home' ~'Errands/Other',
-                                  is.na(simple_purpose) ~ 'Errands/Other',
+                                  simple_purpose=='Errand/Other'~ 'Errands Other',
+                                  simple_purpose=='Change mode'~ 'Errands Other',
+                                  simple_purpose=='Social/Recreation' ~ 'Social, Recreation, Meal',
+                                  simple_purpose=='Meal' ~ 'Social, Recreation, Meal',
+                                  simple_purpose=='Home' ~'Errands Other',
+                                  is.na(simple_purpose) ~ 'Errands Other',
                                   TRUE ~ simple_purpose))%>%mutate(rgc=as.factor(final_home_is_rgc))%>%
   mutate(non_motorized_mode=ifelse((mode_simple=='Walk'|mode_simple=='Bike'),'Walk/Bike', 'Not Walk/Bike'))%>%
   mutate(mode_acc_walk=ifelse(mode_acc=='Walked or jogged', 'Walked or jogged', 'Other Access Mode'))%>%
