@@ -38,6 +38,16 @@ header-includes:
 #update.packages(ask = FALSE, checkBuilt = TRUE)
 #tinytex::tlmgr_update()
 
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{pdfcomment}
+\usepackage{datetime}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage[document]{ragged2e}
+
 library(rlang)
 library(dplyr)
 library(stringr)
@@ -56,6 +66,11 @@ library(openxlsx)
 library(htmlwidgets)
 library(magrittr)
 
+opts_chunk$set(echo=FALSE, 
+               warning=FALSE, 
+               message=FALSE,
+               fig.align = "center"
+               )
 
 #output_dir<-file.path(getwd(), 'outputs')
 
@@ -176,7 +191,7 @@ distance <- static_column_chart(t= summs_2017_2019_dist, x='gender', y='trip_pat
 
 ```
 
-```{r matrix, fig.height = 2.3, fig.width = 4, fig.cap= "Source: ACS 2019 1-year; Sex by Employment Status and 2017/2019 Household Travel Survey", fig.subcap=c('Employment', 'Trip Distance'), fig.ncol = 2}
+```{r matrix, fig.height = 2.3, fig.width = 4, fig.cap= "Source: ACS 2019 1-year; Sex by Employment Status and 2017/2019 Household Travel Survey", fig.subcap=c('Employment', 'Trip Distance'), fig.ncol = 2, out.width = "50%", fig.pos= "H"}
 
 employ__gender_chart_19
 distance
