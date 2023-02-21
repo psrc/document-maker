@@ -172,7 +172,7 @@ distance <- static_column_chart(t= summs_2017_2019_dist,
                                 fill='gender', 
                                 color = "psrc_pairs",
                                 est='number', 
-                                title=' Trip Distance by Gender')+
+                                title=' 2017/2019 Trip Distance by Gender')+
     labs(x = "Gender")
 
 ```
@@ -200,6 +200,13 @@ static_column_chart(pums19_sex_age,
 
 ```
 
+\newpage
+\setlength{\headheight}{10pt}
+\setlength{\textheight}{665pt}
+\fancyhead[L]{}
+
+## Changes Brought about by COVID-19 Pandemic
+
 \begin{flushleft}
 COVID-19 brought about abrupt changes to the transportation landscape. The 2021 Household Travel survey showed big changes in travel behavior. More people were walking and biking, and less people were using transit. Many more people began to telework. Women teleworked more than men, before COVID-19, and the data shows this difference increase even more in 2021. In 2021, 41\% of women teleworked, as compared to 33\% of men. The difference between telework rates relates to women's job sectors as compared to men, and also household responsibilities.
 \end{flushleft}
@@ -213,11 +220,13 @@ telecommute <- static_line_chart(t= work_loc_trend,
                                  est='percent') +
                                 xlab('Year')+ylab('Percent of Workers')
 
-changez <- static_facet_column_chart(t= summs_2017_2019_2021, x='simple_purpose', y='share',  fill='gender', color = "psrc_pairs", facet='survey', moe='share_moe', est='percent')
+changez <- static_facet_column_chart(t= summs_2017_2019_2021, x='simple_purpose', y='share',  fill='gender', color = "psrc_pairs", facet='survey', moe='share_moe', est='percent')+
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 3))
+
 ```
 
 
-```{r 2017/2019 to 2021, fig.height = 2.3, fig.width = 4, fig.subcap= c('Percentage of Telecommuting Workers', 'Changes in Travel Purpose between 2017/2019 and 2021'), fig.ncol = 2, out.width = "50%", fig.pos= "H", echo = FALSE}
+```{r 2017/2019 to 2021, fig.height = 2.3, fig.width = 4, fig.subcap= c('Percentage of Telecommuting Workers', 'Changes in Travel Purpose between 2017/2019 and 2021'), fig.ncol = 2, out.width = "50%", fig.pos= "C", echo = FALSE}
 
 telecommute
 changez

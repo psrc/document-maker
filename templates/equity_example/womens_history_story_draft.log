@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.2.21)  21 FEB 2023 13:22
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.2.21)  21 FEB 2023 13:27
  restricted system commands enabled.
 **womens_history_story_draft.tex
 (./womens_history_story_draft.tex
@@ -1050,12 +1050,12 @@ LaTeX Font Info:    Font shape `TU/Poppins(0)/m/n' will be
 (Font)              scaled to size 17.28pt on input line 100.
 LaTeX Font Info:    Font shape `TU/Poppins(0)/b/n' will be
 (Font)              scaled to size 17.28pt on input line 100.
-<C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png, id=20, 441.5697pt x 72.27pt>
+<C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png, id=24, 441.5697pt x 72.27pt>
 File: C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png Graphic file (type png)
 <use C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png>
 Package luatex.def Info: C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png  used on input line 102.
 (luatex.def)             Requested size: 469.75958pt x 76.8837pt.
-<X:/DSA/Trends/household-travel-survey/headers/PST_2021_HTS_header.png, id=23, 503.9628pt x 88.1694pt>
+<X:/DSA/Trends/household-travel-survey/headers/PST_2021_HTS_header.png, id=27, 503.9628pt x 88.1694pt>
 File: X:/DSA/Trends/household-travel-survey/headers/PST_2021_HTS_header.png Graphic file (type png)
 <use X:/DSA/Trends/household-travel-survey/headers/PST_2021_HTS_header.png>
 Package luatex.def Info: X:/DSA/Trends/household-travel-survey/headers/PST_2021_HTS_header.png  used on input line 112.
@@ -1074,7 +1074,7 @@ LaTeX Font Info:    Font shape `TU/Poppins(0)/m/n' will be
 
 \openout3 = womens_history_story_draft.upa
 {c:/Users/MGrzybowski/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<x:/DSA/Trends/household-travel-survey/headers/PST_2021_HTS_header.png><c:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png>]
-<womens_history_story_draft_files/figure-latex/trip by gender-1.pdf, id=36, 433.62pt x 289.08pt>
+<womens_history_story_draft_files/figure-latex/trip by gender-1.pdf, id=40, 433.62pt x 289.08pt>
 File: womens_history_story_draft_files/figure-latex/trip by gender-1.pdf Graphic file (type pdf)
 <use womens_history_story_draft_files/figure-latex/trip by gender-1.pdf>
 Package luatex.def Info: womens_history_story_draft_files/figure-latex/trip by gender-1.pdf  used on input line 128.
@@ -1084,71 +1084,79 @@ LaTeX Font Info:    Font shape `TU/Poppins(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/Poppins(0)/b/n' will be
 (Font)              scaled to size 14.4pt on input line 132.
 [2<./womens_history_story_draft_files/figure-latex/trip by gender-1.pdf>]
-<womens_history_story_draft_files/figure-latex/Trips by Number of Travellers-1.pdf, id=46, 433.62pt x 289.08pt>
+<womens_history_story_draft_files/figure-latex/Trips by Number of Travellers-1.pdf, id=50, 433.62pt x 289.08pt>
 File: womens_history_story_draft_files/figure-latex/Trips by Number of Travellers-1.pdf Graphic file (type pdf)
 <use womens_history_story_draft_files/figure-latex/Trips by Number of Travellers-1.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/Trips by Number of Travellers-1.pdf  used on input line 143.
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/Trips by Number of Travellers-1.pdf  used on input line 142.
 (luatex.def)             Requested size: 433.63878pt x 289.09251pt.
-<womens_history_story_draft_files/figure-latex/Bike trips-1.pdf, id=47, 433.62pt x 289.08pt>
+<womens_history_story_draft_files/figure-latex/Bike trips-1.pdf, id=51, 433.62pt x 289.08pt>
 File: womens_history_story_draft_files/figure-latex/Bike trips-1.pdf Graphic file (type pdf)
 <use womens_history_story_draft_files/figure-latex/Bike trips-1.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/Bike trips-1.pdf  used on input line 149.
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/Bike trips-1.pdf  used on input line 148.
 (luatex.def)             Requested size: 433.63878pt x 289.09251pt.
 [3<./womens_history_story_draft_files/figure-latex/Trips by Number of Travellers-1.pdf>]
 LaTeX Font Info:    Font shape `TU/Poppins(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 159.
+(Font)              scaled to size 12.0pt on input line 158.
 [4<./womens_history_story_draft_files/figure-latex/Bike trips-1.pdf>] [5]
-<womens_history_story_draft_files/figure-latex/matrix-1.pdf, id=69, 289.08pt x 165.61874pt>
+<womens_history_story_draft_files/figure-latex/matrix-1.pdf, id=74, 289.08pt x 165.61874pt>
 File: womens_history_story_draft_files/figure-latex/matrix-1.pdf Graphic file (type pdf)
 <use womens_history_story_draft_files/figure-latex/matrix-1.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/matrix-1.pdf  used on input line 187.
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/matrix-1.pdf  used on input line 181.
 (luatex.def)             Requested size: 234.8769pt x 134.56488pt.
 LaTeX Font Info:    Font shape `TU/Poppins(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 187.
-<womens_history_story_draft_files/figure-latex/matrix-2.pdf, id=70, 289.08pt x 165.61874pt>
+(Font)              scaled to size 10.0pt on input line 181.
+<womens_history_story_draft_files/figure-latex/matrix-2.pdf, id=75, 289.08pt x 165.61874pt>
 File: womens_history_story_draft_files/figure-latex/matrix-2.pdf Graphic file (type pdf)
 <use womens_history_story_draft_files/figure-latex/matrix-2.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/matrix-2.pdf  used on input line 187.
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/matrix-2.pdf  used on input line 181.
 (luatex.def)             Requested size: 234.8769pt x 134.56488pt.
 
-Overfull \hbox (6.40678pt too wide) in paragraph at lines 187--187
+Overfull \hbox (6.40678pt too wide) in paragraph at lines 181--181
 [][][][]  
  []
 
-<womens_history_story_draft_files/figure-latex/Age group by gender-1.pdf, id=72, 433.62pt x 289.08pt>
+<womens_history_story_draft_files/figure-latex/Age group by gender-1.pdf, id=77, 433.62pt x 289.08pt>
 File: womens_history_story_draft_files/figure-latex/Age group by gender-1.pdf Graphic file (type pdf)
 <use womens_history_story_draft_files/figure-latex/Age group by gender-1.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/Age group by gender-1.pdf  used on input line 194.
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/Age group by gender-1.pdf  used on input line 188.
 (luatex.def)             Requested size: 433.63878pt x 289.09251pt.
-[6<./womens_history_story_draft_files/figure-latex/matrix-1.pdf><./womens_history_story_draft_files/figure-latex/matrix-2.pdf>]
-<womens_history_story_draft_files/figure-latex/2017/2019 to 2021-1.pdf, id=86, 289.08pt x 165.61874pt>
+[6<./womens_history_story_draft_files/figure-latex/matrix-1.pdf><./womens_history_story_draft_files/figure-latex/matrix-2.pdf><./womens_history_story_draft_files/figure-latex/Age group by gender-1.pdf>]
+<womens_history_story_draft_files/figure-latex/2017/2019 to 2021-1.pdf, id=92, 289.08pt x 165.61874pt>
 File: womens_history_story_draft_files/figure-latex/2017/2019 to 2021-1.pdf Graphic file (type pdf)
 <use womens_history_story_draft_files/figure-latex/2017/2019 to 2021-1.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/2017/2019 to 2021-1.pdf  used on input line 200.
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/2017/2019 to 2021-1.pdf  used on input line 194.
 (luatex.def)             Requested size: 234.8769pt x 134.56488pt.
-<womens_history_story_draft_files/figure-latex/2017/2019 to 2021-2.pdf, id=87, 289.08pt x 165.61874pt>
+<womens_history_story_draft_files/figure-latex/2017/2019 to 2021-2.pdf, id=93, 289.08pt x 165.61874pt>
 File: womens_history_story_draft_files/figure-latex/2017/2019 to 2021-2.pdf Graphic file (type pdf)
 <use womens_history_story_draft_files/figure-latex/2017/2019 to 2021-2.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/2017/2019 to 2021-2.pdf  used on input line 201.
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/2017/2019 to 2021-2.pdf  used on input line 195.
 (luatex.def)             Requested size: 234.8769pt x 134.56488pt.
-[7<./womens_history_story_draft_files/figure-latex/Age group by gender-1.pdf><./womens_history_story_draft_files/figure-latex/2017/2019 to 2021-1.pdf>]
 
-! LaTeX Error: \begin{flushleft} on input line 134 ended by \end{document}.
+Overfull \hbox (3.20279pt too wide) in paragraph at lines 194--196
+[][] []  
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.214 \end{document}
-                  
+[7<./womens_history_story_draft_files/figure-latex/2017/2019 to 2021-1.pdf><./womens_history_story_draft_files/figure-latex/2017/2019 to 2021-2.pdf>] (./womens_history_story_draft.aux * soulpos - computing points - it may take a few seconds *
+\openout3 = womens_history_story_draft.upb
+ (./womens_history_story_draft.upa))
+Package rerunfilecheck Info: File `womens_history_story_draft.out' has not changed.
+(rerunfilecheck)             Checksum: 048C7DC148229799C2D174C98B5B59EF;1264.
+)
 
 Here is how much of LuaTeX's memory you used:
- 25256 strings out of 478294
+ 25275 strings out of 478294
  100000,1977958 words of node,token memory allocated
- 2198 words of node memory still in use:
-   24 hlist, 1 vlist, 3 rule, 3 mark, 9 disc, 3 local_par, 1 dir, 52 glue, 6 kern, 16 penalty, 82 glyph, 54 attribute, 91 glue_spec, 54 attribute_list, 1 if_stack, 4 write, 1 close, 1 user_defined, 2 pdf_dest, 4 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
-   avail lists: 1:1,2:338,3:128,4:64,5:55,6:38,7:4541,8:17,9:291,10:17,11:279
- 44542 multiletter control sequences out of 65536+600000
- 64 fonts using 10613739 bytes
- 86i,15n,130p,1738b,681s stack positions out of 10000i,1000n,20000p,200000b,200000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 647 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 8 attribute, 79 glue_spec, 8 attribute_list, 1 write, 1 user_defined nodes
+   avail lists: 1:1,2:372,3:130,4:68,5:59,6:35,7:6744,8:19,9:294,10:17,11:467
+ 44546 multiletter control sequences out of 65536+600000
+ 64 fonts using 10613819 bytes
+ 86i,15n,130p,1738b,557s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/Windows/Fonts/Poppins-Regular.ttf><c:/Windows/Fonts/Poppins-Bold.ttf>
+Output written on womens_history_story_draft.pdf (7 pages, 2040863 bytes).
+
+PDF statistics: 120 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 131072)
+ 41 words of extra memory for PDF output out of 10000 (max. 100000000)
+
