@@ -98,7 +98,7 @@ Womens' trips are more varied to a broader spread of destinations, and are more 
 static_column_chart(t= summs_2017_2019, x='simple_purpose', y='share',  fill='gender', moe='share_moe', est='percent', title= 'Figure 1. Trip Purpose by Gender', source= 'Source: 2017/2019 Household Travel Survey',
                     color="pognbgy_5")+
     labs(x = "Gender", y= "Percentage of People")+
-  scale_x_discrete(labels = function(x) str_wrap(x, width = 3))
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 5))
 ```
 
 \begin{flushleft}
@@ -232,7 +232,7 @@ telecommute <- static_line_chart(t= work_loc_trend,
                                  color = 'psrc_pairs', 
                                  est='percent',
                                  title = 'Increase in Telework by Gender') +
-                                xlab('2021')+ylab('Percent of Workers Telecommuting')
+                                xlab('2021')
 
 telecommute
 
@@ -242,7 +242,7 @@ telecommute
 ```{r 2017/2019 to 2021, fig.dim=c(6,4), echo = FALSE}
 
 changez <- static_facet_column_chart(t= summs_2017_2019_2021, x='simple_purpose', y='share',  fill='gender', color = "psrc_pairs", facet='survey', moe='share_moe', est='percent')+
-  scale_x_discrete(labels = function(x) str_wrap(x, width = 3))
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 5))
 
 changez
 

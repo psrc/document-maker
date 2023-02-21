@@ -156,7 +156,7 @@ data_17_19<-data_17_19%>%mutate(NoVehicles=ifelse(vehicle_count=='0 (no vehicles
   mutate(simple_purpose=ifelse(dest_purpose_cat=='Home', origin_purpose_cat, dest_purpose_cat))%>%
   mutate(simple_purpose=case_when(simple_purpose=='Work'~ 'Work School',
                                   simple_purpose=='School'~ 'Work School',
-                                  simple_purpose=='Work-related'~ 'Work or School',
+                                  simple_purpose=='Work-related'~ 'Work School',
                                   simple_purpose=='Shop'~ 'Shop',
                                   simple_purpose=='Escort'~ 'Escort Passenger',
                                   simple_purpose=='Errand/Other'~ 'Errands Other',
