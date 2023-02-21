@@ -120,19 +120,23 @@ static_column_chart(t= trav_summs_2017_2019,
 ```
 
 \begin{flushleft}
-Women bike much less than men. Some of this is undoubtedly because of bike network design does not feel well-suited or safe for all people of different ages and abilities. As a result, in the Puget Sound Region in 2019 only 30,000 bike trips were made by women but 74,000 men. 
+Women bike much less than men. Some of this is undoubtedly because of bike network design does not feel well-suited or safe for all people of different ages and abilities. There are many considerations as to why women do not feel comfortable riding bicycles as a form of transit, as seen in a study performed by the \href{https://www.itdp.org/2022/07/06/cyclings-gender-gap/}{\underline{\textcolor{blue}{Institute for Transportation and Development Policy}}} in 2022.  
+
+As a result of some of these considerations, in the Puget Sound Region in 2019 only \bftext{30,000} bike trips were made by women but \bftext{74,000} were made by men (Figure 3). 
 
 How can the transportation and land use system better accommodate older people, household maintenance and caregiving needs? Addressing these questions will improve the system for all genders.
 \end{flushleft}
 
 ```{r Bike trips, fig.dim=c(3,2), echo = FALSE}
-static_column_chart(t= mode_summs_2017_2019, x='mode_simple', y='count',  fill='gender', est='number', title= "Number of Bike Trips by Gender", source = 'Source: 2019 PSRC Household Travel Survey Data')+
+static_column_chart(t= mode_summs_2017_2019, x='mode_simple', y='count',  fill='gender', est='number', title= "Figure 3. Number of Bike Trips by Gender", source = 'Source: 2019 PSRC Household Travel Survey Data')+
     labs(x = "Gender", y= "Number of Trips")
 
 ```
 
 \begin{flushleft}
 Among female transit riders, almost 90\% ride the system more than three days per week. Fifty-seven percent of women bring their children on transit, and they often ride transit because they do not have a car, they want to avoid traffic, or because they do not have a license. Two of these three reasons indicate that women who ride transit do so because they have fewer transportation options, and may have less access to economic opportunities as a result. Over 85\% of women riders use Metro to travel to work or school, and of those women, 32\% also use Metro to run errands or complete recreational trips. Among people who make household serving trips most frequently, these trips comprise the same share for women whether they use transit or not; for men, the share of household-serving trips declines if they are transit users. This shows that while men are more likely to find alternatives to using transit to complete household-serving trips (using a different mode or taking fewer trips), women are less likely to find an alternative, and instead work to make the transit system work for their needs. Although the rate of adoption for Transportation Network Companies (TNCs) like Uber and Lyft is the same for men and women, women are more likely than men to report that their transit use has stayed the same as they have also begun to use TNCs. Women are more likely than men to say they use TNCs for trips that transit does not serve, while men are more likely to say they use TNCs to reach a transit stop or station. The trips that are not served by transit may be related to time or location, as women’s needs differ from men’s needs by both time of day and location.
+
+Speaking again to safety, the conversation is slightly different from that pertaining to bike and road safety, but speaks more to the harrassment and violence that women and women-identifying folks experience in shared spaces or transit. \href{https://www.itdp.org/2022/07/06/cyclings-gender-gap/}{\underline{\textcolor{blue}{The Institute for Transportation and Development Policy}}}
 \end{flushleft}
 
 #### Implications for Women's Limitations and Access
@@ -215,7 +219,7 @@ static_column_chart(pums19_sex_age,
 COVID-19 brought about abrupt changes to the transportation landscape. The 2021 Household Travel survey showed big changes in travel behavior. More people were walking and biking, and less people were using transit. Many more people began to telework. Women teleworked more than men, before COVID-19, and the data shows this increase even more in 2021. In 2021, 41\% of women teleworked, as compared to 33\% of men. The difference between telework rates relates to women's job sectors as compared to men, and also household responsibilities.
 \end{flushleft}
 
-```{r 2017/2019 to 2021 charts, fig.dim=c(3,2) echo = FALSE}
+```{r 2017/2019 to 2021 charts, fig.dim=c(3,2), echo = FALSE}
 telecommute <- static_line_chart(t= work_loc_trend, 
                                  x='survey', 
                                  y='share',  
