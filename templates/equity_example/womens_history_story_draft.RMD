@@ -89,6 +89,8 @@ xlsx_file <- "womens_history.xlsx"
 
 ## Travel Behavior and Transit Trends
 
+### Travel Demands Put Different Pressures on Women
+
 \begin{flushleft}
 Through the analysis in this report, key trends have emerged that differentiate female-identifying resident’s travel patterns from men’s travel patterns, across all modes. Across all modes, more women are making many more trips \textbf{(7 or more)} per day than men. Inversely, more women than men are also not making any trips per day. This means women may experience more exposure to travel burdens (cost, stress, or safety risks), or may be more likely to be isolated or disconnected from the opportunities that travel affords. They exist more frequently on both sides of the spectrum.
 
@@ -106,7 +108,7 @@ static_column_chart(t= summs_2017_2019, x='simple_purpose', y='share',  fill='ge
 Women in households with more than two people tend to travel more with other people than men (Figure 2). Transit is often not well set up for people who are traveling with strollers. The walk and bike network are not built out for people of all ages to use.
 \end{flushleft}
 
-### Transit isn't Always Efficient for Women
+### Transit isn't Always the Most Efficient Mode
 
 \begin{flushleft}
 Among female transit riders, almost 90\% ride the system more than three days per week. Fifty-seven percent of women bring their children on transit, and they often ride transit because they do not have a car, they want to avoid traffic, or because they do not have a license. Two of these three reasons indicate that women who ride transit do so because they have fewer transportation options, and may have less access to economic opportunities as a result. Over 85\% of women riders use Metro to travel to work or school, and of those women, 32\% also use Metro to run errands or complete recreational trips. Among people who make household serving trips most frequently, these trips comprise the same share for women whether they use transit or not; for men, the share of household-serving trips declines if they are transit users. This shows that while men are more likely to find alternatives to using transit to complete household-serving trips (using a different mode or taking fewer trips), women are less likely to find an alternative, and instead work to make the transit system work for their needs. Although the rate of adoption for Transportation Network Companies (TNCs) like Uber and Lyft is the same for men and women, women are more likely than men to report that their transit use has stayed the same as they have also begun to use TNCs. Women are more likely than men to say they use TNCs for trips that transit does not serve, while men are more likely to say they use TNCs to reach a transit stop or station. The trips that are not served by transit may be related to time or location, as women’s needs differ from men’s needs by both time of day and location.
@@ -130,8 +132,6 @@ static_column_chart(t= trav_summs_2017_2019,
 \setlength{\textheight}{665pt}
 \fancyhead[L]{}
 
-## Transportation Modalities
-
 ### Women Bike Commute Far Less than Men
 
 \begin{flushleft}
@@ -151,11 +151,6 @@ Not only are certain modalities not conducive to ways in which women move abou t
 
 How can the transportation and land use system better accommodate older people, household maintenance and caregiving needs? Addressing these questions will improve the system for all genders.
 \end{flushleft}
-
-\newpage
-\setlength{\headheight}{10pt}
-\setlength{\textheight}{665pt}
-\fancyhead[L]{}
 
 ## Implications for Women's Limitations and Accessibility
 
@@ -188,7 +183,7 @@ distance <- static_column_chart(t= summs_2017_2019_dist,
                                 fill='gender', 
                                 color = "psrc_pairs",
                                 est='number', 
-                                title='Figure 4. 2017/2019 Trip Distance by Gender')
+                                title='Figure 4. 2017/2019 Trip Distance by Gender (in miles)')
 
 employ__gender_chart_19 <- static_column_chart(t=pums_19_all_employed, 
                                     x = "SEX",
@@ -209,15 +204,15 @@ employ_race_gender_chart_19 <- static_column_chart(t=pums_19_race_employed,
 
 ```
 
-```{r trip distance by gender, echo = FALSE}
+```{r trip distance by gender, fig.dim=c(6,4), echo = FALSE}
 distance
 ```
 
 \begin{flushleft}
-Another reason for some of these trip disparities and distance differences is that PUMS data shows men are employed more than women. As we consider the intersectionality of race, gender, and employment, although gendered differences don't appear to be great between races, the disparity amongst men and women across People of Color and white residents is greater, \textbf{10% compared to 8%}. The transportation system needs to be set up for people getting to a variety of locations by a variety of modes, and one that addresses the needs of all income levels.
+Another reason for some of these trip disparities and distance differences is that PUMS data shows men are employed more than women. As we consider the intersectionality of race, gender, and employment, although gendered differences don't appear to be great between races, the disparity amongst men and women across People of Color and white residents is greater, \textbf{10\% compared to 8\%}. The transportation system needs to be set up for people getting to a variety of locations by a variety of modes, and one that addresses the needs of all income levels.
 \end{flushleft}
 
-```{r matrix, fig.height = 2.3, fig.width = 4, fig.subcap=c('by Gender', 'by Race and Gender'), out.height = "80%", echo = FALSE}
+```{r matrix, fig.height = 2.3, fig.width = 4, fig.subcap=c('by Gender', 'by Race and Gender'), fig.ncol = 2, out.width = "50%", out.height="80%",fig.pos = "H", echo = FALSE}
 
 employ__gender_chart_19
 employ_race_gender_chart_19
@@ -248,7 +243,7 @@ static_column_chart(pums19_sex_age,
 ## Changes Brought about by COVID-19 Pandemic
 
 \begin{flushleft}
-Although there were apparent disparities in the 2017/2019 data, COVID-19 brought about abrupt changes to the transportation landscape in 2021. The 2021 Household Travel survey showed big changes in travel behavior. More people were walking and biking, and less people were using transit. Many more people also now had the opportunity to telework. Although women teleworked more than men before COVID-19, the data shows this increase \textbf{even more in 2021}. In 2021, 41\% of women teleworked, as compared to 33\% of men (Figure 7). The difference between telework rates relates to women's job sectors as compared to men, and also household responsibilities.
+Although there were apparent disparities in the 2017/2019 data, COVID-19 brought about abrupt changes to the transportation landscape in 2021. The 2021 Household Travel survey showed big changes in travel behavior. More people were walking and biking, and less people were using transit. Many more people also now had the opportunity to telework. Although women teleworked more than men before COVID-19, the data shows this increase even more in 2021. In 2021, 41\% of women teleworked, as compared to 33\% of men (Figure 7). The difference between telework rates relates to women's job sectors as compared to men, and also household responsibilities.
 \end{flushleft}
 
 ```{r 2017/2019 to 2021 charts, fig.dim=c(6,4), echo = FALSE}
@@ -268,7 +263,7 @@ telecommute
 ## Trip Purpose by Gender (2017/2019 to 2021)
 
 \begin{flushleft}
-Not only were there changes in the trips made to work for men and women, but overall trip purpose changed from 2017/2019 to 2021 (Figure 8). COVID-19 brought about an increase in social, recreational, or restaurant/meal pick-ups in 2021 for both men and women, but with women surpassing men in percentage of these trips made. Additionally, although it appeared as though women made less trips escorting additional family members (\textbf{from 13\% to 8\%}), men's trips remained at \textbf{~7\%}, which means that overall trips changed, possibly due to the increase in women's telecommute behaviors or lack of activities outside of the home. Overall, women made more trips than men in all other categories besides work or school trips. 
+Not only were there changes in the trips made to work for men and women, but overall trip purpose changed from 2017/2019 to 2021 (Figure 8). COVID-19 brought about an increase in social, recreational, or restaurant/meal pick-ups in 2021 for both men and women, but with women surpassing men in percentage of these trips made. Additionally, although it appeared as though women made less trips escorting additional family members (from 13\% to 8\%), men's trips remained at about 7\%, which means that overall trips changed, possibly due to the increase in women's telecommute behaviors or lack of activities outside of the home. Overall, women made more trips than men in all other categories besides work or school trips. 
 \end{flushleft}
 
 ```{r 2017/2019 to 2021, fig.dim=c(6,4), echo = FALSE}
@@ -280,15 +275,10 @@ changez
 
 ```
 
-\newpage
-\setlength{\headheight}{10pt}
-\setlength{\textheight}{665pt}
-\fancyhead[L]{}
-
 ## Conclusion
 
 \begin{flushleft}
-someotherwords
-\end{flushleft}
 
-#### While we are working towards a more non-binary understand of gendered data, we acknowledge that much of the data presented above does analyze information and patterns in a binary manner. 
+
+\textbf{\textit{While we are working towards a more non-binary understanding of gendered data, we acknowledge that much of the data presented above does analyze information and patterns in a binary manner.}} 
+\end{flushleft}
