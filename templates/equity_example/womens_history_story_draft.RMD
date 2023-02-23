@@ -185,7 +185,7 @@ employ_race_gender_chart_19 <- static_column_chart(t=pums_19_race_employed,
                                     x = "PRACE",
                                     y = "share",
                                     fill = "SEX",
-                                    color="psrc_pairs",
+                                    color="purples_inc",
                                     est ="percent",
                                     #moe='share_moe', 
                                     title = "2019 Employment by Gender and by Race")
@@ -201,7 +201,7 @@ distance <- static_column_chart(t= summs_2017_2019_dist,
 
 ```
 
-```{r matrix, fig.height = 2.3, fig.width = 4, fig.ncol = 2, out.width = "50%", fig.pos= "H", echo = FALSE}
+```{r matrix, fig.height = 2.3, fig.width = 4,fig.subcap=c('by Gender', 'by Race and Gender', 'By Trip Distance(miles)'), fig.ncol = 2, out.width = "50%", fig.pos= "H", echo = FALSE}
 
 employ__gender_chart_19
 employ_race_gender_chart_19
