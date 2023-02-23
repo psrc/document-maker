@@ -312,12 +312,20 @@ trav_summs_2021 <- hhts_count(data_21_big_hh,
 
 
 mode_summs_2017_2019 <- hhts_count(data_17_19,
-                                   group_vars=c('gender','mode_simple'),
-                                   spec_wgt='trip_adult_weight_2017_2019')%>%drop_na(c('gender', 'mode_simple'))%>%filter(mode_simple=='Bike')%>%filter(gender %in% c('Female', 'Male') )%>% mutate_if(is.numeric, round, -3)
+                                   group_vars=c('gender_grp','mode_simple'),
+                                   spec_wgt='trip_adult_weight_2017_2019')%>%
+  drop_na(c('gender_grp', 'mode_simple'))%>%
+  filter(mode_simple=='Bike')%>%
+ # filter(gender %in% c('Female', 'Male') )%>% 
+  mutate_if(is.numeric, round, -3)
 
 mode_summs_2021 <- hhts_count(data_21,
-                              group_vars=c('gender','mode_simple'),
-                              spec_wgt='trip_adult_weight_2021') %>%drop_na(c('gender', 'mode_simple'))%>%filter(mode_simple=='Bike')%>%filter(gender %in% c('Female', 'Male') )%>% mutate_if(is.numeric, round, -3)
+                              group_vars=c('gender_grp','mode_simple'),
+                              spec_wgt='trip_adult_weight_2021') %>%
+  drop_na(c('gender_grp', 'mode_simple'))%>%
+  filter(mode_simple=='Bike')%>%
+  #filter(gender %in% c('Female', 'Male') )%>% 
+  mutate_if(is.numeric, round, -3)
 
 
 

@@ -104,6 +104,7 @@ static_column_chart(t= summs_2017_2019, x='simple_purpose', y='share',  fill='ge
 
 \begin{flushleft}
 Women in households with more than two people tend to travel more with other people than men (Figure 2). Transit is often not well set up for people who are traveling with strollers. The walk and bike network are not built out for people of all ages to use.
+\end{flushleft}
 
 ### Transit isn't Always Efficient for Women
 
