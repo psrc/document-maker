@@ -42,12 +42,13 @@ library(magrittr)
 network_file_loc<-'X:/DSA/Trends/equity/images'
 
 # Create Image 
-image1 <- image_read(file.path(network_file_loc, 'women.jpg'))
+image1 <- image_read(file.path(network_file_loc, 'commute.jpg'))
 image2 <- image_read(file.path(network_file_loc, "ferry.jpg"))
 image3 <- image_read(file.path(network_file_loc, "streetart.jpg"))
-image4<-  image_read(file.path(network_file_loc, "transit.jpg"))
+image4 <- image_read(file.path(network_file_loc, "bike.jpg"))
+image5 <- image_read(file.path(network_file_loc, "transit.jpg"))
 
-input <- c(image_scale(image1, "x300"), image_scale(image2, "x300"), image_scale(image3, "x300"),  image_scale(image4, "x300"))
+input <- c(image_scale(image1, "x200"), image_scale(image2, "x200"), image_scale(image3, "x200"),  image_scale(image4, "x200"), image_scale(image5, "x200"))
 
 women2_image_header <- image_append(input)
 image_write(women2_image_header, path="women2_image_header.png", format="png")
@@ -128,7 +129,7 @@ How can the transportation and land use system better accommodate older people, 
 \end{flushleft}
 
 ```{r Bike trips, fig.dim=c(6,4), echo = FALSE}
-static_column_chart(t= mode_summs_2017_2019, x='mode_simple', y='count',  fill='gender', est='number', title= "Figure 3. Number of Bike Trips by Gender", source = 'Source: 2019 PSRC Household Travel Survey Data')+
+static_column_chart(t= mode_summs_2017_2019, x='mode_simple', y='count',  fill='gender', color = "psrc_pairs", est='number', title= "Figure 3. Number of Bike Trips by Gender", source = 'Source: 2019 PSRC Household Travel Survey Data')+
     labs(x = "Gender")
 
 ```
