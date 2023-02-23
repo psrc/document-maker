@@ -169,6 +169,7 @@ Women take shorter more local trips, as opposed to long highway trips. The trans
 
 ```{r PUMS employment and trip distance by gender, echo = FALSE}
 pums_19_all_employed<- pums19_all %>% filter(ESR=='Employed') 
+pums_19_race_employed<- pums19_race %>% filter(ESR=='Employed') 
 
 
 employ__gender_chart_19 <- static_column_chart(t=pums_19_all_employed, 
@@ -179,6 +180,15 @@ employ__gender_chart_19 <- static_column_chart(t=pums_19_all_employed,
                                     est ="percent",
                                     title = "2019 Employment by Gender")+
     labs(x = "Gender")
+
+employ_race_gender_chart_19 <- static_column_chart(t=pums_19_race_employed, 
+                                    x = "PRACE",
+                                    y = "share",
+                                    fill = "SEX",
+                                    color="psrc_pairs",
+                                    est ="percent",
+                                    #moe='share_moe', 
+                                    title = "2019 Employment by Gender and by Race")
 
 distance <- static_column_chart(t= summs_2017_2019_dist, 
                                 x='gender', 
@@ -194,6 +204,7 @@ distance <- static_column_chart(t= summs_2017_2019_dist,
 ```{r matrix, fig.height = 2.3, fig.width = 4, fig.ncol = 2, out.width = "50%", fig.pos= "H", echo = FALSE}
 
 employ__gender_chart_19
+employ_race_gender_chart_19
 distance
 
 ```

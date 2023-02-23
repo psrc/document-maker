@@ -41,7 +41,17 @@ pums19 %<>% mutate(
     case_when(between(ftr_int(AGEP), 18, 25) ~ '18-25',
               between(ftr_int(AGEP), 26, 35) ~ '26-35',
               between(ftr_int(AGEP), 36, 45) ~ '36-45',
-              AGEP >= 46 ~ "46+")))
+              AGEP >= 46 ~ "46+")),
+  PRACE= factor(
+    case_when(grepl("^(Indian|Asian|Black|Hispanic|Hawaiian|Other|Two)", as.character(PRACE)) ~ "POC",
+            !is.na(PRACE) ~ "White")))
+
+#pums19 %>% 
+ # mutate(PRACE = factor(case_when(PRACE %in% c("American Indian or Alaskan Native Alone", "Asian alone", 
+  #                                    "Black or African American alone", 
+   #                                   "Hispanic or Latino", "Native Hawaiian and Other Pacific Islander alone",
+    #                                  "Some Other Race alone", "Two or More Races") ~ "POC",
+     #                    PRACE == "White alone" ~ "White")))
 
 pums19_all <- psrc_pums_count(pums19, group_vars = c("ESR", "SEX"), incl_na=FALSE)%>%
   filter(ESR != "Total")%>%
@@ -49,6 +59,15 @@ pums19_all <- psrc_pums_count(pums19, group_vars = c("ESR", "SEX"), incl_na=FALS
   rename(
     survey = DATA_YEAR
   )
+
+pums19_race <- psrc_pums_count(pums19, group_vars = c("ESR", "PRACE", "SEX"), incl_na=FALSE)%>%
+  filter(ESR != "Total")%>%
+  filter(SEX != "Total")%>%
+  filter(PRACE != "Total")%>%
+  rename(
+    survey = DATA_YEAR
+  )
+
 
 pums21 <- get_psrc_pums(1, 2021, "p", pvars) 
 
