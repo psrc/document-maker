@@ -104,6 +104,11 @@ static_column_chart(t= summs_2017_2019, x='simple_purpose', y='share',  fill='ge
 
 \begin{flushleft}
 Women in households with more than two people tend to travel more with other people than men (Figure 2). Transit is often not well set up for people who are traveling with strollers. The walk and bike network are not built out for people of all ages to use.
+
+### Transit isn't Always Efficient for Women
+
+\begin{flushleft}
+Among female transit riders, almost 90\% ride the system more than three days per week. Fifty-seven percent of women bring their children on transit, and they often ride transit because they do not have a car, they want to avoid traffic, or because they do not have a license. Two of these three reasons indicate that women who ride transit do so because they have fewer transportation options, and may have less access to economic opportunities as a result. Over 85\% of women riders use Metro to travel to work or school, and of those women, 32\% also use Metro to run errands or complete recreational trips. Among people who make household serving trips most frequently, these trips comprise the same share for women whether they use transit or not; for men, the share of household-serving trips declines if they are transit users. This shows that while men are more likely to find alternatives to using transit to complete household-serving trips (using a different mode or taking fewer trips), women are less likely to find an alternative, and instead work to make the transit system work for their needs. Although the rate of adoption for Transportation Network Companies (TNCs) like Uber and Lyft is the same for men and women, women are more likely than men to report that their transit use has stayed the same as they have also begun to use TNCs. Women are more likely than men to say they use TNCs for trips that transit does not serve, while men are more likely to say they use TNCs to reach a transit stop or station. The trips that are not served by transit may be related to time or location, as women’s needs differ from men’s needs by both time of day and location.
 \end{flushleft}
 
 ```{r Trips by Number of Travellers, fig.dim=c(6,4), echo = FALSE}
@@ -129,25 +134,21 @@ static_column_chart(t= trav_summs_2017_2019,
 ### Women Bike Commute Far Less than Men
 
 \begin{flushleft}
-Women bike much less than men. Some of this is undoubtedly because of bike network design does not feel well-suited or safe for all people of different ages and abilities. There are many considerations as to why women do not feel comfortable riding bicycles as a form of transit, as seen in a study performed by the \href{https://www.itdp.org/2022/07/06/cyclings-gender-gap/}{\underline{\textcolor{blue}{Institute for Transportation and Development Policy}}} in 2022.  
+Women bike much less than men. Some of this is undoubtedly because of bike network design does not feel well-suited or safe for all people of different ages and abilities. There are many considerations as to why women do not feel comfortable riding bicycles as a form of transit, as seen in a study performed by the \href{https://www.itdp.org/2022/07/06/cyclings-gender-gap/}{\underline{\textcolor{blue}{Institute for Transportation and Development Policy}}} in 2022. 
 
 As a result of some of these considerations, in the Puget Sound Region in 2019 only \textbf{30,000} bike trips were made by women but \textbf{74,000} were made by men (Figure 3). 
-
-How can the transportation and land use system better accommodate older people, household maintenance and caregiving needs? Addressing these questions will improve the system for all genders.
 \end{flushleft}
 
 ```{r Bike trips, fig.dim=c(6,4), echo = FALSE}
-static_column_chart(t= mode_summs_2017_2019, x='mode_simple', y='count',  fill='gender', color = "psrc_pairs", est='number', title= "Figure 3. Number of Bike Trips by Gender", source = 'Source: 2019 PSRC Household Travel Survey Data')+
+static_column_chart(t= mode_summs_2017_2019, x='mode_simple', y='count',  fill='gender_grp', color = "psrc_pairs", est='number', title= "Figure 3. Number of Bike Trips by Gender", source = 'Source: 2019 PSRC Household Travel Survey Data')+
     labs(x = "Gender")
 
 ```
 
-### Transit isn't Always Safe for Women
-
 \begin{flushleft}
-Among female transit riders, almost 90\% ride the system more than three days per week. Fifty-seven percent of women bring their children on transit, and they often ride transit because they do not have a car, they want to avoid traffic, or because they do not have a license. Two of these three reasons indicate that women who ride transit do so because they have fewer transportation options, and may have less access to economic opportunities as a result. Over 85\% of women riders use Metro to travel to work or school, and of those women, 32\% also use Metro to run errands or complete recreational trips. Among people who make household serving trips most frequently, these trips comprise the same share for women whether they use transit or not; for men, the share of household-serving trips declines if they are transit users. This shows that while men are more likely to find alternatives to using transit to complete household-serving trips (using a different mode or taking fewer trips), women are less likely to find an alternative, and instead work to make the transit system work for their needs. Although the rate of adoption for Transportation Network Companies (TNCs) like Uber and Lyft is the same for men and women, women are more likely than men to report that their transit use has stayed the same as they have also begun to use TNCs. Women are more likely than men to say they use TNCs for trips that transit does not serve, while men are more likely to say they use TNCs to reach a transit stop or station. The trips that are not served by transit may be related to time or location, as women’s needs differ from men’s needs by both time of day and location.
+Not only are certain modalities not conducive to ways in which women move abou their environment, but there is also the concern for safety. \href{https://www.itdp.org/2022/07/06/cyclings-gender-gap/}{\underline{\textcolor{blue}{The Institute for Transportation and Development Policy in 2022}}} reported that even though women chose biking less often then men, there was still an active participation in dialogues about how to increase user uptake and accessibility with biking because they deemed it a way to remain safe from harassment or negative transit or walking encounters that they experienced. Women should not have to choose between safety concerns.
 
-Speaking again to safety, the conversation is slightly different from that pertaining to bike and road safety, but speaks more to the harrassment and violence that women and women-identifying folks experience in shared spaces or transit. \href{https://www.itdp.org/2022/07/06/cyclings-gender-gap/}{\underline{\textcolor{blue}{The Institute for Transportation and Development Policy}}}
+How can the transportation and land use system better accommodate older people, household maintenance and caregiving needs? Addressing these questions will improve the system for all genders.
 \end{flushleft}
 
 \newpage
@@ -170,12 +171,10 @@ These travel behavior findings point towards many opportunities to adjust the se
 \setlength{\textheight}{665pt}
 \fancyhead[L]{}
 
-## Nationwide Data Shows Similar Burdens and Constraints
+## Regional and Nationwide Data Show Similar Constraints
 
 \begin{flushleft}
-The findings from \href{https://thesource.metro.net/2019/09/19/metro-releases-understanding-how-women-travel-report/}{\underline{\textcolor{blue}{Understanding How Women Travel}}} about women’s mode choices, how likely they are to travel with others in their care, and their complex trip-chaining patterns could all inform adjustments to Metro’s fare policy to make it more equitable towards women and more cost-competitive with driving and carpooling. Findings about women’s trip purposes and primary responsibility for household errands could all inform the way transit vehicles, transit stations, and bus stops are designed, so that space for traveling with others and carrying bags and other belongings could be better accommodated. Findings about when women are traveling and average trip lengths could inform new service offerings that meet a mid-day peak travel demand and provide better direct connections over long distances while minimizing transfers. 
-
-The transportation system, instead, is set up for people to get quickly to work.
+The findings from \href{https://thesource.metro.net/2019/09/19/metro-releases-understanding-how-women-travel-report/}{\underline{\textcolor{blue}{Understanding How Women Travel}}} about women’s mode choices, how likely they are to travel with others in their care, and their complex trip-chaining patterns could all inform adjustments to Metro’s fare policy to make it more equitable towards women and more cost-competitive with driving and carpooling. Findings about women’s trip purposes and primary responsibility for household errands could all inform the way transit vehicles, transit stations, and bus stops are designed, so that space for traveling with others and carrying  belongings could be better accommodated. Findings about when women are traveling and average trip lengths could inform new service offerings that meet a mid-day peak travel demand and provide better direct connections over long distances while minimizing transfers. 
 
 PUMS data shows women are employed more than men, but not to the extent the trip purposes diverge. Women who are working are still carrying more burden of other household tasks. Women take shorter more local trips, as opposed to long highway trips. The transportation system needs to be set up for people getting to a variety of locations by a variety of modes.
 \end{flushleft}
@@ -191,8 +190,7 @@ employ__gender_chart_19 <- static_column_chart(t=pums_19_all_employed,
                                     fill = "SEX",
                                     color="psrc_pairs",
                                     est ="percent",
-                                    title = "2019 Employment by Gender")+
-    labs(x = "Gender")
+                                    title = "2019 Employment by Gender")
 
 employ_race_gender_chart_19 <- static_column_chart(t=pums_19_race_employed, 
                                     x = "PRACE",
@@ -209,12 +207,11 @@ distance <- static_column_chart(t= summs_2017_2019_dist,
                                 fill='gender', 
                                 color = "psrc_pairs",
                                 est='number', 
-                                title=' 2017/2019 Trip Distance by Gender')+
-    labs(x = "Gender")
+                                title=' 2017/2019 Trip Distance by Gender')
 
 ```
 
-```{r matrix, fig.height = 2.3, fig.width = 4, fig.cap= "Travel Data by Race and Gender (Source: Public Use Microsample Census data, 2017/2019 PSRC Household Travel Survey Data)", fig.subcap=c('by Gender', 'by Trip Distance', 'by Race and Gender'), fig.ncol = 2, out.width = "50%", fig.pos= "H", echo = FALSE}
+```{r matrix, fig.height = 2.3, fig.width = 4, fig.subcap=c('by Gender', 'by Trip Distance', 'by Race and Gender'), fig.ncol = 2, out.width = "50%", fig.pos= "H", echo = FALSE}
 
 employ__gender_chart_19
 distance
