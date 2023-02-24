@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.2.21)  24 FEB 2023 13:22
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.2.21)  24 FEB 2023 13:28
  restricted system commands enabled.
 **womens_history_story_draft.tex
 (./womens_history_story_draft.tex
@@ -1097,46 +1097,46 @@ File: womens_history_story_draft_files/figure-latex/Bike trips-1.pdf Graphic fil
 <use womens_history_story_draft_files/figure-latex/Bike trips-1.pdf>
 Package luatex.def Info: womens_history_story_draft_files/figure-latex/Bike trips-1.pdf  used on input line 160.
 (luatex.def)             Requested size: 433.63878pt x 289.09251pt.
-[4<./womens_history_story_draft_files/figure-latex/Bike trips-1.pdf>] [5]
-<womens_history_story_draft_files/figure-latex/trip distance by gender-1.pdf, id=91, 433.62pt x 289.08pt>
+[4<./womens_history_story_draft_files/figure-latex/Bike trips-1.pdf>]
+<womens_history_story_draft_files/figure-latex/trip distance by gender-1.pdf, id=87, 433.62pt x 289.08pt>
 File: womens_history_story_draft_files/figure-latex/trip distance by gender-1.pdf Graphic file (type pdf)
 <use womens_history_story_draft_files/figure-latex/trip distance by gender-1.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/trip distance by gender-1.pdf  used on input line 181.
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/trip distance by gender-1.pdf  used on input line 176.
 (luatex.def)             Requested size: 433.63878pt x 289.09251pt.
-<womens_history_story_draft_files/figure-latex/matrix-1.pdf, id=92, 289.08pt x 165.61874pt>
+<womens_history_story_draft_files/figure-latex/matrix-1.pdf, id=88, 289.08pt x 165.61874pt>
 File: womens_history_story_draft_files/figure-latex/matrix-1.pdf Graphic file (type pdf)
 <use womens_history_story_draft_files/figure-latex/matrix-1.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/matrix-1.pdf  used on input line 183.
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/matrix-1.pdf  used on input line 178.
 (luatex.def)             Requested size: 234.8769pt x 134.56488pt.
-<womens_history_story_draft_files/figure-latex/matrix-2.pdf, id=93, 289.08pt x 165.61874pt>
+<womens_history_story_draft_files/figure-latex/matrix-2.pdf, id=89, 289.08pt x 165.61874pt>
 File: womens_history_story_draft_files/figure-latex/matrix-2.pdf Graphic file (type pdf)
 <use womens_history_story_draft_files/figure-latex/matrix-2.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/matrix-2.pdf  used on input line 184.
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/matrix-2.pdf  used on input line 179.
 (luatex.def)             Requested size: 234.8769pt x 134.56488pt.
 
-Overfull \hbox (3.20279pt too wide) in paragraph at lines 183--185
+Overfull \hbox (3.20279pt too wide) in paragraph at lines 178--180
 [][] []  
  []
 
-[6<./womens_history_story_draft_files/figure-latex/trip distance by gender-1.pdf><./womens_history_story_draft_files/figure-latex/matrix-1.pdf><./womens_history_story_draft_files/figure-latex/matrix-2.pdf>]
-<womens_history_story_draft_files/figure-latex/Age group by gender-1.pdf, id=107, 433.62pt x 289.08pt>
+[5<./womens_history_story_draft_files/figure-latex/trip distance by gender-1.pdf>]
+<womens_history_story_draft_files/figure-latex/Age group by gender-1.pdf, id=99, 433.62pt x 289.08pt>
 File: womens_history_story_draft_files/figure-latex/Age group by gender-1.pdf Graphic file (type pdf)
 <use womens_history_story_draft_files/figure-latex/Age group by gender-1.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/Age group by gender-1.pdf  used on input line 190.
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/Age group by gender-1.pdf  used on input line 185.
 (luatex.def)             Requested size: 433.63878pt x 289.09251pt.
-[7<./womens_history_story_draft_files/figure-latex/Age group by gender-1.pdf>]
-<womens_history_story_draft_files/figure-latex/2017/2019 to 2021 charts-1.pdf, id=115, 433.62pt x 289.08pt>
+[6<./womens_history_story_draft_files/figure-latex/matrix-1.pdf><./womens_history_story_draft_files/figure-latex/matrix-2.pdf><./womens_history_story_draft_files/figure-latex/Age group by gender-1.pdf>]
+<womens_history_story_draft_files/figure-latex/2017/2019 to 2021 charts-1.pdf, id=111, 433.62pt x 289.08pt>
 File: womens_history_story_draft_files/figure-latex/2017/2019 to 2021 charts-1.pdf Graphic file (type pdf)
 <use womens_history_story_draft_files/figure-latex/2017/2019 to 2021 charts-1.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/2017/2019 to 2021 charts-1.pdf  used on input line 205.
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/2017/2019 to 2021 charts-1.pdf  used on input line 200.
 (luatex.def)             Requested size: 433.63878pt x 289.09251pt.
-[8<./womens_history_story_draft_files/figure-latex/2017/2019 to 2021 charts-1.pdf>]
-<womens_history_story_draft_files/figure-latex/2017/2019 to 2021-1.pdf, id=126, 433.62pt x 289.08pt>
+[7<./womens_history_story_draft_files/figure-latex/2017/2019 to 2021 charts-1.pdf>]
+<womens_history_story_draft_files/figure-latex/2017/2019 to 2021-1.pdf, id=122, 433.62pt x 289.08pt>
 File: womens_history_story_draft_files/figure-latex/2017/2019 to 2021-1.pdf Graphic file (type pdf)
 <use womens_history_story_draft_files/figure-latex/2017/2019 to 2021-1.pdf>
-Package luatex.def Info: womens_history_story_draft_files/figure-latex/2017/2019 to 2021-1.pdf  used on input line 215.
+Package luatex.def Info: womens_history_story_draft_files/figure-latex/2017/2019 to 2021-1.pdf  used on input line 210.
 (luatex.def)             Requested size: 433.63878pt x 289.09251pt.
-[9<./womens_history_story_draft_files/figure-latex/2017/2019 to 2021-1.pdf>] (./womens_history_story_draft.aux * soulpos - computing points - it may take a few seconds *
+[8<./womens_history_story_draft_files/figure-latex/2017/2019 to 2021-1.pdf>] (./womens_history_story_draft.aux * soulpos - computing points - it may take a few seconds *
 \openout3 = womens_history_story_draft.upb
  (./womens_history_story_draft.upa))
 Package rerunfilecheck Info: File `womens_history_story_draft.out' has not changed.
@@ -1144,19 +1144,19 @@ Package rerunfilecheck Info: File `womens_history_story_draft.out' has not chang
 )
 
 Here is how much of LuaTeX's memory you used:
- 25283 strings out of 478294
+ 25282 strings out of 478294
  100000,1977958 words of node,token memory allocated
  647 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 8 attribute, 79 glue_spec, 8 attribute_list, 1 write, 1 user_defined nodes
    avail lists: 2:317,3:125,4:74,5:65,6:36,7:5511,8:22,9:309,10:17,11:369
  44543 multiletter control sequences out of 65536+600000
- 63 fonts using 10495007 bytes
+ 63 fonts using 10494847 bytes
  86i,15n,130p,1494b,459s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Windows/Fonts/Poppins-Regular.ttf><c:/Windows/Fonts/Poppins-Bold.ttf>
-Output written on womens_history_story_draft.pdf (9 pages, 2488043 bytes).
+Output written on womens_history_story_draft.pdf (8 pages, 2487486 bytes).
 
-PDF statistics: 152 PDF objects out of 1000 (max. 8388607)
- 112 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 131072)
+PDF statistics: 148 PDF objects out of 1000 (max. 8388607)
+ 109 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 131072)
  73 words of extra memory for PDF output out of 10000 (max. 100000000)
 
