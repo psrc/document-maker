@@ -485,7 +485,7 @@ inc_sex_srvyr_obj_2021<-get_psrc_pums(1, 2021, 'p', pvars)%>%
                              PRACE == "Two or More Races" ~ "POC",
                            PRACE == "White alone" ~ "White")) 
 
-inc_sex_2021_all<-psrc_pums_median(pums21, stat_var='PINCP',group_vars = c('SEX', 'PRACE'))%>%
+inc_sex_2021<-psrc_pums_median(pums21, stat_var='PINCP',group_vars = c('SEX', 'PRACE'))%>%
   filter(COUNTY=='Region')%>%
   filter(PRACE != 'Total')
 
@@ -500,6 +500,4 @@ inc_sex_2021_poc<-psrc_pums_median(inc_sex_srvyr_obj_2021, stat_var='PINCP',
 #                                   "Hispanic or Latino", "Native Hawaiian and Other Pacific Islander alone",
 #                                  "Some Other Race alone", "Two or More Races") ~ "POC",
 #                    PRACE == "White alone" ~ "White"))))
-
-write.table(inc_sex_2021,"clipboard-16384", sep='\t', row.names=FALSE )
 
