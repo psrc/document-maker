@@ -27,8 +27,8 @@ library(magrittr)
 
 # Census and PUMS data about women, age, and employment##################################################
 
-pvars <- c("ESR","SEX", "AGEP", "BIN_AGE", "PRACE")
-hvars <- "BINCOME"
+pvars <- c("ESR","SEX", "AGEP", "BIN_AGE", "PRACE", "PINCP")
+hvars <- c("BINCOME", "HRACE")
 ftr_int <- function(x){as.integer(as.character(x))} 
 
 pums19 <- get_psrc_pums(1, 2019, "p", pvars) 
@@ -472,6 +472,34 @@ travel_by_gender_21 <- get_telecommute_data(survey = "2021",
 
 work_loc_trend<-rbind(travel_by_gender_17_19, travel_by_gender_21)
 
+## updates for income for race and gender (PUMS) from 2021 to include for 2023
 
+inc_sex_srvyr_obj_2021<-get_psrc_pums(1, 2021, 'p', pvars)%>% 
+  filter(PINCP>0)%>%
+  mutate(PRACE = case_when(PRACE == "American Indian or Alaskan Native Alone" |
+                             PRACE == "Asian alone" |
+                             PRACE == "Black or African American alone" |
+                             PRACE == "Hispanic or Latino" |
+                             PRACE == "Native Hawaiian and Other Pacific Islander alone" |
+                             PRACE == "Some Other Race alone" |
+                             PRACE == "Two or More Races" ~ "POC",
+                           PRACE == "White alone" ~ "White")) 
 
+inc_sex_2021_all<-psrc_pums_median(pums21, stat_var='PINCP',group_vars = c('SEX', 'PRACE'))%>%
+  filter(COUNTY=='Region')%>%
+  filter(PRACE != 'Total')
+
+inc_sex_2021_poc<-psrc_pums_median(inc_sex_srvyr_obj_2021, stat_var='PINCP',
+                                   group_vars = c('SEX', 'PRACE'))%>%
+  filter(COUNTY=='Region')%>%
+  filter(PRACE != 'Total')
+
+#pums19 %>% 
+# mutate(PRACE = factor(case_when(PRACE %in% c("American Indian or Alaskan Native Alone", "Asian alone", 
+#                                    "Black or African American alone", 
+#                                   "Hispanic or Latino", "Native Hawaiian and Other Pacific Islander alone",
+#                                  "Some Other Race alone", "Two or More Races") ~ "POC",
+#                    PRACE == "White alone" ~ "White"))))
+
+write.table(inc_sex_2021,"clipboard-16384", sep='\t', row.names=FALSE )
 

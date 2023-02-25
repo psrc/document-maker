@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.2.21)  24 FEB 2023 13:28
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.2.21)  24 FEB 2023 15:33
  restricted system commands enabled.
 **womens_history_story_draft.tex
 (./womens_history_story_draft.tex
@@ -1148,12 +1148,12 @@ Here is how much of LuaTeX's memory you used:
  100000,1977958 words of node,token memory allocated
  647 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 glyph, 8 attribute, 79 glue_spec, 8 attribute_list, 1 write, 1 user_defined nodes
-   avail lists: 2:317,3:125,4:74,5:65,6:36,7:5511,8:22,9:309,10:17,11:369
+   avail lists: 2:317,3:125,4:74,5:65,6:36,7:5469,8:22,9:309,10:17,11:366
  44543 multiletter control sequences out of 65536+600000
- 63 fonts using 10494847 bytes
+ 63 fonts using 10495007 bytes
  86i,15n,130p,1494b,459s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Windows/Fonts/Poppins-Regular.ttf><c:/Windows/Fonts/Poppins-Bold.ttf>
-Output written on womens_history_story_draft.pdf (8 pages, 2487486 bytes).
+Output written on womens_history_story_draft.pdf (8 pages, 2487455 bytes).
 
 PDF statistics: 148 PDF objects out of 1000 (max. 8388607)
  109 compressed objects within 2 object streams
