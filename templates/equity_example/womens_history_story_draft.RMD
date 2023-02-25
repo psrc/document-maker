@@ -63,7 +63,36 @@ source(here::here('templates/equity_example/womens_history_story_draft_datacrunc
 \begin{flushleft}
 The needs of families and women residents are oftentimes overlooked in the design of our urban environments.
 
-For example, women have \href{http://libraryarchives.metro.net/DB_Attachments/2019-0294/UnderstandingHowWomenTravel_FullReport_FINAL.pdf}{\underline{\textcolor{blue}{transportation needs that have not historically been met}}} in urban environments. The regional transportation system (including transit) was traditionally designed around the need to quickly get to work at central locations. Women tend to carry significantly more of the care-giving burdens of society and thus need a system that works \textbf{safely} for traveling with others to a variety of locations \textbf{at all times of day}. Women also represent a large portion of older populations who have unique transportation needs that are not well-served by our system built around driving and work destinations. Furthermore, women are more likely to live in poverty and have lower incomes than men, which impact many aspects of transit needs and housing needs or limitations. (Read our Equity Trend story from last year about \href{https://www.psrc.org/about-us/media-hub/womens-history-month-progress-and-paychecks}{\underline{\textcolor{blue}{Women's History Month: progress and paychecks}}} for gendered income disparities). Learn more about how we can redesign and shape our cities through a more equitable process in Leslie Kern's book entitled \href{https://metropolismag.com/viewpoints/leslie-kern-feminist-city/}{\underline{\textcolor{blue}{Feminist City}}}.
+For example, women have \href{http://libraryarchives.metro.net/DB_Attachments/2019-0294/UnderstandingHowWomenTravel_FullReport_FINAL.pdf}{\underline{\textcolor{blue}{transportation needs that have not historically been met}}} in urban environments. The regional transportation system (including transit) was traditionally designed around the need to quickly get to work at central locations. Women tend to carry significantly more of the care-giving burdens of society and thus need a system that works \textbf{safely} for traveling with others to a variety of locations \textbf{at all times of day}. Women also represent a large portion of older populations who have unique transportation needs that are not well-served by our system built around driving and work destinations. Furthermore, women are more likely to live in poverty and have lower incomes than men, which impact many aspects of transit needs and housing needs or limitations. 
+\end{flushleft}
+
+```{r income, race, and gender}
+race_disaggregated_21 <- static_bar_chart(t=inc_sex_2021, 
+                                    x = "PINCP_median",
+                                    y = "PRACE",
+                                    fill = "SEX",
+                                    color="psrc_pairs",
+                                    est ="currency",
+                                    title = "Figure 1. 2021 Income by Gender and by Race")
+
+race_aggregated_21 <- static_bar_chart(t=inc_sex_2021_poc, 
+                                    x = "PINCP_median",
+                                    y = "PRACE",
+                                    fill = "SEX",
+                                    color="psrc_pairs",
+                                    est ="currency",
+                                    title = "2021 Income by Gender and by Race")
+```
+
+```{r plots for rig, fig.height = 2.3, fig.width = 4, fig.subcap=c('by Gender', 'by Race and Gender'), fig.ncol = 2, out.width = "50%", out.height="80%",fig.pos = "H", echo = FALSE}
+
+race_disaggregated_21
+race_aggregated_21
+
+```
+
+\begin{flushleft}
+(Read our Equity Trend story from last year about \href{https://www.psrc.org/about-us/media-hub/womens-history-month-progress-and-paychecks}{\underline{\textcolor{blue}{Women's History Month: progress and paychecks}}} for gendered income disparities). Learn more about how we can redesign and shape our cities through a more equitable process in Leslie Kern's book entitled \href{https://metropolismag.com/viewpoints/leslie-kern-feminist-city/}{\underline{\textcolor{blue}{Feminist City}}}.
 
 With the arrival of the COVID-19 pandemic, we saw a greater trend towards telecommuting for some people and continued trends in aging. With these new considerations at play, compounded with the existence on previous burdens on women, when will the transportation system evolve for women?
 \end{flushleft}
