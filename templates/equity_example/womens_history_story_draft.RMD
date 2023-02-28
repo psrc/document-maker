@@ -60,20 +60,17 @@ source(here::here('templates/equity_example/womens_history_story_draft_datacrunc
 ```
 ![](C:/Coding/CURRENT_REPOS_GITHUB/document-maker/templates/equity_example/women2_image_header.png){width=100%}
 
-\thispagestyle{firstpage}
-\onehalfspacing
+```{r, echo=FALSE, results=TRUE}
+wb <- createWorkbook()
+xlsx_file <- "womens_history.xlsx"
+
+```
 
 \begin{flushleft}
 The needs of families and women residents are oftentimes overlooked in the design of our urban environments.
 
 For example, women have \href{http://libraryarchives.metro.net/DB_Attachments/2019-0294/UnderstandingHowWomenTravel_FullReport_FINAL.pdf}{\underline{\textcolor{blue}{transportation needs that have not historically been met}}} in urban environments. The regional transportation system (including transit) was traditionally designed around the need to quickly get to work at central locations. Women tend to carry significantly more of the care-giving burdens of society and thus need a system that works \textbf{safely} for traveling with others to a variety of locations \textbf{at all times of day}. Women also represent a large portion of older populations who have unique transportation needs that are not well-served by our system built around driving and work destinations. Furthermore, women are more likely to live in poverty and have lower incomes than men (Figure 1 and Figure 2), which impact many aspects of transit needs and housing needs or limitations. 
 \end{flushleft}
-
-```{r, echo=FALSE, results=TRUE}
-wb <- createWorkbook()
-xlsx_file <- "womens_history.xlsx"
-
-```
 
 ```{r income race and gender, fig.dim=c(6,4), echo = FALSE}
 race_disaggregated_21 <- static_bar_chart(t=inc_sex_2021, 
@@ -104,7 +101,6 @@ With the arrival of the COVID-19 pandemic, we saw a greater trend towards teleco
 \end{flushleft}
 
 \newpage
-\pagestyle{otherpages}
 \setlength{\headheight}{10pt}
 \setlength{\textheight}{665pt}
 \fancyhead[L]{}
@@ -149,8 +145,8 @@ static_column_chart(t= trav_summs_2017_2019,
     labs(x = "Number of Travellers by Gender")
 
 ```
+
 \newpage
-\pagestyle{otherpages}
 \setlength{\headheight}{10pt}
 \setlength{\textheight}{665pt}
 \fancyhead[L]{}
@@ -237,7 +233,6 @@ static_column_chart(pums19_sex_age,
 ```
 
 \newpage
-\pagestyle{otherpages}
 \setlength{\headheight}{10pt}
 \setlength{\textheight}{665pt}
 \fancyhead[L]{}
