@@ -137,7 +137,9 @@ vars_meta <- read.dt('Elmer', 'HHSurvey.variable_metadata')
 
 
 mode_vars<-c('mode_1', 'mode_simple', 'travelers_total')
-other_vars<-c('final_home_rgcnum', 'hhsize', 'vehicle_count',  "hhincome_broad", 'rent_own', 'res_dur', 'student', 'education',  'hhincome_detailed', "age", "age_category", 'race_category', 'race_eth_broad', 'gender', 'employment',  'lifecycle', 'mode_acc', 'dest_purpose_cat', 'origin_purpose_cat', 'final_home_is_rgc')
+other_vars<-c('final_home_rgcnum', 'hhsize', 'vehicle_count',  "hhincome_broad", 'rent_own', 'res_dur', 'student', 'education',  'hhincome_detailed', 
+              "age", "age_category", 'race_category', 'race_eth_broad', 'gender', 'employment',  'lifecycle', 'mode_acc', 'dest_purpose_cat', 'origin_purpose_cat', 'final_home_is_rgc',
+              'race_eth_poc_update')
 trip_path_dist<-'trip_path_distance'
 all_vars<-c(mode_vars, other_vars, trip_path_dist)
 
@@ -344,6 +346,7 @@ get_telecommute_data <- function(survey, stat_var, group_vars, weight, incl_na =
                              "worker",
                              "workplace",
                              "gender",
+                             'race_eth_poc_update',
                              "race_category",
                              "telecommute_freq",
                              "benefits_1",
@@ -408,6 +411,7 @@ get_telecommute_data <- function(survey, stat_var, group_vars, weight, incl_na =
                              "worker",
                              "employment",
                              "workplace",
+                             "race_eth_poc_update",
                              "gender",
                              "race_category",
                              "telecommute_freq",
@@ -452,52 +456,157 @@ get_telecommute_data <- function(survey, stat_var, group_vars, weight, incl_na =
 }
 
 
-
+telecommute_data_organize <- function(survey, stat_var, group_vars, weight, incl_na = TRUE) {
+  
+  if(survey == "2021") {
+    sdf <- get_hhts(survey = survey,
+                    level = "p",
+                    vars = c("age_category",
+                             "worker",
+                             "workplace",
+                             "gender",
+                             'race_eth_poc_update',
+                             "race_category",
+                             "telecommute_freq",
+                             "benefits_1",
+                             "benefits_2",
+                             "benefits_3",
+                             "industry")) %>% 
+      filter(age_category != "Under 18 years"
+             & worker != "No jobs") %>% 
+      mutate(telecommute_freq_cond = case_when(telecommute_freq %in% c("1-2 days", "3-4 days", "5+ days")
+                                               ~ "1+ days per week",
+                                               !is.na(telecommute_freq) ~ telecommute_freq),
+             workplace_travel = case_when(workplace %in% c("Usually the same location (outside home)",
+                                                           "Workplace regularly varies (different offices or jobsites)",
+                                                           "Drives for a living (e.g., bus driver, salesperson)")
+                                          ~ "Works outside the home",
+                                          workplace %in% c("Telework some days and travel to a work location some days",
+                                                           "At home (telecommute or self-employed with home office)")
+                                          ~ "Works at home",
+                                          !is.na(workplace) ~ workplace),
+             gender_group = case_when(gender %in% c("Not listed here / prefer not to answer", "Non-Binary")
+                                      ~ "Prefer not to answer / Another",
+                                      !is.na(gender) ~ gender),
+             race_group = case_when(race_category %in% c("African American", "Asian", "Hispanic", "Other") ~ "POC",
+                                    race_category == "White Only" ~ "White",
+                                    !is.na(race_category) ~ race_category),
+             industry = str_trim(industry)) %>% 
+      mutate(industry_cond = case_when(
+        industry %in% c("Construction", "Natural resources (e.g., forestry, fishery, energy)")
+        ~ "Construction & Resources",
+        industry == "Personal services (e.g., hair styling, personal assistance, pet sitting)"
+        ~ "Personal Services",
+        industry == "Manufacturing (e.g., aerospace & defense, electrical, machinery)"
+        ~ "Manufacturing",
+        industry %in% c("Financial services", "Real estate")
+        ~ "Finance & Real Estate",
+        industry %in% c("Public education", "Private education")
+        ~ "Education (all)",
+        industry %in% c("Health care", "Social assistance", "Childcare (e.g., nanny, babysitter)")
+        ~ "Health Care, Social Services, & Childcare",
+        industry %in% c("Arts and entertainment", "Media")
+        ~ "Media & Entertainment",
+        industry %in% c("Hospitality (e.g., restaurant, accommodation)", "Retail")
+        ~ "Hospitality & Retail",
+        industry %in% c("Landscaping", "Sports and fitness", "Other")
+        ~ "Other",
+        industry == "Government"
+        ~ "Government",
+        industry == "Military"
+        ~ "Military",
+        industry == "Missing: Skip Logic"
+        ~ "Missing",
+        industry == "Professional and business services (e.g., consulting, legal, marketing)"
+        ~ "Professional & Business Services",
+        industry == "Technology and telecommunications"
+        ~ "Technology & Telecommunications",
+        industry == "Transportation and utilities"
+        ~ "Transportation & Utilities"))
+  } else {
+    sdf <- get_hhts(survey = survey,
+                    level = "p",
+                    vars = c("age_category",
+                             "worker",
+                             "employment",
+                             "workplace",
+                             "race_eth_poc_update",
+                             "gender",
+                             "race_category",
+                             "telecommute_freq",
+                             "benefits_1",
+                             "benefits_2",
+                             "benefits_3")) %>% 
+      filter(age_category != "Under 18 years"
+             & worker != "No jobs") %>% 
+      mutate(telecommute_freq = case_when(telecommute_freq %in% c("1 day a week", "2 days a week") ~ "1-2 days", 
+                                          telecommute_freq %in% c("3 days a week", "4 days a week") ~ "3-4 days", 
+                                          telecommute_freq %in% c("5 days a week", "6-7 days a week") ~ "5+ days",
+                                          telecommute_freq %in% c("Never", "Not applicable") ~ "Never / None",
+                                          !is.na(telecommute_freq) ~ telecommute_freq)) %>% 
+      mutate(telecommute_freq_cond = case_when(telecommute_freq %in% c("1-2 days", "3-4 days", "5+ days")
+                                               ~ "1+ days per week",
+                                               !is.na(telecommute_freq) ~ telecommute_freq),
+             workplace_travel = case_when(workplace %in% c("Usually the same location (outside home)",
+                                                           "Workplace regularly varies (different offices or jobsites)",
+                                                           "Drives for a living (e.g., bus driver, salesperson)")
+                                          ~ "Works outside the home",
+                                          workplace == "At home (telecommute or self-employed with home office)"
+                                          ~ "Works at home",
+                                          !is.na(workplace) ~ "Missing"),
+             gender_group = case_when(gender %in% c("Prefer not to answer", "Another")
+                                      ~ "Prefer not to answer / Another",
+                                      !is.na(gender) ~ gender),
+             race_group = case_when(race_category %in% c("African American", "Asian", "Hispanic", "Other") ~ "POC",
+                                    race_category == "White Only" ~ "White",
+                                    !is.na(race_category) ~ race_category))
+  }
+  
+return(sdf)
+}
 
 
 # Workplace
-travel_by_gender_17_19 <- get_telecommute_data(survey = "2017_2019",
+travel_by_gender_17_19_raw <- telecommute_data_organize(survey = "2017_2019",
                                                stat_var = "workplace_travel",
-                                               group_vars = c("gender_group", "workplace_travel"),
+                                               group_vars = c("gender_group", "race_eth_poc_update', 'workplace_travel"),
                                                weight = "hh_weight_2017_2019_adult",
-                                               incl_na = FALSE) %>%filter(workplace_travel=='Works at home')%>%
-  filter(gender_group %in% c('Female', 'Male'))
+                                               incl_na = FALSE) 
 
-travel_by_gender_21 <- get_telecommute_data(survey = "2021",
+travel_by_gender_17_19<-hhts_count(travel_by_gender_17_19_raw, group_vars=c('race_eth_poc_update', 'gender','workplace_travel'))%>% 
+  filter(gender %in% c('Male', 'Female'))%>%filter(workplace_travel=='Works at home')%>%filter(race_eth_poc_update !='No response')
+#%>%filter(workplace_travel=='Works at home')%>%
+ # filter(gender_group %in% c('Female', 'Male'))
+
+travel_by_gender_21_raw <- telecommute_data_organize(survey = "2021",
                                             stat_var = "workplace_travel",
-                                            group_vars = c("gender_group", "workplace_travel"),
+                                            group_vars = c("gender_group", "race_eth_poc_update", "workplace_travel"),
                                             weight = "person_adult_weight_2021",
-                                            incl_na = FALSE) %>%filter(workplace_travel=='Works at home')%>%
-  filter(gender_group %in% c('Female', 'Male'))
-
-work_loc_trend<-rbind(travel_by_gender_17_19, travel_by_gender_21)
+                                            incl_na = FALSE)
+travel_by_gender_21<-hhts_count(travel_by_gender_21_raw, group_vars=c('race_eth_poc_update', 'gender','workplace_travel'))%>% 
+  filter(gender %in% c('Male', 'Female'))%>%filter(workplace_travel=='Works at home')%>%filter(race_eth_poc_update !='No response')
+work_loc_trend<-rbind(travel_by_gender_17_19, travel_by_gender_21)%>% mutate(year=ifelse(survey=='2017_2019', '2017/2019', '2021'))
 
 ## updates for income for race and gender (PUMS) from 2021 to include for 2023
 
-inc_sex_srvyr_obj_2021<-get_psrc_pums(1, 2021, 'p', pvars)%>% 
-  filter(PINCP>0)%>%
-  mutate(PRACE = case_when(PRACE == "American Indian or Alaskan Native Alone" |
-                             PRACE == "Asian alone" |
-                             PRACE == "Black or African American alone" |
-                             PRACE == "Hispanic or Latino" |
-                             PRACE == "Native Hawaiian and Other Pacific Islander alone" |
-                             PRACE == "Some Other Race alone" |
-                             PRACE == "Two or More Races" ~ "POC",
-                           PRACE == "White alone" ~ "White")) 
+inc_sex_srvyr_obj<-get_psrc_pums(span=5, dyear=2021, level="p", vars=c("SEX","PINCP","WKHP", 'PRACE'))%>% filter(WKHP>30)
+inc_sex_2021<-psrc_pums_median(inc_sex_srvyr_obj, stat_var='PINCP',group_vars = c("SEX",'PRACE'))%>%filter(COUNTY=='Region')
 
-inc_sex_2021<-psrc_pums_median(pums21, stat_var='PINCP',group_vars = c('SEX', 'PRACE'))%>%
-  filter(COUNTY=='Region')%>%
-  filter(PRACE != 'Total')
 
-inc_sex_2021_poc<-psrc_pums_median(inc_sex_srvyr_obj_2021, stat_var='PINCP',
-                                   group_vars = c('SEX', 'PRACE'))%>%
-  filter(COUNTY=='Region')%>%
-  filter(PRACE != 'Total')
 
 #pums19 %>% 
-# mutate(PRACE = factor(case_when(PRACE %in% c("American Indian or Alaskan Native Alone", "Asian alone", 
+# mutate(PRACE = factor(case_when(PRACE %in% c("American Indian or Alaskan Native Alone"1, "Asian alone", 
 #                                    "Black or African American alone", 
 #                                   "Hispanic or Latino", "Native Hawaiian and Other Pacific Islander alone",
 #                                  "Some Other Race alone", "Two or More Races") ~ "POC",
 #                    PRACE == "White alone" ~ "White"))))
 
+trips_by_mode_17_19_transit<-hhts_count(data_17_19, group_vars=c('race_eth_poc_update', 'gender','mode_simple'))%>%
+  filter(mode_simple!='Total')%>%filter(gender=='Male' | gender=='Female')%>%filter(race_eth_poc_update!='Total')%>%
+  filter(mode_simple=='Transit')%>%filter(race_eth_poc_update !='No response')
+trips_by_mode_21_transit<-hhts_count(data_21, group_vars=c( 'race_eth_poc_update','gender','mode_simple'))%>%
+  filter(mode_simple!='Total')%>%filter(gender=='Male' | gender=='Female')%>%filter(race_eth_poc_update!='Total')%>%
+  filter(mode_simple=='Transit')%>%filter(race_eth_poc_update !='No response')
+
+
+trips_by_mode_transit<-rbind(trips_by_mode_17_19_transit, trips_by_mode_21_transit)%>% mutate(year=ifelse(survey=='2017_2019', '2017/2019', '2021'))
